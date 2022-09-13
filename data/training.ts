@@ -126,8 +126,8 @@ export const training:TrainingObject = {
             ],
             streams: [
                 {
-                    startDate: new Date("2022-06-24").toJSON(),
-                    endDate: new Date("2022-06-25").toJSON(),
+                    startDate: new Date("2022-07-29").toJSON(),
+                    endDate: new Date("2022-07-30").toJSON(),
                     time: "9:00 - 17:00 London, UK & Lagos, Africa",
                     price: [
                         {
@@ -139,7 +139,7 @@ export const training:TrainingObject = {
                             symbol: "£",
                             locale: "en_GB",
                             template: "GBP"
-                        }    
+                            }
                         },
                         {
                         region: "Primary Market",
@@ -154,14 +154,14 @@ export const training:TrainingObject = {
                         {
                         region: "Secondary Market",
                         regionDescription: "All countries not listed as primary or tertiary",
-                        amount: 900    
+                        amount: 900
                         }
                     ], 
                     filled: true
                 },
                 {
-                    startDate: new Date("2022-07-29").toJSON(),
-                    endDate: new Date("2022-07-30").toJSON(),
+                    startDate: new Date("2022-09-16").toJSON(),
+                    endDate: new Date("2022-09-17").toJSON(),
                     time: "9:00 - 17:00 London, UK & Lagos, Africa",
                     price: [
                         {
@@ -194,8 +194,8 @@ export const training:TrainingObject = {
                     filled: false
                 },
                 {
-                    startDate: new Date("2022-09-16").toJSON(),
-                    endDate: new Date("2022-09-17").toJSON(),
+                    startDate: new Date("2022-11-04").toJSON(),
+                    endDate: new Date("2022-11-05").toJSON(),
                     time: "9:00 - 17:00 London, UK & Lagos, Africa",
                     price: [
                         {
