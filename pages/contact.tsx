@@ -27,7 +27,7 @@ const Contact: NextPage<ContactProps> = ({ howto }) => {
         <>
             <Head>
                 <title>Contact us - Valuehut</title>
-                <meta name="description" content="Valuehut.co" />
+                <meta name="description" content="ValueHut is an agile coaching and training consultancy that is helping Organisations to rethink their ways of working in other to help these organisations deliver most value to their customers." />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <ContactPage howto={howto} offices={offices} />

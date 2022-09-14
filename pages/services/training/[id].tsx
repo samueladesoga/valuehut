@@ -49,7 +49,7 @@ const TrainingPage: NextPage<TPTypes> = ({ training }) => {
         <>
             <Head>
                 <title>{`${training.title} - Valuehut`}</title>
-                <meta name="description" content="Valuehut.co" />
+                <meta name="description" content="Public ValueHut Training offerings can be booked on this page or contact us for private trainings for your organisation." />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             {

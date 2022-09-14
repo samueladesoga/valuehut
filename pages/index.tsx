@@ -21,8 +21,8 @@ const Home: NextPage<HomeTypes> = ({ homeProps }) => {
     return (
         <>
             <Head>
-                <title>Valuehut</title>
-                <meta name="description" content="Valuehut.co" />
+                <title>Valuehut Limited - Offices in London, UK and Lagos, Nigeria.</title>
+                <meta name="description" content="ValueHut is an agile coaching and training consultancy that is helping Organisations to rethink their ways of working in other to help these organisations deliver most value to their customers." />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Homepage {...homeProps} />

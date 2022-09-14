@@ -16,8 +16,8 @@ const Services: NextPage = ({ introdution }: any) => {
     return (
         <>
             <Head>
-                <title>Our services - Valuehut</title>
-                <meta name="description" content="Valuehut.co" />
+                <title>Valuehut - Agile Coaching, Training and Consultancy Services delivered all over Africa including Lagos, Abuja, Accra, Nairobi.</title>
+                <meta name="description" content="Agile Coaching, Training and Consultancy Services delivered all over Africa including Lagos, Abuja, Accra, Nairobi." />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <WhatWeDoPage introdution={introdution} />
