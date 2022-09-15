@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://valuehut.co
+Host: https://www.valuehut.co
 
 # Sitemaps
-Sitemap: https://valuehut.co/sitemap.xml
+Sitemap: https://www.valuehut.co/sitemap.xml
