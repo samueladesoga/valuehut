@@ -191,7 +191,7 @@ export const training:TrainingObject = {
                         amount: 900
                         }
                     ], 
-                    filled: false
+                    filled: true
                 },
                 {
                     startDate: new Date("2022-11-04").toJSON(),
