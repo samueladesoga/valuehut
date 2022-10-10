@@ -61,7 +61,7 @@ interface TrainingObject {
 export const training:TrainingObject = {
     training: [
         {
-            id: 2,
+            id: 1,
             title: "Professional Scrum Master",
             acronym: "PSM",
             description: `Professional Scrum Master (PSM) is an interactive, activity-based course 
@@ -110,7 +110,7 @@ export const training:TrainingObject = {
                      title: "Additional Benefits",
                      content: ``,
                      contentList: [
-                     `Participants are invited to a 2hrs free coaching and support group call approximately 5days after the class. Details would be shared in the class.`,
+                     `Participants are invited to a 90mins free coaching and support group call approximately 5days after the class. Details would be discussed in the class.`,
                      `All participants get an invite to the ValueHut support platform where they can get access to our trainers.`
                      ]
                 },
@@ -119,46 +119,12 @@ export const training:TrainingObject = {
                      content: ``,
                      contentList: [
                      `Mode of delivery is Virtual`,
-                     `The price for the class is dependent on location.`
+                     `The price for the class is dependent on your home address.`
                      ]
                 }
                 
             ],
             streams: [
-                {
-                    startDate: new Date("2022-07-29").toJSON(),
-                    endDate: new Date("2022-07-30").toJSON(),
-                    time: "9:00 - 17:00 London, UK & Lagos, Africa",
-                    price: [
-                        {
-                        region: "United Kingdom",
-                        regionDescription: ["United Kingdom"],
-                        amount: 1000,
-                        currency: {
-                            name: "gbp",
-                            symbol: "£",
-                            locale: "en_GB",
-                            template: "GBP"
-                            }
-                        },
-                        {
-                        region: "Primary Market",
-                        regionDescription: primaryMarket,
-                        amount: 1000
-                        },
-                        {
-                        region: "Tertiary Market",
-                        regionDescription: tertiaryMarket,
-                        amount: 800
-                        },
-                        {
-                        region: "Secondary Market",
-                        regionDescription: "All countries not listed as primary or tertiary",
-                        amount: 900
-                        }
-                    ], 
-                    filled: true
-                },
                 {
                     startDate: new Date("2022-09-16").toJSON(),
                     endDate: new Date("2022-09-17").toJSON(),
@@ -231,6 +197,210 @@ export const training:TrainingObject = {
             isTraining: true
         },
         {
+            id: 2,
+            title: "Professional Scrum Master II",
+            acronym: "PSM II",
+            description: `Professional Scrum Master II (PSM II) is an advanced course that helps students to 
+            understand the stances of an effective Scrum Master  while diving deep into how they serve the 
+            Developers, Product Owner and organization. Students learn about practices and skills that enable 
+            them have the right conversations and how to apply them to become better Scrum Masters. 
+            It is specifically designed for experienced Scrum Masters who have a thorough understanding of the 
+            Scrum Framework, with at least one year of experience looking to grow their knowledge and abilities 
+            as a Scrum Master.`,
+            imageURL: "./energy.jpg",
+            logo: "psmii.svg",
+            iconBorder: "https://static.scrum.org/web/tokens/token-psm-color.svg",
+            articles: [
+                {
+                    title: "Course Learning Objectives",
+                    content: `The course objectives include:`,
+                    contentList: [
+                        `How the Scrum principles and values help guide Scrum Masters in the decisions they make`,
+                        `What practices, tools, skills and stances make an effective Scrum Master`,
+                        `How the Scrum Master acts as a servant-leader and improve their ability in this role`,
+                        `What the Scrum Master can do to support Development Teams and Product Owners to become more effective`,
+                        `Ways that the Scrum Master can help to change the environment making it more conducive for Scrum Teams to be successful with greater agility`,
+                        `Provide tips and techniques for the Scrum Master to work with the rest of the organization in support of their Scrum Teams`,
+                        `Improve impact of a successful Scrum Master on the organization`,
+                        `How to deal with different types of Team conflicts`,
+                        `Removing impediments`
+                    ]
+                },
+                {
+                    title: "Who should attend?",
+                    content: ``,
+                    contentList: [
+                    `Experienced Scrum Masters who have a thorough understanding of the Scrum Framework`,
+                    `Individuals with at least one year of experience looking to grow their knowledge and abilities 
+                    as a Scrum Master`,
+                    ]
+                },
+                {
+                    title: "Assessment Certification",
+                    content: `All participants completing the Professional Scrum Master II course will receive a password to 
+                    attempt the Professional Scrum Master II (PSM II) assessment. PSM II class participants who attempt 
+                    the PSM II assessment within 14 days of receiving their free password and do not score at least 85% 
+                    will be granted a 2nd attempt at no additional cost.`
+                },
+                {
+                     title: "Additional Benefits",
+                     content: ``,
+                     contentList: [
+                     `Participants are invited to a 90mins free coaching and support group call approximately 5days after the class. Details would be discussed in the class.`,
+                     `All participants get an invite to the ValueHut support platform where they can get access to our trainers.`
+                     ]
+                },
+                {
+                     title: "More information",
+                     content: ``,
+                     contentList: [
+                     `Mode of delivery is Virtual using Zoom`,
+                     `The price for the class is dependent on your home address.`
+                     ]
+                }
+                
+            ],
+            streams: [
+                {
+                    startDate: new Date("2023-03-10").toJSON(),
+                    endDate: new Date("2023-03-11").toJSON(),
+                    time: "9:00 - 17:00 London, UK & Lagos, Africa",
+                    price: [
+                        {
+                        region: "United Kingdom",
+                        regionDescription: ["United Kingdom"],
+                        amount: 1100,
+                        currency: {
+                            name: "gbp",
+                            symbol: "£",
+                            locale: "en_GB",
+                            template: "GBP"
+                            }
+                        },
+                        {
+                        region: "Primary Market",
+                        regionDescription: primaryMarket,
+                        amount: 1100
+                        },
+                        {
+                        region: "Tertiary Market",
+                        regionDescription: tertiaryMarket,
+                        amount: 850
+                        },
+                        {
+                        region: "Secondary Market",
+                        regionDescription: "All countries not listed as primary or tertiary",
+                        amount: 950
+                        }
+                    ], 
+                    filled: false
+                },               
+                {
+                    startDate: new Date("2023-04-28").toJSON(),
+                    endDate: new Date("2023-04-29").toJSON(),
+                    time: "9:00 - 17:00 London, UK & Lagos, Africa",
+                    price: [
+                        {
+                        region: "United Kingdom",
+                        regionDescription: ["United Kingdom"],
+                        amount: 1100,
+                        currency: {
+                            name: "gbp",
+                            symbol: "£",
+                            locale: "en_GB",
+                            template: "GBP"
+                            }
+                        },
+                        {
+                        region: "Primary Market",
+                        regionDescription: primaryMarket,
+                        amount: 1100
+                        },
+                        {
+                        region: "Tertiary Market",
+                        regionDescription: tertiaryMarket,
+                        amount: 850
+                        },
+                        {
+                        region: "Secondary Market",
+                        regionDescription: "All countries not listed as primary or tertiary",
+                        amount: 950
+                        }
+                    ], 
+                    filled: false
+                },               
+                {
+                    startDate: new Date("2023-09-08").toJSON(),
+                    endDate: new Date("2023-09-09").toJSON(),
+                    time: "9:00 - 17:00 London, UK & Lagos, Africa",
+                    price: [
+                        {
+                        region: "United Kingdom",
+                        regionDescription: ["United Kingdom"],
+                        amount: 1100,
+                        currency: {
+                            name: "gbp",
+                            symbol: "£",
+                            locale: "en_GB",
+                            template: "GBP"
+                            }
+                        },
+                        {
+                        region: "Primary Market",
+                        regionDescription: primaryMarket,
+                        amount: 1100
+                        },
+                        {
+                        region: "Tertiary Market",
+                        regionDescription: tertiaryMarket,
+                        amount: 850
+                        },
+                        {
+                        region: "Secondary Market",
+                        regionDescription: "All countries not listed as primary or tertiary",
+                        amount: 950
+                        }
+                    ], 
+                    filled: false
+                },               
+                {
+                    startDate: new Date("2023-10-20").toJSON(),
+                    endDate: new Date("2023-10-21").toJSON(),
+                    time: "9:00 - 17:00 London, UK & Lagos, Africa",
+                    price: [
+                        {
+                        region: "United Kingdom",
+                        regionDescription: ["United Kingdom"],
+                        amount: 1100,
+                        currency: {
+                            name: "gbp",
+                            symbol: "£",
+                            locale: "en_GB",
+                            template: "GBP"
+                            }
+                        },
+                        {
+                        region: "Primary Market",
+                        regionDescription: primaryMarket,
+                        amount: 1100
+                        },
+                        {
+                        region: "Tertiary Market",
+                        regionDescription: tertiaryMarket,
+                        amount: 850
+                        },
+                        {
+                        region: "Secondary Market",
+                        regionDescription: "All countries not listed as primary or tertiary",
+                        amount: 950
+                        }
+                    ], 
+                    filled: false
+                }
+            ],
+            isTraining: true
+        },
+        {
             id: 3,
             title: "Professional Agile Leadership",
             acronym: "PAL-E",
@@ -274,8 +444,8 @@ export const training:TrainingObject = {
                      title: "More information",
                      content: ``,
                      contentList: [
-                     `Mode of delivery is Virtual`,
-                     `The price for the class is dependent on location.`
+                     `Mode of delivery is Virtual using Zoom`,
+                     `The price for the class is dependent on your home address.`
                      ]
                 }
             ],
