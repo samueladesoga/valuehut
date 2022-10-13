@@ -262,8 +262,8 @@ export const training:TrainingObject = {
             ],
             streams: [
                 {
-                    startDate: new Date("2023-03-10").toJSON(),
-                    endDate: new Date("2023-03-11").toJSON(),
+                    startDate: new Date("2023-02-24").toJSON(),
+                    endDate: new Date("2023-02-25").toJSON(),
                     time: "9:00 - 17:00 London, UK & Lagos, Africa",
                     price: [
                         {
@@ -296,8 +296,8 @@ export const training:TrainingObject = {
                     filled: false
                 },               
                 {
-                    startDate: new Date("2023-04-28").toJSON(),
-                    endDate: new Date("2023-04-29").toJSON(),
+                    startDate: new Date("2023-04-14").toJSON(),
+                    endDate: new Date("2023-04-15").toJSON(),
                     time: "9:00 - 17:00 London, UK & Lagos, Africa",
                     price: [
                         {
@@ -330,8 +330,8 @@ export const training:TrainingObject = {
                     filled: false
                 },               
                 {
-                    startDate: new Date("2023-09-08").toJSON(),
-                    endDate: new Date("2023-09-09").toJSON(),
+                    startDate: new Date("2023-07-28").toJSON(),
+                    endDate: new Date("2023-07-29").toJSON(),
                     time: "9:00 - 17:00 London, UK & Lagos, Africa",
                     price: [
                         {
@@ -364,8 +364,8 @@ export const training:TrainingObject = {
                     filled: false
                 },               
                 {
-                    startDate: new Date("2023-10-20").toJSON(),
-                    endDate: new Date("2023-10-21").toJSON(),
+                    startDate: new Date("2023-10-27").toJSON(),
+                    endDate: new Date("2023-10-28").toJSON(),
                     time: "9:00 - 17:00 London, UK & Lagos, Africa",
                     price: [
                         {
