@@ -517,6 +517,74 @@ export const training:TrainingObject = {
                         }
                     ], 
                     filled: false
+                },
+                {
+                    startDate: new Date("2023-06-09").toJSON(),
+                    endDate: new Date("2023-06-10").toJSON(),
+                    time: "9:00 - 17:00 London, UK & Lagos, Africa",
+                    price: [
+                        {
+                        region: "United Kingdom",
+                        regionDescription: ["United Kingdom"],
+                        amount: 1100,
+                        currency: {
+                            name: "gbp",
+                            symbol: "£",
+                            locale: "en_GB",
+                            template: "GBP"
+                            }
+                        },
+                        {
+                        region: "Primary Market",
+                        regionDescription: primaryMarket,
+                        amount: 1100
+                        },
+                        {
+                        region: "Tertiary Market",
+                        regionDescription: tertiaryMarket,
+                        amount: 850
+                        },
+                        {
+                        region: "Secondary Market",
+                        regionDescription: "All countries not listed as primary or tertiary",
+                        amount: 950
+                        }
+                    ], 
+                    filled: false
+                },
+                {
+                    startDate: new Date("2023-11-17").toJSON(),
+                    endDate: new Date("2023-11-18").toJSON(),
+                    time: "9:00 - 17:00 London, UK & Lagos, Africa",
+                    price: [
+                        {
+                        region: "United Kingdom",
+                        regionDescription: ["United Kingdom"],
+                        amount: 1100,
+                        currency: {
+                            name: "gbp",
+                            symbol: "£",
+                            locale: "en_GB",
+                            template: "GBP"
+                            }
+                        },
+                        {
+                        region: "Primary Market",
+                        regionDescription: primaryMarket,
+                        amount: 1100
+                        },
+                        {
+                        region: "Tertiary Market",
+                        regionDescription: tertiaryMarket,
+                        amount: 850
+                        },
+                        {
+                        region: "Secondary Market",
+                        regionDescription: "All countries not listed as primary or tertiary",
+                        amount: 950
+                        }
+                    ], 
+                    filled: false
                 }
             ],
             isTraining: true
