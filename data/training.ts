@@ -192,6 +192,278 @@ export const training:TrainingObject = {
                         }
                     ], 
                     filled: false
+                },
+                {
+                    startDate: new Date("2023-01-27").toJSON(),
+                    endDate: new Date("2023-01-28").toJSON(),
+                    time: "9:00 - 17:00 London, UK & Lagos, Africa",
+                    price: [
+                        {
+                        region: "United Kingdom",
+                        regionDescription: ["United Kingdom"],
+                        amount: 1000,
+                        currency: {
+                            name: "gbp",
+                            symbol: "£",
+                            locale: "en_GB",
+                            template: "GBP"
+                            }
+                        },
+                        {
+                        region: "Primary Market",
+                        regionDescription: primaryMarket,
+                        amount: 1000
+                        },
+                        {
+                        region: "Tertiary Market",
+                        regionDescription: tertiaryMarket,
+                        amount: 800
+                        },
+                        {
+                        region: "Secondary Market",
+                        regionDescription: "All countries not listed as primary or tertiary",
+                        amount: 900
+                        }
+                    ], 
+                    filled: false
+                },
+                {
+                    startDate: new Date("2023-03-17").toJSON(),
+                    endDate: new Date("2023-03-18").toJSON(),
+                    time: "9:00 - 17:00 London, UK & Lagos, Africa",
+                    price: [
+                        {
+                        region: "United Kingdom",
+                        regionDescription: ["United Kingdom"],
+                        amount: 1000,
+                        currency: {
+                            name: "gbp",
+                            symbol: "£",
+                            locale: "en_GB",
+                            template: "GBP"
+                            }
+                        },
+                        {
+                        region: "Primary Market",
+                        regionDescription: primaryMarket,
+                        amount: 1000
+                        },
+                        {
+                        region: "Tertiary Market",
+                        regionDescription: tertiaryMarket,
+                        amount: 800
+                        },
+                        {
+                        region: "Secondary Market",
+                        regionDescription: "All countries not listed as primary or tertiary",
+                        amount: 900
+                        }
+                    ], 
+                    filled: false
+                },
+                {
+                    startDate: new Date("2023-05-12").toJSON(),
+                    endDate: new Date("2023-05-13").toJSON(),
+                    time: "9:00 - 17:00 London, UK & Lagos, Africa",
+                    price: [
+                        {
+                        region: "United Kingdom",
+                        regionDescription: ["United Kingdom"],
+                        amount: 1000,
+                        currency: {
+                            name: "gbp",
+                            symbol: "£",
+                            locale: "en_GB",
+                            template: "GBP"
+                            }
+                        },
+                        {
+                        region: "Primary Market",
+                        regionDescription: primaryMarket,
+                        amount: 1000
+                        },
+                        {
+                        region: "Tertiary Market",
+                        regionDescription: tertiaryMarket,
+                        amount: 800
+                        },
+                        {
+                        region: "Secondary Market",
+                        regionDescription: "All countries not listed as primary or tertiary",
+                        amount: 900
+                        }
+                    ], 
+                    filled: false
+                },
+                {
+                    startDate: new Date("2023-07-07").toJSON(),
+                    endDate: new Date("2023-07-08").toJSON(),
+                    time: "9:00 - 17:00 London, UK & Lagos, Africa",
+                    price: [
+                        {
+                        region: "United Kingdom",
+                        regionDescription: ["United Kingdom"],
+                        amount: 1000,
+                        currency: {
+                            name: "gbp",
+                            symbol: "£",
+                            locale: "en_GB",
+                            template: "GBP"
+                            }
+                        },
+                        {
+                        region: "Primary Market",
+                        regionDescription: primaryMarket,
+                        amount: 1000
+                        },
+                        {
+                        region: "Tertiary Market",
+                        regionDescription: tertiaryMarket,
+                        amount: 800
+                        },
+                        {
+                        region: "Secondary Market",
+                        regionDescription: "All countries not listed as primary or tertiary",
+                        amount: 900
+                        }
+                    ], 
+                    filled: false
+                },
+                {
+                    startDate: new Date("2023-08-18").toJSON(),
+                    endDate: new Date("2023-08-19").toJSON(),
+                    time: "9:00 - 17:00 London, UK & Lagos, Africa",
+                    price: [
+                        {
+                        region: "United Kingdom",
+                        regionDescription: ["United Kingdom"],
+                        amount: 1000,
+                        currency: {
+                            name: "gbp",
+                            symbol: "£",
+                            locale: "en_GB",
+                            template: "GBP"
+                            }
+                        },
+                        {
+                        region: "Primary Market",
+                        regionDescription: primaryMarket,
+                        amount: 1000
+                        },
+                        {
+                        region: "Tertiary Market",
+                        regionDescription: tertiaryMarket,
+                        amount: 800
+                        },
+                        {
+                        region: "Secondary Market",
+                        regionDescription: "All countries not listed as primary or tertiary",
+                        amount: 900
+                        }
+                    ], 
+                    filled: false
+                },
+                {
+                    startDate: new Date("2023-09-08").toJSON(),
+                    endDate: new Date("2023-09-09").toJSON(),
+                    time: "9:00 - 17:00 London, UK & Lagos, Africa",
+                    price: [
+                        {
+                        region: "United Kingdom",
+                        regionDescription: ["United Kingdom"],
+                        amount: 1000,
+                        currency: {
+                            name: "gbp",
+                            symbol: "£",
+                            locale: "en_GB",
+                            template: "GBP"
+                            }
+                        },
+                        {
+                        region: "Primary Market",
+                        regionDescription: primaryMarket,
+                        amount: 1000
+                        },
+                        {
+                        region: "Tertiary Market",
+                        regionDescription: tertiaryMarket,
+                        amount: 800
+                        },
+                        {
+                        region: "Secondary Market",
+                        regionDescription: "All countries not listed as primary or tertiary",
+                        amount: 900
+                        }
+                    ], 
+                    filled: false
+                },
+                {
+                    startDate: new Date("2023-10-06").toJSON(),
+                    endDate: new Date("2023-10-07").toJSON(),
+                    time: "9:00 - 17:00 London, UK & Lagos, Africa",
+                    price: [
+                        {
+                        region: "United Kingdom",
+                        regionDescription: ["United Kingdom"],
+                        amount: 1000,
+                        currency: {
+                            name: "gbp",
+                            symbol: "£",
+                            locale: "en_GB",
+                            template: "GBP"
+                            }
+                        },
+                        {
+                        region: "Primary Market",
+                        regionDescription: primaryMarket,
+                        amount: 1000
+                        },
+                        {
+                        region: "Tertiary Market",
+                        regionDescription: tertiaryMarket,
+                        amount: 800
+                        },
+                        {
+                        region: "Secondary Market",
+                        regionDescription: "All countries not listed as primary or tertiary",
+                        amount: 900
+                        }
+                    ], 
+                    filled: false
+                },
+                {
+                    startDate: new Date("2023-12-08").toJSON(),
+                    endDate: new Date("2023-12-09").toJSON(),
+                    time: "9:00 - 17:00 London, UK & Lagos, Africa",
+                    price: [
+                        {
+                        region: "United Kingdom",
+                        regionDescription: ["United Kingdom"],
+                        amount: 1000,
+                        currency: {
+                            name: "gbp",
+                            symbol: "£",
+                            locale: "en_GB",
+                            template: "GBP"
+                            }
+                        },
+                        {
+                        region: "Primary Market",
+                        regionDescription: primaryMarket,
+                        amount: 1000
+                        },
+                        {
+                        region: "Tertiary Market",
+                        regionDescription: tertiaryMarket,
+                        amount: 800
+                        },
+                        {
+                        region: "Secondary Market",
+                        regionDescription: "All countries not listed as primary or tertiary",
+                        amount: 900
+                        }
+                    ], 
+                    filled: false
                 }
             ],
             isTraining: true
