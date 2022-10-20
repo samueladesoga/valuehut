@@ -12,6 +12,7 @@ const NavbarContainer: React.FC = () => {
                 <span className={`${navbarStyles.navbar__whatWeDo}`}>Services</span>
                 <PopupMenuTraining classname={`${navbarStyles.popupMenuOpen}`} isVisible={popupMenu} />
             </span>
+            <Link href='/blog'><a className={`link link-reverse ${navbarStyles.navbar__link}`}>Blog</a></Link>
             <Link href='/about'><a className={`link link-reverse ${navbarStyles.navbar__link}`}>About Us</a></Link>
             <Link href='/contact'><a className={`link link-reverse ${navbarStyles.navbar__link}`}>Contact Us</a></Link>
         </nav>
