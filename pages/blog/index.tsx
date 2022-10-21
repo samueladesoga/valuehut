@@ -68,12 +68,13 @@ export const getStaticProps: GetStaticProps = async () => {
         body: JSON.stringify({ query })
     }).then(res => res.json())
 
-    const posts: IPostType[] = data.data.blogCollection.items
+    const posts: IPostType[] = data.data?.blogCollection?.items
 
     return {
         props: {
             posts: posts,
-        }
+        },
+        revalidate: 10
     }
 }
 

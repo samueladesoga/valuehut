@@ -77,6 +77,7 @@ export async function getStaticProps(context: any){
   
   return{
     props: { post: post, author: author },
+    revalidate: 10
   }
 }
 
@@ -159,7 +160,7 @@ export async function getStaticPaths(){
         body: JSON.stringify({ query })
     }).then(res => res.json())
 
-    const paths: {params: {slug: string}}[] = data && data.data.blogCollection.items.map((path: {slug: string}) => {
+    const paths: {params: {slug: string}}[] = data && data.data?.blogCollection?.items?.map((path: {slug: string}) => {
       return{
         params: {
           slug: path.slug
