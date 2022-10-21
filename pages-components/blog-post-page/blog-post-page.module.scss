@@ -1,0 +1,15 @@
+@import '../../styles/keyframes.module.scss';
+
+.blogPostPage {
+    width: 1024px;
+    @media screen and (max-width: 1080px) {
+        width: 992px;
+    }
+    @media screen and (max-width: 1023px) {
+        width: 768px;
+    }
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+    margin: auto;
+}
