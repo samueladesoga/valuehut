@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <Layout>
-      <GoogleAnalytics />
+      <GoogleAnalytics trackPageViews />
       <Component {...pageProps} />
     </Layout>
   ) 
