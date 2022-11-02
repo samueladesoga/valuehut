@@ -57,7 +57,6 @@ const TrainingPage: NextPage<TPTypes> = ({ training }) => {
                 loading ? 
                 <Spinner /> : 
                 <Training training={training} streams={streams} />
-                <TrustBox />
             }
         </>
     )
