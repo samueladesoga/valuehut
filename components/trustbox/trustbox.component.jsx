@@ -16,7 +16,6 @@ const TrustBox = () => {
         <div ref={ref} // We need a reference to this element to load the TrustBox in the effect.
             className={`${trustStyles.trustpilotWidget}`}  data-locale="en-US" data-template-id="54ad5defc6454f065c28af8b" data-businessunit-id="5c12d8d7393a0100015d1c3e" data-style-height="240px" data-style-width="100%" data-theme="light" data-tags="trainer:Nml4dDMzbkNoYXJhY3Ryekj+B9CXUA==" data-stars="1,2,3,4,5" data-review-languages="en"
         >
-            <h2>Feedback from our students</h2>
             <a href="https://www.trustpilot.com/review/scrum.org" target="_blank" rel="noreferrer"> Trustpilot
             </a>
         </div>
