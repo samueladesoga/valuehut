@@ -14,9 +14,10 @@ interface MainArticleProps {
     style?: any,
     logo?: any,
     children?: any
+    slug?: string;
 }
 
-const MainArticle:React.FC<MainArticleProps> = ({imageURL, header, description, descriptionList, streams, isTraining, style, logo, children, ...otherProps}: MainArticleProps) => {
+const MainArticle:React.FC<MainArticleProps> = ({imageURL, header, description, descriptionList, streams, isTraining, style, logo, children,slug,  ...otherProps}: MainArticleProps) => {
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
         event.preventDefault();
     }
@@ -33,17 +34,29 @@ const MainArticle:React.FC<MainArticleProps> = ({imageURL, header, description, 
                     { header }
                 </h1>
                 }
+                <div className={mainArticleStyles.main__article__description}>
                     { description &&
                         <p className={`${mainArticleStyles.main__article__description}`}>
                             { description }
                         </p> 
                     }{ descriptionList &&
-                        <ul className={`
-                                        ${mainArticleStyles.main__article__description}
+                        <ul className={`${mainArticleStyles.main__article__description}
                                          ${mainArticleStyles.main__article__descriptionList}`}>
                             { descriptionList.map((d: string, i: number) => (<li key={`${header}-ma-li-${i}`}>{ d }</li>)) }
                         </ul>
                     }
+
+                    { slug &&
+                        <div className={mainArticleStyles.readMore}>
+                        <Link href={`/blog/${slug}`}>
+                            <a>
+                            Read more
+                            </a>
+                        </Link>
+                        </div>
+                    }
+                </div>
+                    
                 <div className={`${mainArticleStyles.main__article__buttons__block}`}>
                 {
                     streams &&
@@ -63,7 +76,7 @@ const MainArticle:React.FC<MainArticleProps> = ({imageURL, header, description, 
                 </div>
             </article>
             { imageURL && ( <aside className={`${mainArticleStyles.main__article__aside} ${mainArticleStyles.main__article__aside__image}`}
-                            style={{backgroundImage: `url("/images/${imageURL}")`}} >
+                            style={{backgroundImage: `url("${imageURL}")`}} >
                             </aside>)
             }
         </section>

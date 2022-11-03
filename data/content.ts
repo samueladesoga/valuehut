@@ -1,3 +1,5 @@
+import { IPostType } from "../pages/blog"
+
 export interface ArticleTypes {
     imageURL: string,
     header: string,
@@ -35,7 +37,8 @@ export interface HomepageTypes {
     whatCustomersWant: any,
     whatWeDo: any,
     previousClients: PreviousClientsTypes[],
-    services: any
+    services: any;
+    posts: IPostType[]
 }
 
 export interface SocialNetworksTypes {
