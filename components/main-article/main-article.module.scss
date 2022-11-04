@@ -88,6 +88,18 @@
     }
 }
 
+.main__article__description{
+    position: relative;
+    .readMore{
+        position: absolute;
+        line-height: 130%;
+        font-weight: 500;
+        font-size: .9rem !important;
+        color: #528ECC;
+        right: 0;
+    }
+}
+
 .main__article__header {
     margin: 10px 0 30px 0;
 }

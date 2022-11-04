@@ -1,0 +1,29 @@
+.blogList{
+    margin-left: 20px;
+    .paragraph {
+        margin-bottom: 4px;
+    }
+}
+
+.paragraph{
+    line-height: 150%;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 25px;
+
+    code{
+        padding: 4px;
+        background: #E7E7E7;
+        border-radius: 4px;
+        font-size: .9rem;
+    }
+
+    a{
+        color: #528ECC;
+        text-decoration: underline;
+    }
+}
+
+.bold{
+    font-weight: 700;
+}

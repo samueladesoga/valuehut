@@ -1,73 +1,86 @@
 import React from 'react';
-import homepageStyles from './homepage.module.scss';
-import { HomepageTypes } from '../../data/content';
+import Link from 'next/link';
 
-import WidescreenBanner from '../../components/widescreen-banner/widescreen-banner.component';
-import MainArticle from '../../components/main-article/main-article.component';
-import HeaderWithButton from '../../components/header-with-button/header-with-button.component';
-import TripleBox from '../../components/triple-box/triple-box.component';
-import ServiceBox from '../../components/service-box/service-box.component';
-import PreviousClients from '../../components/previous-clients/previous-clients.component';
-import { IPostType } from '../../pages/blog';
-import TheBlog from '../../components/the-blog';
+import mainArticleStyles from './main-article.module.scss';
 
-const Homepage: React.FC<HomepageTypes> = ({ widescreenBanner, headerArticle, servicesArticle, whatCustomersWant, whatWeDo, previousClients, services, posts }) => {
-    const articleTextAlign = { 
-        textAlign: "left",
+interface MainArticleProps {
+    imageURL?: string,
+    header: string,
+    description?: string,
+    descriptionList?: string[],
+    streams?: any[],
+    isTraining?: boolean,
+    otherProps?: any[],
+    style?: any,
+    logo?: any,
+    children?: any
+    slug?: string;
+}
+
+const MainArticle:React.FC<MainArticleProps> = ({imageURL, header, description, descriptionList, streams, isTraining, style, logo, children,slug,  ...otherProps}: MainArticleProps) => {
+    const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+        event.preventDefault();
     }
-
-    const valuehut_limited = posts.filter((post: IPostType) => post.slug === "valuehut-limited")[0];
-    const our_mission = posts.filter((post: IPostType) => post.slug === "our-mission")[0];
-    const what_we_do = posts.filter((post: IPostType) => post.slug === "what-we-do")[0];
-
+    const articleWidth: object = imageURL ? {} : {width: "100%"}
     return (
-        <>
-        <WidescreenBanner slogan={widescreenBanner.slogan} />
-        <div className={`page ${homepageStyles.homepage}`}>
-            <MainArticle 
-                imageURL={valuehut_limited?.cover.url || 'images/'+headerArticle.imageURL}
-                header={valuehut_limited?.title || headerArticle.header}
-                description={valuehut_limited?.description || headerArticle.description}
-                style={articleTextAlign}
-                slug={valuehut_limited?.slug || undefined}
-            />
-
-            <MainArticle 
-                imageURL={our_mission?.cover.url || 'images/'+whatCustomersWant.imageURL}
-                header={our_mission?.title || whatCustomersWant.header}
-                description={our_mission?.description || whatCustomersWant.descriptionList}
-                style={articleTextAlign}
-                slug={our_mission?.slug || undefined}
-            />
-
-            <MainArticle 
-                imageURL={what_we_do?.cover.url || 'images/'+whatWeDo.imageURL}
-                header={what_we_do?.title || whatWeDo.header}
-                description={what_we_do?.description || whatWeDo.description}
-                style={articleTextAlign}
-                slug={what_we_do?.slug || undefined}
-            />
-            <HeaderWithButton
-                header={servicesArticle.header}
-                link="View all"
-                href="services"    
-            />
-            <TripleBox>
-                {
-                    services.map((service:any, i:number) => {
-                        return i < 3 && (
-                            <ServiceBox {...service} url={`/services/${service.header.toLowerCase()}`} key={`service-${service.header}`} />
-                        )
-                    })
+        <section className={`${mainArticleStyles.main__article}`} style={style}>
+            <article className={`${mainArticleStyles.main__article__section}`} style={articleWidth}>
+                { isTraining ? 
+                <h2 className={`${mainArticleStyles.main__article__header}`}>
+                    { logo ? <img src={`/training/${logo}`} /> : "" }
+                    <span>{ header }</span>
+                </h2> : 
+                <h1 className={`${mainArticleStyles.main__article__header}`}>
+                    { header }
+                </h1>
                 }
-            </TripleBox>
-            <PreviousClients previousClients={previousClients} />
-            <TheBlog>
-                    a
-            </TheBlog>
-        </div>
-        </>
-    )
-};
+                <div className={mainArticleStyles.main__article__description}>
+                    { description &&
+                        <p className={`${mainArticleStyles.main__article__description}`}>
+                            { description }
+                        </p> 
+                    }{ descriptionList &&
+                        <ul className={`${mainArticleStyles.main__article__description}
+                                         ${mainArticleStyles.main__article__descriptionList}`}>
+                            { descriptionList.map((d: string, i: number) => (<li key={`${header}-ma-li-${i}`}>{ d }</li>)) }
+                        </ul>
+                    }
 
-export default Homepage;
+                    { slug &&
+                        <div className={mainArticleStyles.readMore}>
+                        <Link href={`/blog/${slug}`}>
+                            <a>
+                            Read more
+                            </a>
+                        </Link>
+                        </div>
+                    }
+                </div>
+                    
+                <div className={`${mainArticleStyles.main__article__buttons__block}`}>
+                {
+                    streams &&
+                    <Link href={`/services/training/${header.toLowerCase().split(" ").join("-")}#book-now`}>
+                        <a className="button button-primary button-primary-default">Book Now</a>
+                    </Link>
+                }
+                {
+                    isTraining &&
+                    <Link href={`/services/training/${header.toLowerCase().split(" ").join("-")}`}>
+                        <a className="button button-secondary button-secondary-default">Read More</a>
+                    </Link>
+                }
+                {
+                    children
+                }
+                </div>
+            </article>
+            { imageURL && ( <aside className={`${mainArticleStyles.main__article__aside} ${mainArticleStyles.main__article__aside__image}`}
+                            style={{backgroundImage: `url("${imageURL}")`}} >
+                            </aside>)
+            }
+        </section>
+    )
+}
+
+export default MainArticle;

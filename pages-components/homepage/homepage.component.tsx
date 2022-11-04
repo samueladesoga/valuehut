@@ -62,9 +62,7 @@ const Homepage: React.FC<HomepageTypes> = ({ widescreenBanner, headerArticle, se
                 }
             </TripleBox>
             <PreviousClients previousClients={previousClients} />
-            <TheBlog>
-                    a
-            </TheBlog>
+            <TheBlog posts={posts.slice(0,4)} />
         </div>
         </>
     )
