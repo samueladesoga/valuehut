@@ -84,8 +84,9 @@ function Blog({posts} : InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
         <Head>
-            <meta name ="og:title" property ="og:title" content ="Valuehut Limited - Blog" />
-            <meta name ="title" property ="title" content ="Valuehut Limited - Blog" />
+            <title>Valuehut Limited - Blog</title>
+            <meta name="og:title" property="og:title" content="Valuehut Limited - Blog" />
+            <meta name="title" property="title" content="Valuehut Limited - Blog" />
             <meta name="description" content="ValueHut's blog page" />
             <meta name="type" content="Blog" />
             <meta name="og:site_name" content="ValueHut" />

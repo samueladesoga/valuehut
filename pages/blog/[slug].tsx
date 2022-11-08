@@ -99,8 +99,9 @@ function BlogPost({post, author} : InferGetStaticPropsType<typeof getStaticProps
   return (
     <>
       <Head>
-        <meta name ="og:title" property ="og:title" content ={post.title} />
-        <meta name ="title" property ="title" content ={post.title} />
+        <title>{post.title}</title>
+        <meta name ="og:title" property="og:title" content={post.title} />
+        <meta name ="title" property="title" content={post.title} />
         <meta name="description" content={post.description} />
         <meta name="og:description" content={post.description} />
         <meta name="og:site_name" content="ValueHut" />
