@@ -55,6 +55,12 @@
             font-weight: 400;
             font-size: 1rem !important;
             color: #3d3d3d;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
         }
     }
 
