@@ -49,3 +49,47 @@
         padding: 20px 3px; 
     }
 }
+
+.formContainer{
+    width: 100%;
+    h2{
+        margin-bottom: 12px;
+    }
+    form{
+        width: 100%;
+        color: #333;
+        div{
+            margin-bottom: 8px;
+            label{
+                font-size: 14px;
+                font-weight: 400;
+                margin-bottom: 2px;
+            }
+            input{
+                background: transparent;
+                border: 1px solid #333;
+                border-radius: 4px;
+                padding: 4px;
+                width: 100%;
+                
+            }
+            textarea{
+                background: transparent;
+                border: 1px solid #333;
+                border-radius: 4px;
+                padding: 4px;
+                width: 100%;
+            }
+            button {
+                padding: 8px;
+                background: #333;
+                color: #fff;
+                font-size: 14px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+        }
+    }
+}
