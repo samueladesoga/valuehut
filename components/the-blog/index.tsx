@@ -15,8 +15,8 @@ function TheBlog(props: IProps) {
             </div>
             <div className={styles.blogs}>
                 {props.posts &&
-                    props.posts.map((post: IPostType) => (
-                        <div className={styles.blog}>
+                    props.posts.map((post: IPostType, id) => (
+                        <div className={styles.blog} key={id}>
                             <img src={post.cover.url} alt="post-cover" />
                             <a href={`/blog/${post.slug}`}>{post.title}</a>
                             <p>{post.description}</p>

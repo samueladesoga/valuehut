@@ -43,8 +43,7 @@ export async function getStaticProps() {
     const posts: IPostType[] = data?.data?.blogCollection?.items || {};
     return {
         props: {
-            homeProps: homeProps,
-            posts: posts,
+            homeProps: { ...homeProps, ...{ posts: posts } },
         },
     };
 }
@@ -65,7 +64,7 @@ const Home: NextPage<HomeTypes> = ({ homeProps, posts }) => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Homepage {...homeProps} posts={posts} />
+            <Homepage {...homeProps} />
         </>
     );
 };

@@ -71,7 +71,7 @@ const Homepage: React.FC<HomepageTypes> = ({
                     })}
                 </TripleBox>
                 <PreviousClients previousClients={previousClients} />
-                <TheBlog posts={posts?.filter((post: IPostType) => post.showInHomePage).slice(0, 4)} />
+                <TheBlog posts={posts?.filter((post: IPostType) => post.showInHomePage).slice(0, 4) as IPostType[]} />
             </div>
         </>
     );
