@@ -14,17 +14,13 @@ interface IProps {
 function BlogItem(props: IProps) {
   return (
     <div className={styles.container}>
-      {
-        props.cover_img && 
-        (<div className={styles.cover_container}>
-            <Link href={`/blog/${props.slug}`}>
-              <a>
-                <img src={props.cover_img} alt={"img-cover"} className={styles.cover_container_image} />
-              </a>
-            </Link>
-          </div>
-          )
-      }
+      <div className={styles.cover_container}>
+        <Link href={`/blog/${props.slug}`}>
+          <a>
+            <img src={props.cover_img || '/images/blog-placeholder.jpg'} alt={"img-cover"} className={styles.cover_container_image} />
+          </a>
+        </Link>
+      </div>
       <div className={styles.post_content}>
         <div className={styles.post_content_header}>
           <Link href={`/blog/${props.slug}`}>

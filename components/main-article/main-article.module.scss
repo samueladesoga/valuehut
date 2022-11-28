@@ -18,6 +18,7 @@
         text-align: justify;
         .main__article__header {
             text-align: left;
+            font-size: 2.5rem;
         }
         .main__article__aside__image {
             border-radius: 0;
@@ -36,6 +37,8 @@
         text-align: justify;
         .main__article__header {
             text-align: left;
+            text-align: left;
+            font-size: 2.5rem;
         }
         .main__article__aside__image {
             border-radius: 0;
@@ -85,6 +88,26 @@
         list-style-type: none;
         text-align: justify;
         margin-bottom: 1em;
+    }
+
+    p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+    }
+}
+
+.main__article__description{
+    position: relative;
+    .readMore{
+        position: absolute;
+        line-height: 130%;
+        font-weight: 500;
+        font-size: .9rem !important;
+        color: #528ECC;
+        right: 0;
     }
 }
 

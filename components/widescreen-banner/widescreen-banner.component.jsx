@@ -9,7 +9,7 @@ const WidescreenBanner = ({slogan}) => {
                 <div className="widescreen__slogan">
                 {
                     slogan.map((string, i) => 
-                    (<span className="widescreen__slogan__string" key={`banner-string-${i}`}>{string}</span>)
+                    (<h1 className="widescreen__slogan__string" key={`banner-string-${i}`}>{string}</h1>)
                 )}
                 </div>
             </BannerShadow>
