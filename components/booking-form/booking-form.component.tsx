@@ -72,7 +72,7 @@ const BookingForm: React.FC<BookingFormTypes> = ({ training, stream }) => {
                 className="button button-primary button-primary-small"
                 href={
                     encodeURI(`https://valuehut.foxycart.com/cart?name=${training.title}
-                    &Start Date=${getDateInWords(stream.startDate)}
+                    &Start Date=${getDateInWords(new Date(stream.startDate))}
                     &Time=${stream.time}
                     &price=${bookPrice.amount}${bookPrice.currency ? `${bookPrice.currency.name}` : ""}
                     ${bookPrice.currency ? `&locale=${bookPrice.currency.locale}` : ""}
