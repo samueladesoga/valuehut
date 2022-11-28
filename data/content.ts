@@ -197,10 +197,10 @@ export const content = {
                 {
                     region: 'Nigeria',
                     email: 'info@valuehut.co',
-                    phone: '+234(0)818193501',
-                    address: '58, Opebi Road, Lagos, Nigeria',
-                },
-            ],
-        },
-    },
-};
+                    phone: '+234(0)8181935501',
+                    address: '58, Opebi Road, Lagos, Nigeria'
+                }
+            ]
+        }
+    }
+}
