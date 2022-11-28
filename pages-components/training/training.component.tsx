@@ -29,12 +29,6 @@ const Training: React.FC<TrainingComponentTypes> = ({ training, streams }) => {
                     content={ description }
                 />
             }
-            {   articles && articles.map((article, i) => (
-                    <TrainingArticle key={`${article.content[0]}${i}${article.content[0]}`}
-                        { ...article }
-                    />
-                ))
-            }
             <div id="book-now" className={`${trainingStyles.bookNow}`}>
                 {
                     streams &&
@@ -44,6 +38,12 @@ const Training: React.FC<TrainingComponentTypes> = ({ training, streams }) => {
                         />
                 }
             </div>
+            {   articles && articles.map((article, i) => (
+                    <TrainingArticle key={`${article.content[0]}${i}${article.content[0]}`}
+                        { ...article }
+                    />
+                ))
+            }
         </div>
     )
 }

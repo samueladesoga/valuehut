@@ -6,6 +6,7 @@ import Spinner from '../../../components/spinner/spinner.component';
 import TrainingsPage from '../../../pages-components/trainings-page/trainings-page.component';
 import { getAllTrainingsIds } from '../../../lib/training.data';
 import Training from '../../../pages-components/training/training.component';
+import TrustBox from '../../../components/trustbox/trustbox.component';
 
 import { training, TrainingTypes } from '../../../data/training';
 
@@ -49,7 +50,7 @@ const TrainingPage: NextPage<TPTypes> = ({ training }) => {
         <>
             <Head>
                 <title>{`${training.title} - Valuehut`}</title>
-                <meta name="description" content="Public ValueHut Training offerings can be booked on this page or contact us for private trainings for your organisation." />
+                <meta name="description" content="ValueHut Training offerings can be booked on this page or contact us for private trainings for your organisation especially in Lagos, Accra and Nairobi." />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             {

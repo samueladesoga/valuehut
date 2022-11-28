@@ -9,7 +9,7 @@ function BlogPage(props: IProps) {
   return (
     <div className={`page ${blogPage.blogPage}`}>
       <h1 className={blogPage.title}>
-        The Blog
+        VH Blogs
       </h1>
       {props.children}
     </div>
