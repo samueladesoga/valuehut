@@ -28,6 +28,7 @@ const ConsultingPage: React.FC<ConsultingPageTypes> = ({ url, consulting, introd
                             imageURL={consult.imageURL}
                             header={consult.title ? consult.title : ''}
                             description={consult.content}
+                            descriptionList={consult.contentList}
                             key={`consult-${consult.title}`}
                         />
                     );
