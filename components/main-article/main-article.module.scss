@@ -89,7 +89,9 @@
         text-align: justify;
         margin-bottom: 1em;
     }
+}
 
+.main__article__description__trim {
     p{
         overflow: hidden;
         text-overflow: ellipsis;

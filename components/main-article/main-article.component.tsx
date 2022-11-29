@@ -45,7 +45,11 @@ const MainArticle: React.FC<MainArticleProps> = ({
                 ) : (
                     <h2 className={`${mainArticleStyles.main__article__header}`}>{header}</h2>
                 )}
-                <div className={mainArticleStyles.main__article__description}>
+                <div
+                    className={`${mainArticleStyles.main__article__description} ${
+                        slug ? mainArticleStyles.main__article__description__trim : ''
+                    }`}
+                >
                     {description && <p className={`${mainArticleStyles.main__article__description}`}>{description}</p>}
                     {descriptionList && (
                         <ul
