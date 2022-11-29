@@ -135,7 +135,7 @@ export const content = {
         whatWeDo: {
             introdution: [
                 {
-                    imageURL: 'mentatdgt.jpg',
+                    imageURL: '/images/mentatdgt.jpg',
                     header: 'Coaching',
                     description: `Recent Research indicates that a lot of companies have 
                                 embarked on some form of Agile Transformation in the 
@@ -147,7 +147,7 @@ export const content = {
                                 Principles.`,
                 },
                 {
-                    imageURL: 'mikael.jpg',
+                    imageURL: '/images/mikael.jpg',
                     header: 'Training',
                     description: `Our training courses have been carefully designed to provide individuals and teams with skills
                     that help kickstart the journey to better ways of working. These classes are structured to be engaging, 
@@ -158,7 +158,7 @@ export const content = {
                     and you can contact us for bespoke or private classes.`,
                 },
                 {
-                    imageURL: 'cameron.jpg',
+                    imageURL: '/images/cameron.jpg',
                     header: 'Consulting',
                     description: `In situations where the Organisation has made a decision 
                     on the Agile Framework that should be adopted by the Product Teams, a 
@@ -198,9 +198,9 @@ export const content = {
                     region: 'Nigeria',
                     email: 'info@valuehut.co',
                     phone: '+234(0)8181935501',
-                    address: '58, Opebi Road, Lagos, Nigeria'
-                }
-            ]
-        }
-    }
-}
+                    address: '58, Opebi Road, Lagos, Nigeria',
+                },
+            ],
+        },
+    },
+};

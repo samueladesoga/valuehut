@@ -10,45 +10,36 @@ import { content, IntrodutionTypes } from '../../data/content';
 import ServiceArticle from '../../components/service-article/service-article.component';
 
 interface ConsultingPageTypes {
-    url: string,
-    consulting: ConsultingTypes,
-    introdution: any,
-    children?: any
+    url: string;
+    consulting: ConsultingTypes;
+    introdution: any;
+    children?: any;
 }
 
 const ConsultingPage: React.FC<ConsultingPageTypes> = ({ url, consulting, introdution }) => {
     const introdutionArticle = introdution.filter((item: any) => item.header.toLowerCase() === url)[0];
     return (
         <div className={`${trainingsStyles.trainingsPage}`}>
-            <MainArticle 
-                { ...introdutionArticle }
-            />
+            <MainArticle {...introdutionArticle} />
             <Suspense fallback={<Spinner />}>
-            {
-                consulting.articles.map((consult:ConsultingArticleTypes, i:number) => {
+                {consulting.articles.map((consult: ConsultingArticleTypes, i: number) => {
                     return (
-                        <MainArticle 
+                        <MainArticle
                             imageURL={consult.imageURL}
-                            header={consult.title ? consult.title : ""}
+                            header={consult.title ? consult.title : ''}
                             description={consult.content}
                             key={`consult-${consult.title}`}
                         />
-                    )
-                }
-            )}
+                    );
+                })}
             </Suspense>
-            <ServiceArticle 
-                title="For more details:"
-                content=""
-            >
+            <ServiceArticle title="For more details:" content="">
                 <Link href="/contact">
-                    <a className="button button-primary button-primary-large">
-                        Contact us
-                    </a>
+                    <a className="button button-primary button-primary-large">Contact us</a>
                 </Link>
             </ServiceArticle>
         </div>
     );
-}
+};
 
 export default ConsultingPage;
