@@ -1,5 +1,5 @@
-import { url } from "inspector";
-import React from "react";
+import { url } from 'inspector';
+import React from 'react';
 import serviceBoxStyles from './service-box.module.scss';
 import { TrainingTypes } from '../../data/training';
 import Link from 'next/link';
@@ -12,23 +12,26 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 interface ServiceBoxTypes {
-    header: string, 
-    description: string,
-    url: string, 
-    imageURL: string,
-    children?: any
+    header: string;
+    description: string;
+    url: string;
+    imageURL: string;
+    children?: any;
 }
 
-const ServiceBox: React.FC<ServiceBoxTypes> = ({header, description, imageURL, url}) => {
+const ServiceBox: React.FC<ServiceBoxTypes> = ({ header, description, imageURL, url }) => {
     return (
         <Link href={url}>
             <a className={`link ${serviceBoxStyles.serviceBox}`}>
-                <div className={`${serviceBoxStyles.serviceBox__content}`} style={{backgroundImage: `url(/images/${imageURL})`}}>
-                    <h1 className={`${serviceBoxStyles.serviceBox__header}`}>{ header }</h1>
+                <div
+                    className={`${serviceBoxStyles.serviceBox__content}`}
+                    style={{ backgroundImage: `url(${imageURL})` }}
+                >
+                    <h1 className={`${serviceBoxStyles.serviceBox__header}`}>{header}</h1>
                 </div>
             </a>
         </Link>
-    )
-}
+    );
+};
 
 export default ServiceBox;
