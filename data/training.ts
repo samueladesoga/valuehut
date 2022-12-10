@@ -466,8 +466,106 @@ export const training: TrainingObject = {
             ],
             isTraining: true,
         },
-        {
+                {
             id: 3,
+            title: 'Professional Scrum Facilitation Skills',
+            acronym: 'PSFS',
+            description: `Professional Scrum Facilitation Skills™ is an interactive class designed to help 
+            Scrum Masters, Scrum Team Members and Leaders working with the Scrum Framework develop a facilitator’s mindset, 
+            proficiency in facilitation skills, and learn when and how to select effective techniques for various circumstances. 
+            Exceptional facilitation skills enable better problem-solving, more effective Scrum events and greater team alignment, 
+            all leading to better outcomes. Often times, new Scrum Practitioners struggle with how to facilitate Scrum Event and this do {
+            class aims to provide a set of facilitation tools that you can try out the very next day with your scrum teams.`,
+            imageURL: '/images/energy.jpg',
+            logo: 'psfs.svg',
+            iconBorder: 'https://static.scrum.org/web/tokens/token-psm-color.svg',
+            articles: [
+                {
+                    title: 'Course Learning Objectives',
+                    content: `The course objectives include:`,
+                    contentList: [
+                        `Develop facilitation skills and a facilitator’s mindset`,
+                        `Learn the facilitation principles that experienced facilitators fall back on when interactions are difficult`,
+                        `Understand the roles that facilitation principles and the Scrum Values play in enhancing healthy collaboration in Scrum Teams`,
+                        `Explore how facilitation can address challenging scenarios most Scrum Teams encounter`,
+                        `Apply facilitation skills and techniques to improve the Scrum events and other interactions`,
+                        `Understand how to encourage diverse perspectives, while bringing the team together to reach decisions`,
+                        `Experience the elements of group dynamics and how they influence the decision-making process`, 
+                        `Leave class with a toolbox of facilitation techniques and understand how to apply them in different circumstances`
+                    ],
+                },
+                {
+                    title: 'Who should attend?',
+                    content: ``,
+                    contentList: [
+                        `Scrum Masters and any Scrum Team member interested in learning how to use facilitation to enhance their team’s success`,
+                        `Scrum Coaches, Agile Coaches and Consultants`
+                    ],
+                },
+                {
+                    title: 'Assessment Certification',
+                    content: `All participants completing the Professional Scrum Facilitation Skills  class will receive a password to 
+                    attempt the Professional Scrum Facilitation Skills assessment. Participants who attempt 
+                    the PSFS assessment within 14 days of receiving their free password and do not score at least 85% 
+                    will be granted a 2nd attempt at no additional cost.`,
+                },
+                {
+                    title: 'Additional Benefits',
+                    content: ``,
+                    contentList: [
+                        `Participants are invited to a 90mins free coaching and support group call approximately 5days after the class. Details would be discussed in the class.`,
+                        `All participants get an invite to the ValueHut support platform where they can get access to our trainers.`,
+                    ],
+                },
+                {
+                    title: 'More information',
+                    content: ``,
+                    contentList: [
+                        `Mode of delivery is Virtual using Zoom`,
+                        `The price for the class is dependent on your home address.`,
+                    ],
+                },
+            ],
+            streams: [
+                {
+                    startDate: new Date('2023-01-19').toJSON(),
+                    endDate: new Date('2023-01-19').toJSON(),
+                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 600,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 600,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 500,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 450,
+                        },
+                    ],
+                    filled: false,
+                },
+            ],
+            isTraining: true,
+        },
+        {
+            id: 4,
             title: 'Professional Agile Leadership',
             acronym: 'PAL-E',
             description: `Professional Agile Leadership is a 2 day workshop to equip leaders and managers 
@@ -656,7 +754,7 @@ export const training: TrainingObject = {
             isTraining: true,
         },
         {
-            id: 4,
+            id: 5,
             title: 'Applying Professional Scrum',
             acronym: 'APS',
             description: `The APS is a hands-on, activity-based course in which 
