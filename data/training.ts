@@ -474,8 +474,8 @@ export const training: TrainingObject = {
             Scrum Masters, Scrum Team Members and Leaders working with the Scrum Framework develop a facilitator’s mindset, 
             proficiency in facilitation skills, and learn when and how to select effective techniques for various circumstances. 
             Exceptional facilitation skills enable better problem-solving, more effective Scrum events and greater team alignment, 
-            all leading to better outcomes. Often times, new Scrum Practitioners struggle with how to facilitate Scrum Event and this do {
-            class aims to provide a set of facilitation tools that you can try out the very next day with your scrum teams.`,
+            all leading to better outcomes. Often times, new Scrum Practitioners struggle with how to facilitate Scrum Event and this 
+            class aims to provide a set of facilitation tools that participants can try out the very next day with their scrum teams.`,
             imageURL: '/images/energy.jpg',
             logo: 'psfs.svg',
             iconBorder: 'https://static.scrum.org/web/tokens/token-psm-color.svg',
