@@ -7,6 +7,7 @@ import { IAuthor, IPostType } from '.'
 import styles from "./blogPostPage.module.scss"
 import BlogPostPage from '../../pages-components/blog-post-page/blog-post-page.component';
 import moment from 'moment';
+import Head from 'next/head';
 
 export async function getStaticProps(context: any){
   
@@ -96,46 +97,62 @@ function BlogPost({post, author} : InferGetStaticPropsType<typeof getStaticProps
 };
 
   return (
-    <BlogPostPage>
-      <div className={styles.blog_page_header}>
-        <h1 className={styles.blog_title}>
-          {post.title}
-        </h1>
-        <span className={styles.blog_page_posted}>
-          Posted the <span>{moment(post.sys.publishedAt).format('Do MMMM YYYY')}</span> - {author.fullName}
-        </span>
-        {
-          (post.cover && post.cover.url) &&
-            <img src={post.cover.url} alt="blog-post-cover"/>
-        }
-      </div>
-      <div>
-      { (post && post.content &&
-              post.content.json)  &&
-              documentToReactComponents(post.content.json, options)
+    <>
+      <Head>
+        <title>{post.title}</title>
+        <meta name ="og:title" property="og:title" content={post.title} />
+        <meta name ="title" property="title" content={post.title} />
+        <meta name="description" content={post.description} />
+        <meta name="og:description" content={post.description} />
+        <meta name="og:site_name" content="ValueHut" />
+        <meta name="og:type" content="Article" />
+        <meta name="type" content="Article" />
+        <meta name="robots" content="max-image-preview:large" />
+
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+   
+      <BlogPostPage>
+        <div className={styles.blog_page_header}>
+          <h1 className={styles.blog_title}>
+            {post.title}
+          </h1>
+          <span className={styles.blog_page_posted}>
+            Posted the <span>{moment(post.sys.publishedAt).format('Do MMMM YYYY')}</span> - {author.fullName}
+          </span>
+          {
+            (post.cover && post.cover.url) &&
+              <img src={post.cover.url} alt="blog-post-cover"/>
           }
-      </div>
+        </div>
+        <div>
+        { (post && post.content &&
+                post.content.json)  &&
+                documentToReactComponents(post.content.json, options)
+            }
+        </div>
 
-      <div className={styles.divider}>
+        <div className={styles.divider}>
 
-      </div>
+        </div>
 
-      <div className={styles.blog_post_author}>
-          <div className={styles.writtenBy}>
-            <span>
-              Written by
-            </span>
-          </div>
-          <div className={styles.author}>
-              <div className={styles.img}>
-                <img src={(author.profilePicture && author.profilePicture.url) ? author.profilePicture.url : '/images/profile_picture.webp'} alt='profile-picture'/>
-              </div>
-            <span>
-              {author.fullName}
-            </span>
-          </div>
-      </div>
-    </BlogPostPage>
+        <div className={styles.blog_post_author}>
+            <div className={styles.writtenBy}>
+              <span>
+                Written by
+              </span>
+            </div>
+            <div className={styles.author}>
+                <div className={styles.img}>
+                  <img src={(author.profilePicture && author.profilePicture.url) ? author.profilePicture.url : '/images/profile_picture.webp'} alt='profile-picture'/>
+                </div>
+              <span>
+                {author.fullName}
+              </span>
+            </div>
+        </div>
+      </BlogPostPage> 
+    </>
   )
 }
 

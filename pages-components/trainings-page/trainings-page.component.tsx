@@ -9,24 +9,21 @@ import { IntrodutionTypes } from '../../data/content';
 import TrustBox from '../../components/trustbox/trustbox.component';
 
 interface TrainingsPageTypes {
-    url: string,
-    trainings: TrainingTypes[],
-    introdution: any,
-    children?: any
+    url: string;
+    trainings: TrainingTypes[];
+    introdution: any;
+    children?: any;
 }
 
 const TrainingsPage: React.FC<TrainingsPageTypes> = ({ url, trainings, introdution }) => {
-    const introdutionArticle = introdution.filter((item: any) => item.header.toLowerCase() === "training")[0];
+    const introdutionArticle = introdution.filter((item: any) => item.header.toLowerCase() === 'training')[0];
     return (
         <div className={`${trainingsStyles.trainingsPage}`}>
-            <MainArticle 
-                { ...introdutionArticle }
-            />
+            <MainArticle {...introdutionArticle} />
             <Suspense fallback={<Spinner />}>
-            {
-                trainings.map((training:TrainingTypes, i:number) => {
+                {trainings.map((training: TrainingTypes, i: number) => {
                     return (
-                        <MainArticle 
+                        <MainArticle
                             imageURL={training.imageURL}
                             header={training.title}
                             description={training.description}
@@ -35,13 +32,12 @@ const TrainingsPage: React.FC<TrainingsPageTypes> = ({ url, trainings, introduti
                             logo={training.logo}
                             key={`training-${training.title}`}
                         />
-                    )
-                }
-            )}
+                    );
+                })}
             </Suspense>
             <TrustBox />
         </div>
     );
-}
+};
 
 export default TrainingsPage;
