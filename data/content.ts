@@ -70,11 +70,11 @@ export const content = {
                 imageURL: 'business.jpg',
                 header: 'ValueHut Limited',
                 description: `ValueHut is an agile coaching and training consultancy that is helping 
-                Organisations focus on most valuable work by aligning their strategy to execution across all 
-                units of the business; we have supported our clients  to build a mindset that enables them to  
-                build the capabilities to continuouslly delight their customers. 
-                In addition, these organisation have developed the skills to make work a safe place where 
-                employees are motivated to deliver value to their customers.`,
+                Organisations transform into a network of interdependent teams across different business units.
+                We work with Leaders and the teams as everyone has got a part to play in the process
+                of transformation. Our coaches work with the teams to improve their cross-functional and self-managing capabilities.
+                In addition, we train, coach and support Leaders to build the capabilities required to create the required
+                work environment for these teams to succeed.`,
             },
             servicesArticle: {
                 header: 'Services',
@@ -82,11 +82,11 @@ export const content = {
             whatCustomersWant: {
                 imageURL: 'rodolfo.jpg',
                 header: 'Our mission',
-                descriptionList: [
-                    `Helping entire organizations to focus on most valuable work.`,
-                    `Supporting organizations to make the work a safer place where people are able to bring their authentic selves to solve complex problems.`,
-                    `Building a mindset that enables you to continue delight your customers by delivering valuable products.`,
-                ],
+                descriptionList: [`We are supporting organizations to build a safer workplace, where employees are able to 
+                    bring their authentic selves to solve complex problems; a workplace where managers and leaders
+                    are true servant-leaders that truly care about the team and the work that they do. Ultimately, the culture
+                    that we co-create with you for your organisations places your organisation in the the best position to 
+                    delight your customers as you continue to deliver valuable products and services.`]
             },
             whatWeDo: {
                 imageURL: 'mentatdgt.jpg',
