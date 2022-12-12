@@ -757,24 +757,21 @@ export const training: TrainingObject = {
             id: 5,
             title: 'Applying Professional Scrum',
             acronym: 'APS',
-            description: `The APS is a hands-on, activity-based course in which 
-                        students experience how Professional Scrum and the Scrum framework 
-                        improves their capacity to deliver 
-                        value compared to traditional methods. Scrum enables 
-                        a better way of working that highlights the use of 
-                        experimentation, incremental delivery of customer value, 
-                        frequent feedback loops and the fostering of strong team 
-                        dynamics. The course is high recommended for teams 
-                        that already work together in an organisation to improve 
-                        their ways of working using Scrum. The class is delivered 
-                        over a two days (8hrs per day).`,
+            description: `The APS is a hands-on, activity-based course in which students experience how Professional Scrum and the Scrum framework 
+                        improves their capacity to deliver value compared to traditional methods. Scrum enables a better way of working that highlights 
+                        the use of experimentation, incremental delivery of customer value, frequent feedback loops and the fostering of strong team 
+                        dynamics. The course is high recommended for teams that already work together in an organisation to improve their ways of working 
+                        using Scrum. The class is delivered over a two days (8hrs per day).`,
             imageURL: '/images/morillo.jpg',
             logo: 'aps.svg',
             iconBorder: 'https://static.scrum.org/web/tokens/token-psm-color.svg',
             articles: [
                 {
                     title: 'What will I learn?',
-                    content: `Through this online interactive mentoring and coaching program of 16 hours of learning, ending with a coaching session for continuous growth, you will be able to advance the HOW TO dimension of ScrumMastering and agile coaching, and grow skills that help improve your Scrum Team, organizations and yourself. You can join from anywhere online. However please note that there is pre-work prior and homework after each online mentoring and coaching session (read more in commitment session).`,
+                    content: `Through this online interactive mentoring and coaching program of 16 hours of learning, ending with a coaching session for 
+                    continuous growth, you will be able to advance the HOW TO dimension of ScrumMastering and agile coaching, and grow skills that help 
+                    improve your Scrum Team, organizations and yourself. You can join from anywhere online. However please note that there is pre-work 
+                    prior and homework after each online mentoring and coaching session (read more in commitment session).`,
                 },
                 {
                     title: 'Assessment Certification',

@@ -52,8 +52,8 @@ export const consulting: ConsultingObject = {
             },
             {
                 title: 'Agile Fundamentals',
-                content: `Our consultants are able to teach and mentor teams on context aware use of any of the Agile Framewrks.
-                We help your teams improve on the use of Frameworks such as Scrum and Kanban bny introducing complimentary practices.
+                content: `Our consultants are able to teach and mentor teams on context aware adoption of Agile Frameworks.
+                We help your teams improve on the use of Frameworks such as Scrum and Kanban by introducing complimentary practices.
                 Some of the complimentary practices that we support your teams with are listed below.
                 `,
                 contentList: [
