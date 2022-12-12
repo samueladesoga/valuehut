@@ -20,6 +20,9 @@ const ConsultingPage: React.FC<ConsultingPageTypes> = ({ url, consulting, introd
     const introdutionArticle = introdution.filter((item: any) => item.header.toLowerCase() === url)[0];
     return (
         <div className={`${trainingsStyles.trainingsPage}`}>
+            <div className={`${trainingsStyles.WhatWeDo__title}`}>
+                <h1>VH {url === 'coaching' ? 'Coaching' : 'Consulting'}</h1>
+            </div>
             <MainArticle {...introdutionArticle} />
             <Suspense fallback={<Spinner />}>
                 {consulting.articles.map((consult: ConsultingArticleTypes, i: number) => {
