@@ -14,7 +14,7 @@ const WhatWeDoPage: React.FC<WhatWeDoTypes> = ({ introdution }) => {
         <div className={`${wwdStyles.servicesPage}`}>
             <div className={`${wwdStyles.whatWeDoPage}`}>
                 <div className={`${wwdStyles.WhatWeDo__title}`}>
-                    <h1>VH Services</h1>
+                    <h1>Our Services</h1>
                 </div>
                 <div className={`${wwdStyles.whatWeDoPage__content}`}>
                     {introdution.map((s) => (
