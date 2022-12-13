@@ -15,6 +15,7 @@ interface MainArticleProps {
     logo?: any;
     children?: any;
     slug?: string;
+    isHeader?: boolean;
 }
 
 const MainArticle: React.FC<MainArticleProps> = ({
@@ -28,6 +29,7 @@ const MainArticle: React.FC<MainArticleProps> = ({
     logo,
     children,
     slug,
+    isHeader,
     ...otherProps
 }: MainArticleProps) => {
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -38,10 +40,19 @@ const MainArticle: React.FC<MainArticleProps> = ({
         <section className={`${mainArticleStyles.main__article}`} style={style}>
             <article className={`${mainArticleStyles.main__article__section}`} style={articleWidth}>
                 {isTraining ? (
-                    <h2 className={`${mainArticleStyles.main__article__header}`}>
-                        {logo ? <img src={`/training/${logo}`} /> : ''}
-                        <span>{header}</span>
-                    </h2>
+                    isHeader ? (
+                        <h1 className={`${mainArticleStyles.main__article__header}`}>
+                            {logo ? <img src={`/training/${logo}`} /> : ''}
+                            <span>{header}</span>
+                        </h1>
+                    ) : (
+                        <h2 className={`${mainArticleStyles.main__article__header}`}>
+                            {logo ? <img src={`/training/${logo}`} /> : ''}
+                            <span>{header}</span>
+                        </h2>
+                    )
+                ) : isHeader ? (
+                    <h1 className={`${mainArticleStyles.main__article__header}`}>{header}</h1>
                 ) : (
                     <h2 className={`${mainArticleStyles.main__article__header}`}>{header}</h2>
                 )}

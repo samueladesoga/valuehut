@@ -19,10 +19,7 @@ const TrainingsPage: React.FC<TrainingsPageTypes> = ({ url, trainings, introduti
     const introdutionArticle = introdution.filter((item: any) => item.header.toLowerCase() === 'training')[0];
     return (
         <div className={`${trainingsStyles.trainingsPage}`}>
-            <div className={`${trainingsStyles.WhatWeDo__title}`}>
-                <h1>VH Training</h1>
-            </div>
-            <MainArticle {...introdutionArticle} />
+            <MainArticle {...introdutionArticle} isHeader />
             <Suspense fallback={<Spinner />}>
                 {trainings.map((training: TrainingTypes, i: number) => {
                     return (
