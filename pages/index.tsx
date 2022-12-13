@@ -58,10 +58,10 @@ const Home: NextPage<HomeTypes> = ({ homeProps, posts }) => {
     return (
         <>
             <Head>
-                <title>Valuehut Limited - Offices in London, UK and Lagos, Nigeria.</title>
+                <title>Valuehut - An agile coaching and training consultancy offering scrum.org courses.</title>
                 <meta
                     name="description"
-                    content="ValueHut is an agile coaching and training consultancy that is helping Organisations to rethink their ways of working in other to help these organisations deliver most value to their customers."
+                    content="ValueHut is an agile coaching and training consultancy supporting Teams, Leaders and Organisations rethink their ways of working."
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
