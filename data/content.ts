@@ -185,8 +185,11 @@ export const content = {
                 },
             ],
         },
+
         contact: {
-            howto: 'If you’re considering using the services provided by ValueHut, please phone or email us your query with as much detail as possible. Upon receiving your email, we will either call or email you – within 24 hours of your email being sent – to discuss the services further and initiate the next step.',
+            howto: `If you will like to talk to one of our agile coaches to discuss yourself or your Organisation
+            please fill out the form below; one of us will contact you within 24hrs. Alternatively, contact us by email or
+            phone number listed below.`,
             offices: [
                 {
                     region: 'UK',
