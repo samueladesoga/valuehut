@@ -187,8 +187,8 @@ export const content = {
         },
 
         contact: {
-            howto: `If you will like to talk to one of our agile coaches to discuss yourself or your Organisation
-            please fill out the form below; one of us will contact you within 24hrs. Alternatively, contact us by email or
+            howto: `If you will like to talk to one of our agile coaches to discuss your Organisational needs,
+            please fill out the form below and one of us will contact you within 24hrs. Alternatively, contact us by email or
             phone number listed below.`,
             offices: [
                 {
