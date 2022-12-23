@@ -24,7 +24,7 @@ export async function getStaticProps(context: any){
             content {
               json
             }
-            sys{
+            sys {
               publishedAt
             }
             author{
@@ -118,7 +118,7 @@ function BlogPost({post, author} : InferGetStaticPropsType<typeof getStaticProps
             {post.title}
           </h1>
           <span className={styles.blog_page_posted}>
-            Posted the <span>{moment(post.sys.publishedAt).format('Do MMMM YYYY')}</span> - {author.fullName}
+            Date posted: <span>{moment(post.sys.publishedAt).format('Do MMMM YYYY')}</span>
           </span>
           {
             (post.cover && post.cover.url) &&
