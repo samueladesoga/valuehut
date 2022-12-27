@@ -46,7 +46,6 @@ const TrainingPage: NextPage<TPTypes> = ({ training }) => {
         setLoading(true);
         fetchData();
     }, []);
-    console.log(streams);
     return (
         <>
             <Head>

@@ -20,7 +20,6 @@ interface ServiceBoxTypes {
 }
 
 const ServiceBox: React.FC<ServiceBoxTypes> = ({ header, description, imageURL, url }) => {
-    console.log(typeof description);
     return (
         <div className={serviceBoxStyles.container}>
             <Link href={url}>
