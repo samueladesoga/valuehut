@@ -16,6 +16,12 @@ interface MainArticleProps {
     children?: any;
     slug?: string;
     isHeader?: boolean;
+    link?: ILink;
+}
+
+interface ILink {
+    url: string;
+    label: string;
 }
 
 const MainArticle: React.FC<MainArticleProps> = ({
@@ -30,6 +36,7 @@ const MainArticle: React.FC<MainArticleProps> = ({
     children,
     slug,
     isHeader,
+    link,
     ...otherProps
 }: MainArticleProps) => {
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -71,6 +78,13 @@ const MainArticle: React.FC<MainArticleProps> = ({
                                 <li key={`${header}-ma-li-${i}`}>{d}</li>
                             ))}
                         </ul>
+                    )}
+                    {link && (
+                        <div className={mainArticleStyles.optionlLink}>
+                            <a href={link.url} target="_blank" rel="noreferrer">
+                                {link.label}
+                            </a>
+                        </div>
                     )}
 
                     {slug && (

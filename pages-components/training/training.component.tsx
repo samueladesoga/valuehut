@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 import DatesTable from '../../components/dates-table/dates-table.component';
 import TrainingBanner from '../../components/training-banner/training-banner.component';
+import TrustBox from '../../components/trustbox/trustbox.component';
 
 interface TrainingComponentTypes {
     training: TrainingTypes;
@@ -27,6 +28,8 @@ const Training: React.FC<TrainingComponentTypes> = ({ training, streams }) => {
                 articles.map((article, i) => (
                     <TrainingArticle key={`${article.content[0]}${i}${article.content[0]}`} {...article} />
                 ))}
+            <div style={{ marginBottom: 10 }}></div>
+            <TrustBox />
         </div>
     );
 };

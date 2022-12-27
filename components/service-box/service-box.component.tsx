@@ -21,16 +21,19 @@ interface ServiceBoxTypes {
 
 const ServiceBox: React.FC<ServiceBoxTypes> = ({ header, description, imageURL, url }) => {
     return (
-        <Link href={url}>
-            <a className={`link ${serviceBoxStyles.serviceBox}`}>
-                <div
-                    className={`${serviceBoxStyles.serviceBox__content}`}
-                    style={{ backgroundImage: `url(${imageURL})` }}
-                >
-                    <h1 className={`${serviceBoxStyles.serviceBox__header}`}>{header}</h1>
-                </div>
-            </a>
-        </Link>
+        <div className={serviceBoxStyles.container}>
+            <Link href={url}>
+                <a className={`link ${serviceBoxStyles.serviceBox}`}>
+                    <div
+                        className={`${serviceBoxStyles.serviceBox__content}`}
+                        style={{ backgroundImage: `url(${imageURL})` }}
+                    >
+                        <h1 className={`${serviceBoxStyles.serviceBox__header}`}>{header}</h1>
+                    </div>
+                </a>
+            </Link>
+            <p className={serviceBoxStyles.informativeText}>{description}</p>
+        </div>
     );
 };
 

@@ -30,6 +30,7 @@ const ConsultingPage: React.FC<ConsultingPageTypes> = ({ url, consulting, introd
                             description={consult.content}
                             descriptionList={consult.contentList}
                             key={`consult-${consult.title}`}
+                            link={consult.link}
                         />
                     );
                 })}
