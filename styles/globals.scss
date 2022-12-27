@@ -115,6 +115,15 @@ body {
   }
 }
 
+.link-button{
+  background: $primaryColor;
+  padding: 5px;
+  color: white;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .link-disabled {
   color: $neutral400 !important;
   &:hover {

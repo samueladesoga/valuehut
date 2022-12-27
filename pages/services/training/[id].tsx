@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+import type { NextPage } from 'next';
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import { content } from '../../../data/content';
@@ -11,26 +11,26 @@ import TrustBox from '../../../components/trustbox/trustbox.component';
 import { training, TrainingTypes } from '../../../data/training';
 
 export function getStaticProps({ params }: any) {
-    const trainings = training.training.filter(tr => {
-        return tr.title.toLowerCase().split(" ").join("-") === params.id
-    })
+    const trainings = training.training.filter((tr) => {
+        return tr.title.toLowerCase().split(' ').join('-') === params.id;
+    });
     return {
-        props: { 
-            training: trainings[0]
-        }
-    }
+        props: {
+            training: trainings[0],
+        },
+    };
 }
 
 export async function getStaticPaths() {
     const paths = getAllTrainingsIds();
     return {
-      paths,
-      fallback: false,
+        paths,
+        fallback: false,
     };
-  }
+}
 
 interface TPTypes {
-    training: TrainingTypes
+    training: TrainingTypes;
 }
 
 const TrainingPage: NextPage<TPTypes> = ({ training }) => {
@@ -38,28 +38,28 @@ const TrainingPage: NextPage<TPTypes> = ({ training }) => {
     const [streams, setStreams] = useState([]);
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch(`/api/training?id=${training.title.toLowerCase().split(" ").join("-")}`);
+            const response = await fetch(`/api/training?id=${training.title.toLowerCase().split(' ').join('-')}`);
             const data = await response.json();
             setStreams(data.streams);
-            setLoading(false)
+            setLoading(false);
         };
-        setLoading(true)
+        setLoading(true);
         fetchData();
-    }, [])
+    }, []);
+    console.log(streams);
     return (
         <>
             <Head>
                 <title>{`${training.title} - Valuehut`}</title>
-                <meta name="description" content="ValueHut Training offerings can be booked on this page or contact us for private trainings for your organisation especially in Lagos, Accra and Nairobi." />
+                <meta
+                    name="description"
+                    content="ValueHut Training offerings can be booked on this page or contact us for private trainings for your organisation especially in Lagos, Accra and Nairobi."
+                />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            {
-                loading ? 
-                <Spinner /> : 
-                <Training training={training} streams={streams} />
-            }
+            {loading ? <Spinner /> : <Training training={training} streams={streams} />}
         </>
-    )
-}
+    );
+};
 
-export default TrainingPage
+export default TrainingPage;

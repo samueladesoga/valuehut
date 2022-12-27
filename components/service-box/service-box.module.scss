@@ -1,5 +1,28 @@
 @import '../../styles/color-scheme.module.scss';
 
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    a {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    p{
+        max-width: 100%;
+        font-size: 16px;
+        width: 300px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+    }
+}
+
 .serviceBox {
     width: 30%;
     max-width: 320px;
@@ -44,7 +67,6 @@
         margin-bottom: 20px;
     }
 }
-
 
 // .serviceBox {
 //     width: 30%;

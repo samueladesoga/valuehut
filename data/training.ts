@@ -28,6 +28,7 @@ export interface StreamTypes {
     startDate: any;
     endDate: any;
     time: string;
+    classType: string;
     price: PriceTypes[];
     filled: boolean;
 }
@@ -126,6 +127,7 @@ export const training: TrainingObject = {
             streams: [
                 {
                     startDate: new Date('2022-11-04').toJSON(),
+                    classType: 'Live',
                     endDate: new Date('2022-11-05').toJSON(),
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
                     price: [
@@ -160,6 +162,7 @@ export const training: TrainingObject = {
                 },
                 {
                     startDate: new Date('2023-01-27').toJSON(),
+                    classType: 'Live',
                     endDate: new Date('2023-01-28').toJSON(),
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
                     price: [
@@ -194,6 +197,7 @@ export const training: TrainingObject = {
                 },
                 {
                     startDate: new Date('2023-03-17').toJSON(),
+                    classType: 'Live',
                     endDate: new Date('2023-03-18').toJSON(),
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
                     price: [
@@ -228,6 +232,7 @@ export const training: TrainingObject = {
                 },
                 {
                     startDate: new Date('2023-05-12').toJSON(),
+                    classType: 'Live',
                     endDate: new Date('2023-05-13').toJSON(),
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
                     price: [
@@ -329,6 +334,7 @@ export const training: TrainingObject = {
             streams: [
                 {
                     startDate: new Date('2023-02-24').toJSON(),
+                    classType: 'Live',
                     endDate: new Date('2023-02-25').toJSON(),
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
                     price: [
@@ -363,6 +369,7 @@ export const training: TrainingObject = {
                 },
                 {
                     startDate: new Date('2023-04-14').toJSON(),
+                    classType: 'Live',
                     endDate: new Date('2023-04-15').toJSON(),
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
                     price: [
@@ -399,6 +406,7 @@ export const training: TrainingObject = {
                     startDate: new Date('2023-07-28').toJSON(),
                     endDate: new Date('2023-07-29').toJSON(),
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    classType: 'Live',
                     price: [
                         {
                             region: 'United Kingdom',
@@ -432,6 +440,7 @@ export const training: TrainingObject = {
                 {
                     startDate: new Date('2023-10-27').toJSON(),
                     endDate: new Date('2023-10-28').toJSON(),
+                    classType: 'Live',
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
                     price: [
                         {
@@ -466,7 +475,7 @@ export const training: TrainingObject = {
             ],
             isTraining: true,
         },
-                {
+        {
             id: 3,
             title: 'Professional Scrum Facilitation Skills',
             acronym: 'PSFS',
@@ -490,8 +499,8 @@ export const training: TrainingObject = {
                         `Explore how facilitation can address challenging scenarios most Scrum Teams encounter`,
                         `Apply facilitation skills and techniques to improve the Scrum events and other interactions`,
                         `Understand how to encourage diverse perspectives, while bringing the team together to reach decisions`,
-                        `Experience the elements of group dynamics and how they influence the decision-making process`, 
-                        `Leave class with a toolbox of facilitation techniques and understand how to apply them in different circumstances`
+                        `Experience the elements of group dynamics and how they influence the decision-making process`,
+                        `Leave class with a toolbox of facilitation techniques and understand how to apply them in different circumstances`,
                     ],
                 },
                 {
@@ -499,7 +508,7 @@ export const training: TrainingObject = {
                     content: ``,
                     contentList: [
                         `Scrum Masters and any Scrum Team member interested in learning how to use facilitation to enhance their team’s success`,
-                        `Scrum Coaches, Agile Coaches and Consultants`
+                        `Scrum Coaches, Agile Coaches and Consultants`,
                     ],
                 },
                 {
@@ -530,6 +539,7 @@ export const training: TrainingObject = {
                 {
                     startDate: new Date('2023-01-19').toJSON(),
                     endDate: new Date('2023-01-19').toJSON(),
+                    classType: 'Live',
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
                     price: [
                         {
@@ -616,6 +626,7 @@ export const training: TrainingObject = {
             streams: [
                 {
                     startDate: new Date('2022-07-15').toJSON(),
+                    classType: 'Live',
                     endDate: new Date('2022-07-16').toJSON(),
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
                     price: [
@@ -651,6 +662,7 @@ export const training: TrainingObject = {
                 {
                     startDate: new Date('2022-12-09').toJSON(),
                     endDate: new Date('2022-12-10').toJSON(),
+                    classType: 'Live',
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
                     price: [
                         {
@@ -686,6 +698,7 @@ export const training: TrainingObject = {
                     startDate: new Date('2023-06-09').toJSON(),
                     endDate: new Date('2023-06-10').toJSON(),
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    classType: 'Live',
                     price: [
                         {
                             region: 'United Kingdom',
@@ -720,6 +733,7 @@ export const training: TrainingObject = {
                     startDate: new Date('2023-11-17').toJSON(),
                     endDate: new Date('2023-11-18').toJSON(),
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    classType: 'Live',
                     price: [
                         {
                             region: 'United Kingdom',

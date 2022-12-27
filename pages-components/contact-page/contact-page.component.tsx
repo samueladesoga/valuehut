@@ -37,10 +37,11 @@ const ContactPage: React.FC<ContactProps> = ({ howto, offices }) => {
     return (
         <div className={`page ${contactPageStyles.contactPage}`}>
             <div className={`${contactPageStyles.howToContact}`}>
-                <h1>How to contact us</h1>
-                <p>{howto}</p>
-            </div>
-            <div className={`${contactPageStyles.contactDataBlock}`}>
+                <div className={contactPageStyles.howToContactUs}>
+                    <h1>How to contact us</h1>
+                    <p>{howto}</p>
+                </div>
+
                 <div className={contactPageStyles.formContainer}>
                     <h2>Send us an Email :</h2>
                     <form ref={form} onSubmit={handleSendEmail}>
@@ -52,7 +53,7 @@ const ContactPage: React.FC<ContactProps> = ({ howto, offices }) => {
                         </div>
                         <div className="input">
                             <label htmlFor="from_name" className="text-lg">
-                                Full name
+                                Name
                             </label>
                             <input type="text" placeholder="Type your name..." name="from_name" />
                         </div>
@@ -73,6 +74,8 @@ const ContactPage: React.FC<ContactProps> = ({ howto, offices }) => {
                         </div>
                     </form>
                 </div>
+            </div>
+            <div className={`${contactPageStyles.contactDataBlock}`}>
                 {!offices.length ? (
                     <Spinner />
                 ) : (
