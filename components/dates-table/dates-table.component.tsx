@@ -95,7 +95,7 @@ const DatesTableStream: React.FC<DatesTableStreamTypes> = ({ training, stream })
         };
     return (
         <TableRow key={startDate.toString()} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
-            <TableCell component="th" scope="row" style={{ width: '40%' }}>
+            <TableCell component="th" scope="row">
                 {getDateInWords(new Date(startDate))}
                 &#160; - &#160;
                 <br className="xs-visible" />
@@ -103,7 +103,7 @@ const DatesTableStream: React.FC<DatesTableStreamTypes> = ({ training, stream })
             </TableCell>
             <TableCell align="center">{time}</TableCell>
             <TableCell align="center">{classType}</TableCell>
-            <TableCell align="right">
+            <TableCell align="center">
                 {!filled ? (
                     <span className="link-button" onClick={showModal(stream)}>
                         Book

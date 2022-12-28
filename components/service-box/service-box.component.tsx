@@ -33,6 +33,9 @@ const ServiceBox: React.FC<ServiceBoxTypes> = ({ header, description, imageURL, 
                 </a>
             </Link>
             <p className={serviceBoxStyles.informativeText}>{description}</p>
+            <Link href={url}>
+                <a className={`link ${serviceBoxStyles.readMore}`}>Read More {'>'}</a>
+            </Link>
         </div>
     );
 };
