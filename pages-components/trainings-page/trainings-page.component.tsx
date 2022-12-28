@@ -35,7 +35,10 @@ const TrainingsPage: React.FC<TrainingsPageTypes> = ({ url, trainings, introduti
                     );
                 })}
             </Suspense>
-            <TrustBox />
+            <section style={{ padding: '10px', width: '100%', maxWidth: '100%', marginTop: '20px' }}>
+                <h2>What our clients say</h2>
+                <TrustBox />
+            </section>
         </div>
     );
 };
