@@ -18,7 +18,7 @@
 }
 
 .footer__link {
-    color: $primaryColor;
+    color: $light !important;
     font-weight: 400;
     &:hover {
         color: $light;

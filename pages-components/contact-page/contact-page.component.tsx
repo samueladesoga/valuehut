@@ -1,4 +1,4 @@
-import React, { SyntheticEvent, useRef } from 'react';
+import React, { SyntheticEvent, useRef, useState } from 'react';
 import contactPageStyles from './contact-page.module.scss';
 import ContactData from '../../components/contact-data/contact-data.component';
 import { ContactDataTypes } from '../../data/content';
@@ -17,10 +17,26 @@ const Spinner = () => (
 );
 
 const ContactPage: React.FC<ContactProps> = ({ howto, offices }) => {
+    const [email, setEmail] = useState<string>('');
+    const [name, setName] = useState<string>('');
+    const [subject, setSubject] = useState<string>('');
+    const [message, setMessage] = useState<string>('');
+
     const form = useRef<HTMLFormElement>(null);
 
     const handleSendEmail = (e: SyntheticEvent) => {
         e.preventDefault();
+
+        if (email?.length < 1 || name.length < 1 || subject.length < 1 || message.length < 1) {
+            alert('Please fill in the form before submitting!');
+            return;
+        }
+
+        if (message.length < 20) {
+            alert('Message should be at least 20 characters!');
+            return;
+        }
+
         emailjs
             .sendForm(
                 process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID as string,
@@ -49,25 +65,45 @@ const ContactPage: React.FC<ContactProps> = ({ howto, offices }) => {
                             <label htmlFor="form_email" className="text-lg">
                                 Email
                             </label>
-                            <input type="email" placeholder="Type your email..." name="form_email" />
+                            <input
+                                type="email"
+                                onChange={(e) => setEmail(e.target.value)}
+                                placeholder="Type your email..."
+                                name="form_email"
+                            />
                         </div>
                         <div className="input">
                             <label htmlFor="from_name" className="text-lg">
                                 Name
                             </label>
-                            <input type="text" placeholder="Type your name..." name="from_name" />
+                            <input
+                                type="text"
+                                onChange={(e) => setName(e.target.value)}
+                                placeholder="Type your name..."
+                                name="from_name"
+                            />
                         </div>
                         <div className="input">
                             <label htmlFor="form_subject" className="text-lg">
                                 Subject
                             </label>
-                            <input type="text" placeholder="Type a subject..." name="form_subject" />
+                            <input
+                                type="text"
+                                onChange={(e) => setSubject(e.target.value)}
+                                placeholder="Type a subject..."
+                                name="form_subject"
+                            />
                         </div>
                         <div className="mb-4">
                             <label className="text-lg" htmlFor="message">
                                 Message
                             </label>
-                            <textarea placeholder="Type a message..." rows={5} name="message" />
+                            <textarea
+                                placeholder="Type a message..."
+                                onChange={(e) => setMessage(e.target.value)}
+                                rows={5}
+                                name="message"
+                            />
                         </div>
                         <div>
                             <button type="submit">Send</button>
