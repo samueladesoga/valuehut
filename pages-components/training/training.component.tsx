@@ -28,8 +28,10 @@ const Training: React.FC<TrainingComponentTypes> = ({ training, streams }) => {
                 articles.map((article, i) => (
                     <TrainingArticle key={`${article.content[0]}${i}${article.content[0]}`} {...article} />
                 ))}
-            <div style={{ marginBottom: 10 }}></div>
-            <TrustBox />
+            <section style={{ padding: '10px', width: '100%', maxWidth: '90%', marginTop: '20px' }}>
+                <h2>What our customers say</h2>
+                <TrustBox />
+            </section>
         </div>
     );
 };

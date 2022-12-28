@@ -68,14 +68,21 @@ const MainArticle: React.FC<MainArticleProps> = ({
                         slug ? mainArticleStyles.main__article__description__trim : ''
                     }`}
                 >
-                    {description && <p className={`${mainArticleStyles.main__article__description}`}>{description}</p>}
+                    {description && (
+                        <div
+                            className={`${mainArticleStyles.main__article__description}`}
+                            dangerouslySetInnerHTML={{ __html: description }}
+                        />
+                    )}
                     {descriptionList && (
                         <ul
                             className={`${mainArticleStyles.main__article__description}
                                          ${mainArticleStyles.main__article__descriptionList}`}
                         >
                             {descriptionList.map((d: string, i: number) => (
-                                <li key={`${header}-ma-li-${i}`}>{d}</li>
+                                <li key={`${header}-ma-li-${i}`}>
+                                    <div dangerouslySetInnerHTML={{ __html: d }} />
+                                </li>
                             ))}
                         </ul>
                     )}
