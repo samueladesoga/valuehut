@@ -68,15 +68,7 @@ export async function getServerSideProps({ res }: any) {
         body: JSON.stringify({ query }),
     }).then((res) => res.json());
 
-    const paths: { params: { slug: string } }[] =
-        data &&
-        data.data?.blogCollection?.items?.map((path: { slug: string }) => {
-            return {
-                params: {
-                    slug: path.slug,
-                },
-            };
-        });
+    const paths: string[] = data && data.data?.blogCollection?.items?.map((path: { slug: string }) => path.slug);
 
     const sitemap = generateSiteMap(paths);
     res.setHeader('Content-Type', 'text/xml');
