@@ -139,19 +139,18 @@ export const content = {
                 {
                     imageURL: '/images/mentatdgt.jpg',
                     header: 'Coaching',
-                    description: `Recent Research indicates that a lot of companies have 
-                                embarked on some form of Agile Transformation in the 
-                                last 10 years, however only a small proportion of these 
-                                companies have realised the value promises by Agile 
-                                Transformation. This realisation is not an issue with Agile 
-                                but to a large extent a lack of understanding of the Agile 
-                                Frameworks being adopted and the underlying Agile 
-                                Principles.`,
+                    description: `The desire to build Organisation agility capabilities is by no means an easy journey, rather it is a complex journey of Learning and Unlearning 
+                                that involves executives, mid-level manager and the teams across the organisation. Our Agile Coaches help define the 'Why' for Agility and work 
+                                with your people to co-create experiments using established Agile Principles, Practices and Frameworks. 
+
+                                Our team - Agile Coaches, Scrum Master and Agile Trainers support the Leadership Team as well as the Execution teams across the organisation.
+                                We also help define context specific measures of success across entire Organisation.
+                                `,
                 },
                 {
                     imageURL: '/images/mikael.jpg',
                     header: 'Training',
-                    description: `Our training courses have been carefully designed to provide individuals and teams with skills
+                    description: `Our <a class="link" href="https://www.valuehut.co/services/training">training courses</a> have been carefully designed to provide individuals and teams with skills
                     that help kickstart the journey to better ways of working. These classes are structured to be engaging, 
                     interactive and laced with loads of real life case studies; including the experiences of our trainers.
 

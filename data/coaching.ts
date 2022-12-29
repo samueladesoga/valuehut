@@ -33,6 +33,16 @@ export const coaching: CoachingObject = {
         description: ``,
         imageURL: './cameron.jpg',
         articles: [
+            // {
+            //     title: 'New Arcticle for test',
+            //     content:
+            //         'content for test you can click <a class="link" href="https://google.com">here</a> it will take u to google.',
+            //     contentList: [
+            //         `Resistance at <a class="link" href="https://twitter.com">Click here to go to twitter</a>`,
+            //         `Organisational structure & culture that is not optimised for Agility.`,
+            //         `Disjointed perceptions of the current and the future state for the Organisation across the Organisation.`,
+            //     ],
+            // },
             {
                 title: 'Enterprise Coaching',
                 content: `Efforts to embark on Agility at the team level especially when it doesn’t involve the whole organisation 
