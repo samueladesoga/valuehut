@@ -46,10 +46,10 @@ export const consulting: ConsultingObject = {
                     `Coach Product team on Agile Testing Mindset and practices`,
                     `Post Implementation support`,
                 ],
-                link: {
-                    label: 'This is a test link',
-                    url: 'https://google.com',
-                },
+                // link: {
+                //     label: 'This is a test link',
+                //     url: 'https://google.com',
+                // },
             },
             {
                 title: 'Behaviour Driven Development',
