@@ -32,7 +32,7 @@ const ServiceBox: React.FC<ServiceBoxTypes> = ({ header, description, imageURL, 
                     </div>
                 </a>
             </Link>
-            <p className={serviceBoxStyles.informativeText}>dangerouslySetInnerHTML={{ __html: description }}</p>
+            <p className={serviceBoxStyles.informativeText}>{description}</p>
             <Link href={url}>
                 <a className={`link ${serviceBoxStyles.readMore}`}>Read More {'>'}</a>
             </Link>
