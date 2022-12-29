@@ -29,7 +29,7 @@ const Training: React.FC<TrainingComponentTypes> = ({ training, streams }) => {
                     <TrainingArticle key={`${article.content[0]}${i}${article.content[0]}`} {...article} />
                 ))}
             <section style={{ padding: '10px', width: '100%', maxWidth: '90%', marginTop: '20px' }}>
-                <h2>What our customers say</h2>
+                <h2>What our clients say</h2>
                 <TrustBox />
             </section>
         </div>
