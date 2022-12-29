@@ -82,11 +82,13 @@ export const content = {
             whatCustomersWant: {
                 imageURL: 'rodolfo.jpg',
                 header: 'Our mission',
-                descriptionList: [`We are supporting organizations to build a safer workplace, where employees are able to 
+                descriptionList: [
+                    `We are supporting organizations to build a safer workplace, where employees are able to 
                     bring their authentic selves to solve complex problems; a workplace where managers and leaders
                     are true servant-leaders that truly care about the team and the work that they do. Ultimately, the culture
                     that we co-create with you for your organisations places your organisation in the the best position to 
-                    delight your customers as you continue to deliver valuable products and services.`]
+                    delight your customers as you continue to deliver valuable products and services.`,
+                ],
             },
             whatWeDo: {
                 imageURL: 'mentatdgt.jpg',
