@@ -30,6 +30,18 @@ function generateSiteMap(paths: any) {
     <url>
         <loc>${BASEURL}/services/training</loc>
     </url>
+    <url>
+        <loc>${BASEURL}/services/training/professional-scrum-facilitation-skills</loc>
+    </url>
+    <url>
+        <loc>${BASEURL}/services/training/professional-scrum-master</loc>
+    </url>
+    <url>
+        <loc>${BASEURL}/services/training/professional-scrum-master-ii</loc>
+    </url>
+    <url>
+        <loc>${BASEURL}/services/training/applying-professional-scrum</loc>
+    </url>
     ${paths
         .map((slug: string) => {
             return `
