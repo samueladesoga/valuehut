@@ -177,8 +177,8 @@ export const content = {
                     avatar: 'avatar.jpeg',
                     about: `
                     Sam is our Principal Coach and Lead Trainer at ValueHut; He is a dynamic Agile practitioner and Professional Scrum Trainer with Scrum.org.
-                    Sam is interested in helping people, teams and entire organisation develop the Agile mindset required by businesses to remain competitive 
-                    in face VUCA market environments.
+                    Sam is interested in helping people, teams and entire organisation develop the Agile mindset required by businesses to remain ahead of competition 
+                    despite VUCA market environments.
                     `,
                     socialNetworks: {
                         twitter: 'sadesoga',
