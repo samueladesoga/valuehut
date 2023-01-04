@@ -176,8 +176,9 @@ export const content = {
                     name: 'Samuel Adesoga',
                     avatar: 'avatar.jpeg',
                     about: `
-                    Sam is our Principal Coach and Lead Trainer at ValueHut; He is a dynamic Agile practitioner and Professional Scrum Trainer with Scrum.org
-                    Sam is interested in helping people to develop the Agile mindset that is required by business to remain competitive.
+                    Sam is our Principal Coach and Lead Trainer at ValueHut; He is a dynamic Agile practitioner and Professional Scrum Trainer with Scrum.org.
+                    Sam is interested in helping people, teams and entire organisation develop the Agile mindset required by businesses to remain competitive 
+                    in face VUCA market environments.
                     `,
                     socialNetworks: {
                         twitter: 'sadesoga',
