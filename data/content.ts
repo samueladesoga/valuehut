@@ -161,12 +161,10 @@ export const content = {
                 {
                     imageURL: '/images/cameron.jpg',
                     header: 'Consulting',
-                    description: `In situations where the Organisation has made a decision 
-                    on the Agile Framework that should be adopted by the Product Teams, a 
-                    Scrum Master from ValueHut would help improve the understandinging of 
-                    Scrum or Kanban. In addtion, the Scrum Master would help improve the use 
-                    of the Agile Framework by teaching Supplimentary practices that extend the 
-                    benefit of using such Frameworks.`,
+                    description: `Established product delivery teams often face challenges related to adoption of Agile Practices such as Test Automation, Continuous Delivery, 
+                    Product Backlog Management, Behaviour Driven Development and many more. Our team of Agile Consultants help your Organisation build internal capabilities with 
+                    Agile practices whilst helping you deliver on agreed initiatves, products or project. 
+                    `,
                 },
             ],
         },
