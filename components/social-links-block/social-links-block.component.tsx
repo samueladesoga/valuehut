@@ -22,6 +22,12 @@ export default function SocialLinksBlock({ socialNetworks }: SocialLinksBlockTyp
                 </SocialLink> :
                 null
             }
+            { socialNetworks.blog ? 
+                <SocialLink url={`https://${socialNetworks.blog}`}>
+                    <Image src="/icons/blog.svg" width={20} height={20} alt="blog" />
+                </SocialLink> :
+                null
+            }
         </div>
     )
 }

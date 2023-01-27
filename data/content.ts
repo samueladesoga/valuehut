@@ -44,6 +44,7 @@ export interface HomepageTypes {
 export interface SocialNetworksTypes {
     linkedIn?: string;
     twitter?: string;
+    blog?: string;
 }
 
 export interface TrainerTypes {
@@ -181,6 +182,7 @@ export const content = {
                     socialNetworks: {
                         twitter: 'sadesoga',
                         linkedIn: 'samueladesoga',
+                        blog: 'samadesoga.me'
                     },
                 },
             ],
