@@ -173,7 +173,7 @@ export const content = {
             trainers: [
                 {
                     name: 'Samuel Adesoga',
-                    avatar: 'avatar.jpeg',
+                    avatar: 'sam_avatar.jpeg',
                     about: `
                     Sam is our Principal Coach and Lead Trainer at ValueHut; He is a dynamic Agile practitioner and Professional Scrum Trainer with Scrum.org.
                     Sam is interested in helping people, teams and entire organisation develop the Agile mindset required by businesses to remain ahead of competition 
@@ -184,6 +184,15 @@ export const content = {
                         linkedIn: 'samueladesoga',
                         blog: 'samadesoga.me'
                     },
+                },
+                {
+                    name: 'Deborah Okiogbero',
+                    avatar: 'debbie_avatar.jpg',
+                    about: `
+                    Debbie is ValueHut's executive assistant; She is a highly organized and professional individual with a knack for problem solving. She is resourceful, 
+                    and effective with excellent communication skills. Debbie manages our course schedules for both our public and private clients; in addition she manages 
+                    our key accounts and is always eager to assist all of us at ValueHut. 
+                    `,
                 },
             ],
         },
