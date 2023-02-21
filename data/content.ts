@@ -65,7 +65,7 @@ export const content = {
     pages: {
         home: {
             widescreenBanner: {
-                slogan: [`Exploring better`, `ways of working`],
+                slogan: [`Supporting organisations to explore`, `better ways of working`],
             },
             headerArticle: {
                 imageURL: 'business.jpg',
