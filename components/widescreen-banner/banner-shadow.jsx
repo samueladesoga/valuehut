@@ -10,7 +10,7 @@ export const BannerShadow = styled.div`
     justify-content: space-around;
     align-items: center;
     & .widescreen__slogan {
-        font-size: 4rem;
+        font-size: 9vw;
         text-align: center;
         width: 70%;
         @media screen and (max-width: 1023px) {
@@ -33,7 +33,7 @@ export const BannerShadow = styled.div`
         color: white;
         & .widescreen__slogan__string {
             display: block;
-            font-size: 4rem;
+            font-size: 9vw;
         }
     }
     & img {
