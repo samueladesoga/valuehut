@@ -333,6 +333,41 @@ export const training: TrainingObject = {
                     filled: true,
                 },
                 {
+                    startDate: new Date('2023-05-19').toJSON(),
+                    endDate: new Date('2023-05-20').toJSON(),
+                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    classType: 'Virtual',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1100,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1100,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 850,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 950,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
                     startDate: new Date('2023-07-28').toJSON(),
                     endDate: new Date('2023-07-29').toJSON(),
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
