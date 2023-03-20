@@ -196,6 +196,41 @@ export const training: TrainingObject = {
                     filled: false,
                 },
                 {
+                    startDate: new Date('2023-06-23').toJSON(),
+                    classType: 'Face to Face',
+                    endDate: new Date('2023-06-24').toJSON(),
+                    time: '9:00 - 17:00 Lagos, Africa',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1000,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1000,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 800,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 900,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
                     startDate: new Date('2023-07-07').toJSON(),
                     classType: 'Virtual',
                     endDate: new Date('2023-07-08').toJSON(),
