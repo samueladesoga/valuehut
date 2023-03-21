@@ -199,7 +199,7 @@ export const training: TrainingObject = {
                     startDate: new Date('2023-06-23').toJSON(),
                     classType: 'Face to Face',
                     endDate: new Date('2023-06-24').toJSON(),
-                    time: '9:00 - 17:00 Lagos, Africa',
+                    time: '9:00 - 17:00 Lagos, Nigeria.',
                     price: [
                         {
                             region: 'United Kingdom',
