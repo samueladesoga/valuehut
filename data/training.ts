@@ -220,7 +220,7 @@ export const training: TrainingObject = {
                         {
                             region: 'Tertiary Market',
                             regionDescription: tertiaryMarket,
-                            amount: 800,
+                            amount: 900,
                         },
                         {
                             region: 'Secondary Market',

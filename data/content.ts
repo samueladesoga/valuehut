@@ -186,6 +186,21 @@ export const content = {
                     },
                 },
                 {
+                    name: 'Temitope Awere',
+                    avatar: 'temi_avatar.jpg',
+                    about: `
+                    Temitope is a Partner Coach and Trainer at ValueHut; Temi is an experienced Lean-agile Practitioner, Accredited Kanban Trainer, ICAgile instructor Agile Coach, 
+                    Professional Scrum Master, Agile Project Manager,  SAFe Program consultant and Kanban Management Professional with over 10 years’ experience empowering 
+                    and coaching development teams and organizations in adoption agile principles, improving the flow of customer value through scalable, maintainable 
+                    software solutions.
+                    `,
+                    socialNetworks: {
+                        twitter: '',
+                        linkedIn: '',
+                        blog: ''
+                    },
+                },
+                {
                     name: 'Deborah Okiogbero',
                     avatar: 'debbie_avatar.jpg',
                     about: `
