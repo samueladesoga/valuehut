@@ -175,9 +175,9 @@ export const content = {
                     name: 'Samuel Adesoga',
                     avatar: 'sam_avatar.jpeg',
                     about: `
-                    Sam is our Principal Coach and Lead Trainer at ValueHut; He is a dynamic Agile practitioner and Professional Scrum Trainer with Scrum.org.
-                    Sam is interested in helping people, teams and entire organisation develop the Agile mindset required by businesses to remain ahead of competition 
-                    despite VUCA market environments.
+                    Sam is our Principal Coach and Lead Trainer at ValueHut; He is a agnostic Enterprise Agile Coach and Practitioner, a Professional Scrum Trainer with Scrum.org.
+                    In the last 20years, Sam has supported individuals, teams and Organisations to deliver value using Agile Frameworks and Practices; ultimately developing the 
+                    mindset required to thrive in  Volatile, Uncertain, Complex and Ambiguous (VUCA) business environment..
                     `,
                     socialNetworks: {
                         twitter: 'sadesoga',
@@ -189,9 +189,9 @@ export const content = {
                     name: 'Temitope Awere',
                     avatar: 'temi_avatar.jpg',
                     about: `
-                    Temitope is a Partner Coach and Trainer at ValueHut; Temi is an experienced Lean-agile Practitioner, Accredited Kanban Trainer, ICAgile instructor Agile Coach, 
+                    Temitope is a Partner Coach and Trainer at ValueHut; Temi is an experienced Lean-Agile Practitioner, Accredited Kanban Trainer, ICAgile Instructor Agile Coach, 
                     Professional Scrum Master, Agile Project Manager,  SAFe Program consultant and Kanban Management Professional with over 10 years’ experience empowering 
-                    and coaching development teams and organizations in adoption agile principles, improving the flow of customer value through scalable, maintainable 
+                    and coaching development teams and organizations in the adoption agile principles and improving the flow of customer value through scalable, maintainable 
                     software solutions.
                     `,
                     socialNetworks: {
