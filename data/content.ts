@@ -195,9 +195,9 @@ export const content = {
                     software solutions.
                     `,
                     socialNetworks: {
-                        twitter: '',
-                        linkedIn: '',
-                        blog: ''
+                        twitter: 'agile_matrix',
+                        linkedIn: 'temitope-awere-554194118',
+                        blog: 'https://www.agilematrix.org/blog1/'
                     },
                 },
                 {
