@@ -197,7 +197,7 @@ export const content = {
                     socialNetworks: {
                         twitter: 'agile_matrix',
                         linkedIn: 'temitope-awere-554194118',
-                        blog: 'https://www.agilematrix.org/blog1/'
+                        blog: 'agilematrix.org/blog1/'
                     },
                 },
                 {
