@@ -175,9 +175,9 @@ export const content = {
                     name: 'Samuel Adesoga',
                     avatar: 'sam_avatar.jpeg',
                     about: `
-                    Sam is our Principal Coach and Lead Trainer at ValueHut; He is a agnostic Enterprise Agile Coach and Practitioner, a Professional Scrum Trainer with Scrum.org.
+                    Sam is our Principal Coach and Lead Trainer at ValueHut; He is an agnostic Enterprise Agile Coach and Practitioner, a Professional Scrum Trainer with Scrum.org.
                     In the last 20years, Sam has supported individuals, teams and Organisations to deliver value using Agile Frameworks and Practices; ultimately developing the 
-                    mindset required to thrive in  Volatile, Uncertain, Complex and Ambiguous (VUCA) business environment..
+                    mindset required to thrive in  Volatile, Uncertain, Complex and Ambiguous (VUCA) business environment.
                     `,
                     socialNetworks: {
                         twitter: 'sadesoga',
