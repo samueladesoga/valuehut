@@ -499,7 +499,7 @@ export const training: TrainingObject = {
                             amount: 500,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
                     startDate: new Date('2023-08-25').toJSON(),
