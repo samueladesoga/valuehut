@@ -126,41 +126,6 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    startDate: new Date('2023-05-12').toJSON(),
-                    classType: 'Virtual',
-                    endDate: new Date('2023-05-13').toJSON(),
-                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
-                    price: [
-                        {
-                            region: 'United Kingdom',
-                            regionDescription: ['United Kingdom'],
-                            amount: 1000,
-                            currency: {
-                                name: 'gbp',
-                                symbol: '£',
-                                locale: 'en_GB',
-                                template: 'GBP',
-                            },
-                        },
-                        {
-                            region: 'Primary Market',
-                            regionDescription: primaryMarket,
-                            amount: 1000,
-                        },
-                        {
-                            region: 'Tertiary Market',
-                            regionDescription: tertiaryMarket,
-                            amount: 800,
-                        },
-                        {
-                            region: 'Secondary Market',
-                            regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 900,
-                        },
-                    ],
-                    filled: true,
-                },
-                {
                     startDate: new Date('2023-06-23').toJSON(),
                     classType: 'Face to Face',
                     endDate: new Date('2023-06-24').toJSON(),
@@ -193,12 +158,47 @@ export const training: TrainingObject = {
                             amount: 900,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
                     startDate: new Date('2023-08-18').toJSON(),
                     classType: 'Virtual',
                     endDate: new Date('2023-08-19').toJSON(),
+                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1000,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1000,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 800,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 900,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    startDate: new Date('2023-09-08').toJSON(),
+                    classType: 'Virtual',
+                    endDate: new Date('2023-09-09').toJSON(),
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
                     price: [
                         {
