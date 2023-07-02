@@ -133,6 +133,10 @@ export const content = {
                     name: 'BBC Worldwide',
                     imageURL: 'bbc-worldwide.jpg',
                 },
+                {
+                    name: 'Fidelity Bank',
+                    imageURL: 'fidelity-bank.svg',
+                },
             ],
         },
         whatWeDo: {
