@@ -20,6 +20,10 @@ function TrainingItem({ stream, training }: { stream: StreamTypes; training: Tra
             )
         }
 
+    const today = new Date()
+
+    if (new Date(stream.endDate) < today) return <></>
+
     return (
         <div className="col-start-1 col-end-13 md:col-start-2 bg-white max-w-3xl p-5 rounded-md shadow-sm">
             <div className="flex justify-between mb-2">
@@ -53,8 +57,9 @@ function TrainingItem({ stream, training }: { stream: StreamTypes; training: Tra
                 <button
                     className="bg-primary-default text-white rounded-md text-sm px-4 py-2"
                     onClick={showModal(stream)}
+                    disabled={stream.filled}
                 >
-                    Book Now
+                    {stream.filled ? 'Fully booked' : 'Book Now'}
                 </button>
             </div>
             <div></div>

@@ -1,7 +1,7 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import React from 'react';
-import SchedulePage from '../../pages-components/schedule-page';
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import React from 'react'
+import SchedulePage from '../../../../pages-components/schedule-page'
 
 const Schedule: NextPage = () => {
     return (
@@ -20,7 +20,7 @@ const Schedule: NextPage = () => {
             </Head>
             <SchedulePage></SchedulePage>
         </>
-    );
-};
+    )
+}
 
-export default Schedule;
+export default Schedule

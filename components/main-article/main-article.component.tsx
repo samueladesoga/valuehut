@@ -105,7 +105,7 @@ const MainArticle: React.FC<MainArticleProps> = ({
 
                 <div className={`${mainArticleStyles.main__article__buttons__block}`}>
                     {streams && (
-                        <Link href={`/schedule`}>
+                        <Link href={`/services/training/schedule`}>
                             <a className="button button-primary button-primary-default">Book Now</a>
                         </Link>
                     )}
