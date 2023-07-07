@@ -8,55 +8,55 @@
 // Start and End Dates should be JSON objects!
 // (See how it looks now)
 
-import { primaryMarket, tertiaryMarket } from './countries';
+import { primaryMarket, tertiaryMarket } from './countries'
 
 export interface PriceTypes {
-    region: string;
-    regionDescription: string | string[];
-    amount: number;
-    currency?: CurrencyTypes;
+    region: string
+    regionDescription: string | string[]
+    amount: number
+    currency?: CurrencyTypes
 }
 
 export interface CurrencyTypes {
-    name: string;
-    symbol?: string;
-    locale?: string;
-    template?: string;
+    name: string
+    symbol?: string
+    locale?: string
+    template?: string
 }
 
 export interface StreamTypes {
-    startDate: any;
-    endDate: any;
-    time: string;
-    classType: string;
-    price: PriceTypes[];
-    filled: boolean;
+    startDate: any
+    endDate: any
+    time: string
+    classType: string
+    price: PriceTypes[]
+    filled: boolean
 }
 
 export interface TrainingArticleTypes {
-    title?: string;
-    content: string;
-    contentList?: string[];
-    imageURL?: string;
-    textAlign?: string;
-    imagePosition?: string;
+    title?: string
+    content: string
+    contentList?: string[]
+    imageURL?: string
+    textAlign?: string
+    imagePosition?: string
 }
 
 export interface TrainingTypes {
-    id: number;
-    title: string;
-    acronym?: string;
-    description?: string;
-    logo?: any;
-    iconBorder?: string;
-    imageURL: string;
-    articles?: TrainingArticleTypes[];
-    streams?: StreamTypes[];
-    isTraining?: boolean;
+    id: number
+    title: string
+    acronym?: string
+    description?: string
+    logo?: any
+    iconBorder?: string
+    imageURL: string
+    articles?: TrainingArticleTypes[]
+    streams?: StreamTypes[]
+    isTraining?: boolean
 }
 
 interface TrainingObject {
-    training: TrainingTypes[];
+    training: TrainingTypes[]
 }
 
 export const training: TrainingObject = {
@@ -693,4 +693,4 @@ export const training: TrainingObject = {
             isTraining: true,
         },
     ],
-};
+}

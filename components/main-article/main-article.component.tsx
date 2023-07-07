@@ -1,27 +1,27 @@
-import React from 'react';
-import Link from 'next/link';
+import React from 'react'
+import Link from 'next/link'
 
-import mainArticleStyles from './main-article.module.scss';
+import mainArticleStyles from './main-article.module.scss'
 
 interface MainArticleProps {
-    imageURL?: string;
-    header: string;
-    description?: string;
-    descriptionList?: string[];
-    streams?: any[];
-    isTraining?: boolean;
-    otherProps?: any[];
-    style?: any;
-    logo?: any;
-    children?: any;
-    slug?: string;
-    isHeader?: boolean;
-    link?: ILink;
+    imageURL?: string
+    header: string
+    description?: string
+    descriptionList?: string[]
+    streams?: any[]
+    isTraining?: boolean
+    otherProps?: any[]
+    style?: any
+    logo?: any
+    children?: any
+    slug?: string
+    isHeader?: boolean
+    link?: ILink
 }
 
 interface ILink {
-    url: string;
-    label: string;
+    url: string
+    label: string
 }
 
 const MainArticle: React.FC<MainArticleProps> = ({
@@ -40,9 +40,9 @@ const MainArticle: React.FC<MainArticleProps> = ({
     ...otherProps
 }: MainArticleProps) => {
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-        event.preventDefault();
-    };
-    const articleWidth: object = imageURL ? {} : { width: '100%' };
+        event.preventDefault()
+    }
+    const articleWidth: object = imageURL ? {} : { width: '100%' }
     return (
         <section className={`${mainArticleStyles.main__article}`} style={style}>
             <article className={`${mainArticleStyles.main__article__section}`} style={articleWidth}>
@@ -105,7 +105,7 @@ const MainArticle: React.FC<MainArticleProps> = ({
 
                 <div className={`${mainArticleStyles.main__article__buttons__block}`}>
                     {streams && (
-                        <Link href={`/services/training/${header.toLowerCase().split(' ').join('-')}#book-now`}>
+                        <Link href={`/schedule`}>
                             <a className="button button-primary button-primary-default">Book Now</a>
                         </Link>
                     )}
@@ -124,7 +124,7 @@ const MainArticle: React.FC<MainArticleProps> = ({
                 ></aside>
             )}
         </section>
-    );
-};
+    )
+}
 
-export default MainArticle;
+export default MainArticle
