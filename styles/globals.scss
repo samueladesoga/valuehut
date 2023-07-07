@@ -1,6 +1,10 @@
 @import './color-scheme.module.scss';
 @import './keyframes.module.scss';
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
