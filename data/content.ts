@@ -208,9 +208,9 @@ export const content = {
                     name: 'Deborah Okiogbero',
                     avatar: 'debbie_avatar.jpg',
                     about: `
-                    Debbie is ValueHut's executive assistant; She is a highly organized and professional individual with a knack for problem solving. Debbie is resourceful, 
-                    and effective with excellent communication skills. Debbie manages our course schedules for both our public and private clients; in addition Debbie manages 
-                    our key accounts and is always eager to assist all of us at ValueHut. 
+                   Debbie is our Executive Assistant with a knack for problem solving. She is highly organized and demonstrates excellent communication skills. Her resourcefulness 
+                   and efficiency while managing course schedules for both our private and public sector clients is impressive. She also takes responsibility acting as Key Account 
+                   Manager and her customers relationship management has positively impacted all stakeholders.
                     `,
                 },
             ],
