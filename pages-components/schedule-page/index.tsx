@@ -20,7 +20,7 @@ function SchedulePage() {
         <div className="min-h-screen bg-[#F9F6F3]">
             <div className="w-full h-80 mb-10 bg-gradient-to-r from-primary-dark to to-primary-default flex items-center justify-center">
                 <h1 className="text-5xl text-white text-center">
-                    Our up and coming <br></br>Training courses
+                    Scrum Training Schedule
                 </h1>
             </div>
 
