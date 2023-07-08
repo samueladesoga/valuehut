@@ -3,6 +3,7 @@ import React, { useCallback, useState } from 'react'
 import { training } from '../../data/training'
 import WrapTraining from './training'
 import classNames from 'classnames'
+import TrustBox from '../../components/trustbox/trustbox.component'
 
 function SchedulePage() {
     const [trainings, setTrainings] = useState(training.training)
@@ -89,6 +90,9 @@ function SchedulePage() {
 
                         return undefined
                     })}
+                <div className="mt-8">
+                    <TrustBox />
+                </div>
             </div>
         </div>
     )
