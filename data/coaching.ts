@@ -57,16 +57,16 @@ export const coaching: CoachingObject = {
             },
             {
                 title: 'Team Coaching',
-                content: `Far too many products delivery teams are “Doing Agile” rather than “Being Agile”, 
-                this means that the “Agile Rituals” are being done but Agile doesn’t seem to be delivering 
-                on it’s promise. The Principles of Agile are very simple but take a long time to be consistent 
-                in its application to every aspect of Delivery. Our Agile coaches apply their extensive knowledge 
-                of Agile principles and framework to guide struggling individual and teams.
+                content: `Far too many teams go through the mechanics of "Doing Agile" and very quickly realise that nothing has changed.
+                Our Agile Coaches help your teams articulate the outcomes desired from the team's intention to adopt agile ways of working.
+                These outcomes guide our engagement with your teams and based on our extensive experience with supporting product delivery teams, 
+                our agile coaches co-create experiments for improving the teams agility and using appropriate agility metrics kick off a process of continuous
+                improvement within the teams.
 
-                Our mission is to unlock the potentials in every individual and team so that they can continue 
-                to deliver better products faster. Our Agile coaches engage with your team in a number of roles 
-                as Agile Coaches, Scrum Master and sometime as Delivery Managers; the mission remains the same 
-                regardless of the role that is being filled with one of our coaches.`,
+                Our mission is to help every individual and team embody the agile mindset that enables these teams to become effective at 
+                delivering better products faster. Our preferred ways of working for teams is inspired by the Scrum Framework and the Kanban methodology; these 
+                frameworks help teams improve their self-management abilities which set up the teams to be able to deal with deliver frequently and faster
+                despite complex business domain.`,
             },
         ],
     },
