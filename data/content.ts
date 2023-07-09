@@ -143,13 +143,14 @@ export const content = {
             introdution: [
                 {
                     imageURL: '/images/mentatdgt.jpg',
-                    header: 'Coaching',
-                    description: `The desire to build Organisation agility capabilities is by no means an easy journey, rather it is a complex journey of Learning and Unlearning 
-                                that involves executives, mid-level manager and the teams across the organisation. Our Agile Coaches help define the 'Why' for Agility and work 
-                                with your people to co-create experiments using established Agile Principles, Practices and Frameworks. 
+                    header: 'Agile Coaching',
+                    description: `The desire to build Organisation agility capabilities is a complex journey of Learning and Unlearning that involves executives, mid-level managers and the teams across 
+                                the organisation. Organisation Agility has become a neccessity as there is an increasingly pressure to adapt to changing customer's needs and reduce the time to market 
+                                at the same time. Our Agile Coaches support the organisation to define the business outcome for agility and subsequently co-create initiatives to deliver these outcomes 
+                                across the entire organisation. 
 
-                                Our team - Agile Coaches, Scrum Master and Agile Trainers support the Leadership Team as well as the Execution teams across the organisation.
-                                We also help define context specific measures of success across entire Organisation.
+                                Our team of Agile Coaches, Scrum Masters and Agile Trainers provide support for the Leadership Team and the teams across the organisation. We measure the success of 
+                                all engagement using context specific agile metrics built on the outcomes desired from our coaching engagement.
                                 `,
                 },
                 {
@@ -160,8 +161,8 @@ export const content = {
                     interactive and laced with loads of real life case studies; including the experiences of our trainers.
 
                     Our lead trainer is the first Professional Scrum Trainer in Nigeria and we offer a number of bespoke Agile classes
-                    that are packaged based on your organisational needs. You can book for any of our live or virtual public classes on our training page;
-                    and you can contact us for bespoke or private classes.`,
+                    that are packaged based on your organisational needs. You can book for any of our live or virtual public classes from our training page;
+                    and you can <a class="link" href="https://www.valuehut.co/contact">contact us</a> for bespoke or private classes.`,
                 },
                 {
                     imageURL: '/images/cameron.jpg',
