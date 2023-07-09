@@ -29,7 +29,7 @@ interface CoachingObject {
 
 export const coaching: CoachingObject = {
     coaching: {
-        title: 'Agile Coaching',
+        title: 'Coaching',
         description: ``,
         imageURL: './cameron.jpg',
         articles: [
