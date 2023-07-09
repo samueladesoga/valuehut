@@ -143,7 +143,7 @@ export const content = {
             introdution: [
                 {
                     imageURL: '/images/mentatdgt.jpg',
-                    header: 'Agile Coaching',
+                    header: 'Coaching',
                     description: `The desire to build Organisation agility capabilities is a complex journey of Learning and Unlearning that involves executives, mid-level managers and the teams across 
                                 the organisation. Organisation Agility has become a neccessity as there is an increasingly pressure to adapt to changing customer's needs and reduce the time to market 
                                 at the same time. Our Agile Coaches support the organisation to define the business outcome for agility and subsequently co-create initiatives to deliver these outcomes 
