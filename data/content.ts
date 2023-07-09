@@ -68,7 +68,7 @@ export const content = {
                 slogan: [`Co-creating better ways of working and leading.`, ``],
             },
             headerArticle: {
-                imageURL: 'business.jpg',
+                imageURL: 'network.png',
                 header: 'ValueHut Limited',
                 description: `ValueHut is an agile coaching and training consultancy that is helping 
                 Organisations transform into a network of interdependent teams across different business units.
@@ -81,7 +81,7 @@ export const content = {
                 header: 'Services',
             },
             whatCustomersWant: {
-                imageURL: 'rodolfo.jpg',
+                imageURL: 'happy.jpg',
                 header: 'Our mission',
                 descriptionList: [
                     `We are supporting organizations to build a safer workplace, where employees are able to 
@@ -92,7 +92,7 @@ export const content = {
                 ],
             },
             whatWeDo: {
-                imageURL: 'mentatdgt.jpg',
+                imageURL: 'coaching-1.png',
                 header: 'What we do',
                 description: `Embarking on a journey to build agility into the DNA of an 
                 organisation could be daunting one. We partner with you, leveraging our 
@@ -142,7 +142,7 @@ export const content = {
         whatWeDo: {
             introdution: [
                 {
-                    imageURL: '/images/mentatdgt.jpg',
+                    imageURL: '/images/coaching-1.png',
                     header: 'Coaching',
                     description: `The desire to build Organisation agility capabilities is a complex journey of Learning and Unlearning that involves executives, mid-level managers and the teams across 
                                 the organisation. Organisation Agility has become a neccessity as there is an increasingly pressure to adapt to changing customer's needs and reduce the time to market 
