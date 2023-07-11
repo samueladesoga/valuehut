@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import TrainingItem from './trainingItem'
 import { StreamTypes, TrainingTypes } from '../../data/training'
+import Link from 'next/link'
 
 function WrapTraining({ training }: { training: TrainingTypes }) {
     const [_training, setTraining] = useState<TrainingTypes>(training)
@@ -18,8 +19,18 @@ function WrapTraining({ training }: { training: TrainingTypes }) {
                     />
                 </div>
                 <div className="w-auto col-start-1 col-end-13 md:col-start-2">
-                    <h3 className="mb-4 font-semibold">{_training.acronym}</h3>
+                    <div className="flex justify-between max-w-3xl">
+                        <h3 className="mb-4 font-semibold">{_training.acronym}</h3>
+                    </div>
                     <p className="text-sm max-w-3xl">{_training.description}</p>
+                    <div className="flex justify-end max-w-3xl">
+                        <Link
+                            className="text-primary-default text-sm"
+                            href={_training.title.toLowerCase().split(' ').join('-')}
+                        >
+                            <a className="text-primary-default text-xs font-medium">Read more...</a>
+                        </Link>
+                    </div>
                 </div>
                 <div className="col-start-1 col-end-13 md:col-start-2">
                     <h4 className="text-base">Upcoming classes:</h4>
