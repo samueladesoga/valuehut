@@ -20,7 +20,7 @@ function SchedulePage() {
         <div className="min-h-screen bg-[#F9F6F3]">
             <div className="w-full h-80 mb-10 bg-gradient-to-r from-primary-dark to to-primary-default flex items-center justify-center">
                 <h1 className="text-5xl text-white text-center">
-                    Scrum Training Schedule
+                    Agile and Scrum Training Schedule
                 </h1>
             </div>
 
@@ -29,7 +29,7 @@ function SchedulePage() {
                     <h3 className="text-3xl text-gray-dark">Our next classes</h3>
                 </div>
                 <div className="mb-8">
-                    <p className="text-base mb-2">Select classes:</p>
+                    <p className="text-base mb-2">Select Training:</p>
                     <div>
                         <ul className="flex gap-2 text-sm">
                             <li

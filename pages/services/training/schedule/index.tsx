@@ -8,12 +8,12 @@ const Schedule: NextPage = () => {
         <>
             <Head>
                 <title>Valuehut Limited - Schedule</title>
-                <meta name="og:title" property="og:title" content="Valuehut Limited - Schedule" />
-                <meta name="title" property="title" content="Valuehut Limited - Schedule" />
-                <meta name="description" content="ValueHut's schedule page" />
+                <meta name="og:title" property="og:title" content="Valuehut Limited - Agile and Scrum Training Schedule" />
+                <meta name="title" property="title" content="Valuehut Limited - Agile and Scrum Training Schedule" />
+                <meta name="description" content="ValueHut training schedule for Scrum.org and Agile ways of working suited for Leaders, Individual and Teams" />
                 <meta name="type" content="page" />
                 <meta name="og:site_name" content="ValueHut" />
-                <meta name="og:description" content="ValueHut's schedule page" />
+                <meta name="og:description" content="ValueHut training schedule for Scrum.org and Agile ways of working suited for Leaders, Individual and Teams" />
                 <meta name="og:type" content="page" />
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="robots" content="max-image-preview:large" />
