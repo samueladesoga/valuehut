@@ -46,13 +46,12 @@ export const coaching: CoachingObject = {
             {
                 title: 'Enterprise Coaching',
                 content: `Efforts to embark on Agility at the team level especially when it doesn’t involve the whole organisation 
-                could be an uphill battle; we advise our clients that in other to deliver sustainable and long-lasting change, 
-                agility should be introduced using a “whole organisation” approach to agility. This approach however comes with it 
-                own sets of challenges which might be familiar to you.`,
+                could be an uphill battle; to deliver sustainable and long-lasting change, agility should be introduced using a “whole organisation” 
+                approach to agility. This approach however comes with it own sets of challenges which might be familiar to you.`,
                 contentList: [
-                    `Resistance at different levels within the organisation.`,
+                    `Conflicting priorities between the pressure to continue to operate as-is and exploring new ways of working.`,
                     `Organisational structure & culture that is not optimised for Agility.`,
-                    `Disjointed perceptions of the current and the future state for the Organisation across the Organisation.`,
+                    `Disjointed perceptions of the current and future state for the Organisation across the Organisation.`,
                 ],
             },
             {
@@ -65,8 +64,7 @@ export const coaching: CoachingObject = {
 
                 Our mission is to help every individual and team embody the agile mindset that enables these teams to become effective at 
                 delivering better products faster. Our preferred ways of working for teams is inspired by the Scrum Framework and the Kanban methodology; these 
-                frameworks help teams improve their self-management abilities which set up the teams to be able to deal with deliver frequently and faster
-                despite complex business domain.`,
+                frameworks help teams improve their self-management abilities which set up the teams to deliver frequently, better and faster despite complex business domain.`,
             },
         ],
     },

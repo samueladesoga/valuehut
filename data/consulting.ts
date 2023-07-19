@@ -35,9 +35,9 @@ export const consulting: ConsultingObject = {
         articles: [
             {
                 title: 'Continuous Integration / Continous Delivery',
-                content: `A central theme to application delivery is the enabling teams to build better products faster. 
-                Continuous Integration and Continuous Delivery are practices that enabled the product teams collect feedback in near real time.
-                CI / CD is underpinned by making information Transparent and automating collection of metrics the product.
+                content: `A central theme to application delivery is enabling teams to build better products faster. 
+                Continuous Integration and Continuous Delivery are practices that enables the product teams gather feedback in near real time.
+                CI / CD is underpinned by making information transparent and automating collection of metrics about the product.
                 Our consultants have implemented and supported many organisations with their CI/CD Implementation. Our typical process would involve:`,
                 contentList: [
                     `An evaluation of the current state including tools / technology being used`,
@@ -53,9 +53,9 @@ export const consulting: ConsultingObject = {
             },
             {
                 title: 'Behaviour Driven Development',
-                content: `Behaviour Driven Development is an Agile Development practise that fosters collaboration between 
+                content: `Behaviour Driven Development is an Agile Development practice that fosters collaboration between 
                 the Business and the Development teams. It encourages communication based on the expected behaviour of the 
-                product to be implmented and subsequently enables the team to capture requirements as specification which 
+                product to be implemented and subsequently enables the team to capture requirements as specification which 
                 can then be automated by the Development Team.`,
             },
             {

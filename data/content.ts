@@ -74,7 +74,7 @@ export const content = {
                 Organisations transform into a network of interdependent teams across different business units.
                 We work with Leaders and the teams as everyone has got a part to play in the process
                 of transformation. Our coaches work with the teams to improve their cross-functional and self-managing capabilities.
-                In addition, we train, coach and support Leaders to build the capabilities required to create the required
+                In addition, we train, coach, and support Leaders to build the capabilities required to create the required
                 work environment for these teams to succeed.`,
             },
             servicesArticle: {
@@ -84,21 +84,20 @@ export const content = {
                 imageURL: 'happy.jpg',
                 header: 'Our mission',
                 descriptionList: [
-                    `We are supporting organizations to build a safer workplace, where employees are able to 
+                    `We support organizations to build a safer workplace where employees are able to 
                     bring their authentic selves to solve complex problems; a workplace where managers and leaders
-                    are true servant-leaders that truly care about the team and the work that they do. Ultimately, the culture
-                    that we co-create with you for your organisations places your organisation in the the best position to 
-                    delight your customers as you continue to deliver valuable products and services.`,
+                    are true servant-leaders that truly care about the team and the work that they do. The culture and mindset
+                    that we co-create with you for your organisation provide your people the capabilities to ensure that they are able
+                    to deliver valuable products and services to your customers sustainably.`,
                 ],
             },
             whatWeDo: {
                 imageURL: 'coaching-1.png',
                 header: 'What we do',
                 description: `Embarking on a journey to build agility into the DNA of an 
-                organisation could be daunting one. We partner with you, leveraging our 
-                experiences with proven Agile Frameworks to co-create alternate ways of working
-                with clear outcomes aligned with enabling the organisation to continue to 
-                deliver valuable products.`,
+                organisation could be daunting; for this reason we partner with you, leveraging our 
+                experiences with proven Agile Frameworks to co-create better ways of working. The outcomes that we 
+                deliver enables our clients to deliver better, safer and valuable products and services.`,
             },
             previousClients: [
                 {
@@ -144,13 +143,13 @@ export const content = {
                 {
                     imageURL: '/images/coaching-1.png',
                     header: 'Coaching',
-                    description: `The desire to build Organisation agility capabilities is a complex journey of Learning and Unlearning that involves executives, mid-level managers and the teams across 
-                                the organisation. Organisation Agility has become a neccessity as there is an increasingly pressure to adapt to changing customer's needs and reduce the time to market 
-                                at the same time. Our Agile Coaches support the organisation to define the business outcome for agility and subsequently co-create initiatives to deliver these outcomes 
+                    description: `Developing Organisation agility capabilities is a complex journey of Learning and Unlearning that involves executives, mid-level managers, and the teams across 
+                                the organisation. Organisation Agility is a necessity due to increasingly pressure to adapt to changing customer's needs and reduce the time to market 
+                                at the same time. Our Agile Coaches support the organisation to define the business outcomes for agility and subsequently co-create initiatives to deliver these outcomes 
                                 across the entire organisation. 
 
-                                Our team of Agile Coaches, Scrum Masters and Agile Trainers provide support for the Leadership Team and the teams across the organisation. We measure the success of 
-                                all engagement using context specific agile metrics built on the outcomes desired from our coaching engagement.
+                                Our team of Agile Coaches, Scrum Masters and Agile Trainers provide support for the Leadership Team and the teams across the organisation. We measure the success 
+                                using context specific agile metrics built on the outcomes created within our coaching engagement.
                                 `,
                 },
                 {
@@ -169,7 +168,7 @@ export const content = {
                     header: 'Consulting',
                     description: `Established product delivery teams often face challenges related to adoption of Agile Practices such as Test Automation, Continuous Delivery, 
                     Product Backlog Management, Behaviour Driven Development and many more. Our team of Agile Consultants help your Organisation build internal capabilities with 
-                    Agile practices whilst helping you deliver on agreed initiatves, products or project. 
+                    Agile practices whilst helping you deliver on agreed initiatives, products or project. 
                     `,
                 },
             ],
