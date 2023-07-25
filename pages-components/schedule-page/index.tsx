@@ -66,6 +66,14 @@ function SchedulePage() {
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
+                                    'border-primary-default bg-primary-light': filters.includes('PSPO'),
+                                })}
+                                onClick={() => handleFilter('PSPO')}
+                            >
+                                PSPO
+                            </li>
+                            <li
+                                className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
                                     'border-primary-default bg-primary-light': filters.includes('PAL-E'),
                                 })}
                                 onClick={() => handleFilter('PAL-E')}
