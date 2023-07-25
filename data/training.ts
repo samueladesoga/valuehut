@@ -119,7 +119,7 @@ export const training: TrainingObject = {
                     title: 'More information',
                     content: ``,
                     contentList: [
-                        `Mode of delivery is Virtual`,
+                        `Mode of delivery is either In-Person or Virtual, view course dates for more details.`,
                         `The price for the class is dependent on your home address.`,
                     ],
                 },
@@ -235,6 +235,72 @@ export const training: TrainingObject = {
         },
         {
             id: 2,
+            title: 'Professional Scrum Product Owner',
+            acronym: 'PSPO',
+            description: `Professional Scrum Product Owner course (PSPO) is an interactive, activity-based course 
+            where students gain a thorough understanding of Professional Scrum and the critical role of the 
+            Product Owner. Students learn a number of Product Ownership practices that can be applied immediately after
+            the class and introduction to a wider set of Agile Product Management practices.`,
+            imageURL: '/images/morillo.jpg',
+            logo: 'pspo.svg',
+            iconBorder: 'https://static.scrum.org/web/tokens/token-psm-color.svg',
+            articles: [
+                {
+                    title: 'Course Learning Objectives',
+                    content: `The course objectives include:`,
+                    contentList: [
+                        `Increase business agility through the proper execution of the Product Owner accountability`,
+                        `Recognize the value of a product over project mindset`,
+                        `Learn how to bridge business strategy to product execution using Scrum`,
+                        `Understand that the Product Owner is an Agile Product Manager`,
+                        `Understand the Scrum Principles and Empiricism`,
+                        `Understand the Product Owner accountabilities on the Scrum Team`,
+                        `Learn how to align the team around the business strategy, product vision, Product Goal, and Sprint Goal`,
+                        `Find ways to effectively communicate the business strategy, product vision, and Product Goal`,
+                        `Learn techniques for Product Backlog Management, Release Management, and Forecasting`,
+                        `Identify metrics that can be used to track value creation, and successful product delivery`,
+                        `Discover techniques to interact with stakeholders, customers, and the members of the Scrum Team`,
+                    ],
+                },
+                {
+                    title: 'Who should attend?',
+                    content: ``,
+                    contentList: [
+                        `Professionals that are interested in starting a career as a Product Owner`,
+                        `Product Owners with some experience in the role that are looking to improve their understanding or fix their misconceptions of Scrum and the Product Owner role`,
+                        `Scrum Masters wishing to be an effective coach to Product Owners will also find valuable insights in this course`,
+                    ],
+                },
+                {
+                    title: 'Assessment Certification',
+                    content: `All participants completing the Professional Scrum Product Owner course will receive 
+                    a password to attempt the Professional Scrum Product Owner I (PSPO I) assessment. 
+                    The industry-recognized PSPO I certification requires a minimum passing score of 85%. 
+                    PSM class participants who attempt the PSM I assessment within 14 days of receiving their 
+                    free password and do not score at least 85% will be granted a 2nd attempt at no additional cost.`,
+                },
+                {
+                    title: 'Additional Benefits',
+                    content: ``,
+                    contentList: [
+                        `Participants are invited to a 90mins free coaching and support group call approximately 5days after the class. Details would be discussed in the class.`,
+                        `All participants get an invite to the ValueHut support platform where they can get access to our trainers.`,
+                    ],
+                },
+                {
+                    title: 'More information',
+                    content: ``,
+                    contentList: [
+                        `Mode of delivery is either In-Person or Virtual, view course dates for more details.`,
+                        `The price for the class is dependent on your home address.`,
+                    ],
+                },
+            ],
+            streams: [],
+            isTraining: true,
+        },
+        {
+            id: 3,
             title: 'Professional Scrum Master II',
             acronym: 'PSM II',
             description: `Professional Scrum Master II (PSM II) is an advanced course that helps students to 
@@ -291,7 +357,7 @@ export const training: TrainingObject = {
                     title: 'More information',
                     content: ``,
                     contentList: [
-                        `Mode of delivery is Virtual using Zoom`,
+                        `Mode of delivery is either In-Person or Virtual, view course dates for more details.`,
                         `The price for the class is dependent on your home address.`,
                     ],
                 },
@@ -406,7 +472,7 @@ export const training: TrainingObject = {
             isTraining: true,
         },
         {
-            id: 3,
+            id: 4,
             title: 'Professional Scrum Facilitation Skills',
             acronym: 'PSFS',
             description: `Professional Scrum Facilitation Skills™ is an interactive class designed to help 
@@ -460,7 +526,7 @@ export const training: TrainingObject = {
                     title: 'More information',
                     content: ``,
                     contentList: [
-                        `Mode of delivery is Virtual using Zoom`,
+                        `Mode of delivery is either In-Person or Virtual, view course dates for more details.`,
                         `The price for the class is dependent on your home address.`,
                     ],
                 },
@@ -540,7 +606,7 @@ export const training: TrainingObject = {
             isTraining: true,
         },
         {
-            id: 4,
+            id: 5,
             title: 'Professional Agile Leadership',
             acronym: 'PAL-E',
             description: `Professional Agile Leadership is a 2 day workshop to equip leaders and managers 
@@ -663,7 +729,7 @@ export const training: TrainingObject = {
             isTraining: true,
         },
         {
-            id: 5,
+            id: 6,
             title: 'Applying Professional Scrum',
             acronym: 'APS',
             description: `The APS is a hands-on, activity-based course in which students experience how Professional Scrum and the Scrum framework 
@@ -676,11 +742,28 @@ export const training: TrainingObject = {
             iconBorder: 'https://static.scrum.org/web/tokens/token-psm-color.svg',
             articles: [
                 {
-                    title: 'What will I learn?',
-                    content: `Through this online interactive mentoring and coaching program of 16 hours of learning, ending with a coaching session for 
-                    continuous growth, you will be able to advance the HOW TO dimension of ScrumMastering and agile coaching, and grow skills that help 
-                    improve your Scrum Team, organizations and yourself. You can join from anywhere online. However please note that there is pre-work 
-                    prior and homework after each online mentoring and coaching session (read more in commitment session).`,
+                    title: 'Course Learning Objectives',
+                    content: `The course objectives include:`,
+                    contentList: [
+                        `Learn about Agility and how Scrum differs from traditional plan-driven work models`,
+                        `Develop an Agile mindset by focusing on professionalism, experimentation, and outcomes`,
+                        `Learn (or relearn) the fundamentals of Scrum and how to apply them correctly`,
+                        `Develop an understanding of what it is like to use Scrum and if it is right for your team`,
+                        `Learn how to be a great Scrum Team member, or how to support a great Scrum Team`,
+                        `Leave the class with ways to identify common pitfalls and how to avoid them`,
+                        `Students use a set of proven practices throughout the class that can be used to enhance their application of Scrum`,
+                        `Leave with tools that help Identify first steps in applying Professional Scrum with your team`,
+                    ],
+                },
+                {
+                    title: 'Who should attend?',
+                    content: ``,
+                    contentList: [
+                        `Professionals that are interested in starting a career as a Scrum Master`,
+                        `Professionals that is seeking to improve their use of Scrum`,
+                        `Entire Teams that would like to refresh their knowledge of Scrum`,
+                        `Anyone that would explore the use of Scrum in product development`,
+                    ],
                 },
                 {
                     title: 'Assessment Certification',
