@@ -196,10 +196,10 @@ export const training: TrainingObject = {
                     filled: false,
                 },
                 {
-                    startDate: new Date('2023-09-08').toJSON(),
-                    classType: 'Virtual',
+                    startDate: new Date('2023-09-06').toJSON(),
+                    classType: 'Virtual - Immersive class',
                     endDate: new Date('2023-09-09').toJSON(),
-                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    time: '13:00 - 17:00 London, UK & Lagos, Africa',
                     price: [
                         {
                             region: 'United Kingdom',
@@ -298,9 +298,9 @@ export const training: TrainingObject = {
             ],
             streams: [                
                 {
-                    startDate: new Date('2023-08-22').toJSON(),
+                    startDate: new Date('2023-08-15').toJSON(),
                     classType: 'Virtual',
-                    endDate: new Date('2023-08-23').toJSON(),
+                    endDate: new Date('2023-08-16').toJSON(),
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
                     price: [
                         {
