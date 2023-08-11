@@ -34,11 +34,11 @@ export const consulting: ConsultingObject = {
         imageURL: '/images/mikael.jpg',
         articles: [
             {
-                title: 'Continous Delivery',
+                title: 'Continuous Delivery',
                 content: `A central theme to application delivery is enabling teams to build better products faster. 
                 Continuous Integration and Continuous Delivery are practices that enables the product teams gather feedback in near real time as the product is being built.
-                Continuous Delivery is a set of practices that provide to capabilities required to build, test, package and deploy application code into an environment; information such
-                as quality of the product, measures of technical debt is collect and displayed in report format that are easy to understand for entire product teams. 
+                Continuous Delivery is a set of practices that provide to the capabilities required to build, test, package and deploy application code into an environment. Information such
+                as quality of the product and measures of technical debt are collected; and presented in formats that are easy to understand for entire product teams. 
                 Our consultants have implemented and supported many organisations with their Continuous Delivery Implementation. Our typical process would involve:`,
                 contentList: [
                     `An evaluation of the current state including tools / technology being used`,
@@ -60,7 +60,7 @@ export const consulting: ConsultingObject = {
                 tests into the continuous delivery pipelines. At ValueHut, our consultants are able to: `,
                 contentList: [
                     `Train your product teams on approaches to Software Testing`,
-                    `Augument your product teams with our people; we work along side your product team improving the quality of the product`,
+                    `Augment your product teams with our people; we work along side your product team improving the quality of the product`,
                     `Implement a thorough automated test suite for existing or new products`,
                     `Design a Test Automation strategy for products across your organisation`,
                 ],
@@ -71,7 +71,7 @@ export const consulting: ConsultingObject = {
             },
             {
                 title: 'Product Backlog Management',
-                content: `Product Backlog Managemment is a set of Agile Practices that helps organisations structure their product backlog from idea to delivery of product to users.
+                content: `Product Backlog Management is a set of Agile Practices that helps organisations structure their product backlog from idea to delivery of product to users.
                 These practices are applicable to old product backlog that might seemingly out of control and new product backlogs for new initiatives. Some of the concerns that we help
                 address as part of this consulting service include:`,
 
