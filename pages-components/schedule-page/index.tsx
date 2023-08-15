@@ -24,7 +24,7 @@ function SchedulePage() {
                 </h1>
             </div>
 
-            <div className="max-w-[1440px] m-auto p-5">
+            <div className="max-w-5xl m-auto p-5">
                 <div className="flex justify-between mb-4">
                     <h3 className="text-3xl text-gray-dark">Our next classes</h3>
                 </div>
