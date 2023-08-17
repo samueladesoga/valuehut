@@ -40,6 +40,10 @@ export interface TrainingArticleTypes {
     imageURL?: string
     textAlign?: string
     imagePosition?: string
+    links?: {
+        url: string
+        label: string
+    }[]
 }
 
 export interface TrainingTypes {
@@ -89,6 +93,16 @@ export const training: TrainingObject = {
                         `Clarify the leadership role a Scrum Master play on the team`,
                         `Learn the skills, traits and behaviour shifts required to be a Scrum Master`,
                     ],
+                    links: [
+                        {
+                            label: 'Check this cool blog that talks about this topic in depth...',
+                            url: 'https://valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
+                        },
+                        {
+                            label: 'And this is a cool twitter link',
+                            url: 'https://twitter.com',
+                        },
+                    ],
                 },
                 {
                     title: 'Who should attend?',
@@ -121,6 +135,16 @@ export const training: TrainingObject = {
                     contentList: [
                         `Mode of delivery is either In-Person or Virtual, view course dates for more details.`,
                         `The price for the class is dependent on your home address.`,
+                    ],
+                    links: [
+                        {
+                            label: 'Check this cool blog that talks about this topic in depth...',
+                            url: 'https://valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
+                        },
+                        {
+                            label: 'And this is a cool twitter link',
+                            url: 'https://twitter.com',
+                        },
                     ],
                 },
             ],
@@ -296,7 +320,7 @@ export const training: TrainingObject = {
                     ],
                 },
             ],
-            streams: [                
+            streams: [
                 {
                     startDate: new Date('2023-08-15').toJSON(),
                     classType: 'Virtual',
