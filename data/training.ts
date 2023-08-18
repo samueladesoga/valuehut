@@ -129,7 +129,7 @@ export const training: TrainingObject = {
                     links: [
                         {
                             label: 'Click here for more reasons to train with ValueHut limited',
-                            url: 'https://valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
+                            url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
                         },
                     ],
                 },
@@ -307,7 +307,7 @@ export const training: TrainingObject = {
                     links: [
                         {
                             label: 'Click here for more reasons to train with ValueHut limited',
-                            url: 'https://valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
+                            url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
                         },
                     ],
                 },
@@ -485,7 +485,7 @@ export const training: TrainingObject = {
                     links: [
                         {
                             label: 'Click here for more reasons to train with ValueHut limited',
-                            url: 'https://valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
+                            url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
                         },
                     ],
                 },
@@ -625,7 +625,7 @@ export const training: TrainingObject = {
                     links: [
                         {
                             label: 'Click here for more reasons to train with ValueHut limited',
-                            url: 'https://valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
+                            url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
                         },
                     ],
                 },
@@ -754,7 +754,7 @@ export const training: TrainingObject = {
                     links: [
                         {
                             label: 'Click here for more reasons to train with ValueHut limited',
-                            url: 'https://valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
+                            url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
                         },
                     ],
                 },
@@ -886,7 +886,7 @@ export const training: TrainingObject = {
                     links: [
                         {
                             label: 'Click here for more reasons to train with ValueHut limited',
-                            url: 'https://valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
+                            url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
                         },
                     ],
                 },
