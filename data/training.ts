@@ -93,16 +93,6 @@ export const training: TrainingObject = {
                         `Clarify the leadership role a Scrum Master play on the team`,
                         `Learn the skills, traits and behaviour shifts required to be a Scrum Master`,
                     ],
-                    links: [
-                        {
-                            label: 'Check this cool blog that talks about this topic in depth...',
-                            url: 'https://valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
-                        },
-                        {
-                            label: 'And this is a cool twitter link',
-                            url: 'https://twitter.com',
-                        },
-                    ],
                 },
                 {
                     title: 'Who should attend?',
@@ -138,12 +128,8 @@ export const training: TrainingObject = {
                     ],
                     links: [
                         {
-                            label: 'Check this cool blog that talks about this topic in depth...',
+                            label: 'Click here for more reasons to train with ValueHut limited',
                             url: 'https://valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
-                        },
-                        {
-                            label: 'And this is a cool twitter link',
-                            url: 'https://twitter.com',
                         },
                     ],
                 },
@@ -318,6 +304,12 @@ export const training: TrainingObject = {
                         `Mode of delivery is either In-Person or Virtual, view course dates for more details.`,
                         `The price for the class is dependent on your home address.`,
                     ],
+                    links: [
+                        {
+                            label: 'Click here for more reasons to train with ValueHut limited',
+                            url: 'https://valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
+                        },
+                    ],
                 },
             ],
             streams: [
@@ -490,6 +482,12 @@ export const training: TrainingObject = {
                         `Mode of delivery is either In-Person or Virtual, view course dates for more details.`,
                         `The price for the class is dependent on your home address.`,
                     ],
+                    links: [
+                        {
+                            label: 'Click here for more reasons to train with ValueHut limited',
+                            url: 'https://valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
+                        },
+                    ],
                 },
             ],
             streams: [
@@ -624,6 +622,12 @@ export const training: TrainingObject = {
                         `Mode of delivery is either In-Person or Virtual, view course dates for more details.`,
                         `The price for the class is dependent on your home address.`,
                     ],
+                    links: [
+                        {
+                            label: 'Click here for more reasons to train with ValueHut limited',
+                            url: 'https://valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
+                        },
+                    ],
                 },
             ],
             streams: [
@@ -747,6 +751,12 @@ export const training: TrainingObject = {
                         `Mode of delivery is Virtual using Zoom`,
                         `The price for the class is dependent on your home address.`,
                     ],
+                    links: [
+                        {
+                            label: 'Click here for more reasons to train with ValueHut limited',
+                            url: 'https://valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
+                        },
+                    ],
                 },
             ],
             streams: [
@@ -865,6 +875,20 @@ export const training: TrainingObject = {
                     content: `All participants will receive a password to attempt the Professional Scrum Master I (PSM I) assessment. 
                     PSM class participants who attempt the PSM I assessment within 14 days of receiving their free password and 
                     do not score at least 85% will be granted a 2nd attempt at no additional cost.`,
+                },
+                {
+                    title: 'More information',
+                    content: ``,
+                    contentList: [
+                        `Mode of delivery is Virtual using Zoom`,
+                        `The price for the class is dependent on your home address.`,
+                    ],
+                    links: [
+                        {
+                            label: 'Click here for more reasons to train with ValueHut limited',
+                            url: 'https://valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
+                        },
+                    ],
                 },
             ],
             streams: [],
