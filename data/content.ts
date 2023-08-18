@@ -149,7 +149,7 @@ export const content = {
                                 across the entire organisation. 
 
                                 Our team of Agile Coaches, Scrum Masters and Agile Trainers provide support for the Leadership Team and the teams across the organisation. We measure the success 
-                                using context specific agile metrics built on the outcomes created within our coaching engagement.
+                                using context specific <a class="link" href="https://www.valuehut.co/blog/unlocking-organisational-agility-key-product-metrics-every-business-leader">agile metrics</a> built on the outcomes created within our coaching engagement.
                                 `,
                 },
                 {
