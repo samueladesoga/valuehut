@@ -55,7 +55,7 @@ const BookingForm: React.FC<BookingFormTypes> = ({ training, stream }) => {
                 </div>
             </div>
             <br />
-            <label>Where do you live?</label>
+            <label>Select your country of residence:</label>
             <br />
             
             <select onChange={handleChange} defaultValue={country}>

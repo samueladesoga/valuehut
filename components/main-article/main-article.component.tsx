@@ -97,7 +97,7 @@ const MainArticle: React.FC<MainArticleProps> = ({
                     {slug && (
                         <div className={mainArticleStyles.readMore}>
                             <Link href={`/blog/${slug}`}>
-                                <a>Read more</a>
+                                Read more
                             </Link>
                         </div>
                     )}
@@ -105,13 +105,13 @@ const MainArticle: React.FC<MainArticleProps> = ({
 
                 <div className={`${mainArticleStyles.main__article__buttons__block}`}>
                     {streams && (
-                        <Link href={`/services/training/schedule`}>
-                            <a className="button button-primary button-primary-default">Book Now</a>
+                        <Link className="button button-primary button-primary-default" href={`/services/training/schedule`}>
+                            Book Now
                         </Link>
                     )}
                     {isTraining && (
-                        <Link href={`/services/training/${header.toLowerCase().split(' ').join('-')}`}>
-                            <a className="button button-secondary button-secondary-default">Read More</a>
+                        <Link className="button button-secondary button-secondary-default" href={`/services/training/${header.toLowerCase().split(' ').join('-')}`}>
+                            Read More
                         </Link>
                     )}
                     {children}
