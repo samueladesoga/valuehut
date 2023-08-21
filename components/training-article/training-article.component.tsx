@@ -35,7 +35,7 @@ const TrainingArticle: React.FC<TrainingArticleProps> = ({ title, content, conte
                                         i: number,
                                     ) => (
                                         <li key={i} className="!text-primary-default">
-                                            <Link href={link.url}>{link.label}</Link>
+                                            <Link target="_blank" href={link.url}>{link.label}</Link>
                                         </li>
                                     ),
                                 )}
