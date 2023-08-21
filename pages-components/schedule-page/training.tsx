@@ -25,10 +25,10 @@ function WrapTraining({ training }: { training: TrainingTypes }) {
                     <p className="text-sm max-w-3xl">{_training.description}</p>
                     <div className="flex justify-end max-w-3xl">
                         <Link
-                            className="text-primary-default text-sm"
+                            className="text-primary-default text-xs font-medium"
                             href={_training.title.toLowerCase().split(' ').join('-')}
                         >
-                            <a className="text-primary-default text-xs font-medium">Read more...</a>
+                            Read more...
                         </Link>
                     </div>
                 </div>
