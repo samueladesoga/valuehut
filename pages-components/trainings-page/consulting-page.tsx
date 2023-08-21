@@ -36,8 +36,8 @@ const ConsultingPage: React.FC<ConsultingPageTypes> = ({ url, consulting, introd
                 })}
             </Suspense>
             <ServiceArticle title="For more details:" content="">
-                <Link href="/contact">
-                    <a className="button button-primary button-primary-large">Contact us</a>
+                <Link href="/contact" className="button button-primary button-primary-large">
+                    Contact us
                 </Link>
             </ServiceArticle>
         </div>

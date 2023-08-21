@@ -10,10 +10,8 @@ interface PopupMenuItemTypes {
 
 const PopupMenuItem: React.FC<PopupMenuItemTypes> = ({ label, href }) => {
     return (
-        <Link href={ href }>
-            <a className={`${itemStyles.popupMenuItem} link link-reverse`}>
-                { label }
-            </a>
+        <Link className={`${itemStyles.popupMenuItem} link link-reverse`} href={ href }>
+            { label }
         </Link>
     )
 }

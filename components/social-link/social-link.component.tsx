@@ -9,10 +9,8 @@ interface SocialLinkTypes {
 
 const SocialLink: React.FC<SocialLinkTypes> = ({ url, imageURL, children }) => {
     return (
-        <Link href={url} target="_blank">
-            <a target="_blank" className={`${slbStyles.socialLink}`}>
-                { children }
-            </a>
+        <Link href={url} target="_blank" className={`${slbStyles.socialLink}`}>
+            { children }
         </Link>
     )
 }

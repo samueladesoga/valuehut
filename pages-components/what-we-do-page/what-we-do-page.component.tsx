@@ -19,13 +19,10 @@ const WhatWeDoPage: React.FC<WhatWeDoTypes> = ({ introdution }) => {
                 <div className={`${wwdStyles.whatWeDoPage__content}`}>
                     {introdution.map((s) => (
                         <MainArticle imageURL={s.imageURL} header={s.header} description={s.description}>
-                            <Link href={`services/${s.header.toLowerCase()}`}>
-                                <a
-                                    className="button button-secondary button-secondary-default"
-                                    style={{ marginBottom: 30 }}
-                                >
-                                    Read More
-                                </a>
+                            <Link className="button button-secondary button-secondary-default" 
+                                 style={{ marginBottom: 30 }}
+                                 href={`services/${s.header.toLowerCase()}`}> 
+                                 Read More
                             </Link>
                         </MainArticle>
                     ))}
