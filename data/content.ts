@@ -153,7 +153,7 @@ export const content = {
                                 `,
                 },
                 {
-                    imageURL: '/images/mikael.jpg',
+                    imageURL: '/images/training.jpg',
                     header: 'Training',
                     description: `Our <a class="link" href="https://www.valuehut.co/services/training/schedule">training courses</a> have been carefully designed to provide individuals and teams with skills
                     that help kickstart the journey to better ways of working. These classes are structured to be engaging, 
@@ -164,7 +164,7 @@ export const content = {
                     and you can <a class="link" href="https://www.valuehut.co/contact">contact us</a> for bespoke or private classes.`,
                 },
                 {
-                    imageURL: '/images/cameron.jpg',
+                    imageURL: '/images/consulting.jpg',
                     header: 'Consulting',
                     description: `Established product delivery teams often face challenges related to adoption of Agile Practices such as Test Automation, Continuous Delivery, 
                     Product Backlog Management, Behaviour Driven Development and many more. Our team of Agile Consultants help your Organisation build internal capabilities with 

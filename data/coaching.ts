@@ -31,7 +31,7 @@ export const coaching: CoachingObject = {
     coaching: {
         title: 'Coaching',
         description: ``,
-        imageURL: './cameron.jpg',
+        imageURL: './fundamentalTraining.jpg',
         articles: [
             // {
             //     title: 'New Arcticle for test',

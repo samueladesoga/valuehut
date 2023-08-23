@@ -31,7 +31,7 @@ export const consulting: ConsultingObject = {
     consulting: {
         title: 'Agile Consulting',
         description: ``,
-        imageURL: '/images/mikael.jpg',
+        imageURL: '/images/consulting.jpg',
         articles: [
             {
                 title: 'Continuous Delivery',
@@ -95,7 +95,7 @@ export const consulting: ConsultingObject = {
                     `Product Backlog Management Techniques`,
                     `User Stories & Vertical Slicing of Stories`,
                 ],
-                imageURL: '/images/cameron.jpg',
+                imageURL: '/images/fundamentalTraining.jpg',
             },
         ],
     },
