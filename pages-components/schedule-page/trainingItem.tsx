@@ -40,7 +40,7 @@ function TrainingItem({ stream, training }: { stream: StreamTypes; training: Tra
             </div>
             <div className="mb-2">
                 <span className="flex items-center font-medium text-base text-gray-dark">
-                    {stream.classType.toLowerCase().includes('face') ? (
+                    {stream.classType.toLowerCase().includes('person') ? (
                         <>
                             <BsFillPersonFill color="#528ecc" className="mr-2" />
                             In Person
