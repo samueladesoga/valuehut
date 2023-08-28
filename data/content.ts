@@ -72,10 +72,11 @@ export const content = {
                 header: 'ValueHut Limited',
                 description: `ValueHut is an agile coaching and training consultancy that is helping 
                 Organisations transform into a network of interdependent teams across different business units.
-                We work with Leaders and the teams as everyone has got a part to play in the process
-                of transformation. Our coaches work with the teams to improve their cross-functional and self-managing capabilities.
-                In addition, we train, coach, and support Leaders to build the capabilities required to create the required
-                work environment for these teams to succeed.`,
+                The desire for transformation is driven by a need to respond to changing customer needs  and capabities 
+                to continually deliver product that delight users. We partner with Leaders and support the teams as everyone 
+                has a part to play in the transformation process. Our coaches work with the teams to improve their cross-functional 
+                and self-managing capabilities. Leaders are supported and coached to develop the capabilities required to create enabling
+                work environments for teams to succeed.`,
             },
             servicesArticle: {
                 header: 'Services',
