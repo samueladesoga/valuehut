@@ -31,7 +31,7 @@ function SchedulePage() {
                 <div className="mb-8">
                     <p className="text-base mb-2">Select Training:</p>
                     <div>
-                        <ul className="flex gap-2 text-sm">
+                        <ul className="flex flex-wrap gap-2 text-sm">
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
                                     'border-primary-default bg-primary-light': filters.length < 1 || filters.length > 4,
