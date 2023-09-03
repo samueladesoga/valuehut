@@ -50,7 +50,7 @@ function SchedulePage() {
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
-                                    'border-primary-default bg-primary-light': filters.includes('PSM'),
+                                    'border-primary-default bg-primary-light': filters.includes('PSM - Immersion'),
                                 })}
                                 onClick={() => handleFilter('PSM - Immersion')}
                             >
