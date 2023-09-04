@@ -1051,7 +1051,7 @@ export const training: TrainingObject = {
                     startDate: new Date('2023-10-25').toJSON(),
                     classType: 'Virtual',
                     endDate: new Date('2023-12-06').toJSON(),
-                    time: 'Every Wednesday, 17:00 - 18:00 London, UK & Lagos, Africa',
+                    time: 'Every Wednesday, 17:00 - 20:00 London, UK & Lagos, Africa',
                     price: [
                         {
                             region: 'United Kingdom',
