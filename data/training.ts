@@ -171,44 +171,9 @@ export const training: TrainingObject = {
                     filled: true,
                 },
                 {
-                    startDate: new Date('2023-09-08').toJSON(),
-                    classType: 'Virtual - Immersive class',
-                    endDate: new Date('2023-09-16').toJSON(),
-                    time: '13:00 - 17:00 London, UK & Lagos, Africa',
-                    price: [
-                        {
-                            region: 'United Kingdom',
-                            regionDescription: ['United Kingdom'],
-                            amount: 1000,
-                            currency: {
-                                name: 'gbp',
-                                symbol: '£',
-                                locale: 'en_GB',
-                                template: 'GBP',
-                            },
-                        },
-                        {
-                            region: 'Primary Market',
-                            regionDescription: primaryMarket,
-                            amount: 1000,
-                        },
-                        {
-                            region: 'Tertiary Market',
-                            regionDescription: tertiaryMarket,
-                            amount: 800,
-                        },
-                        {
-                            region: 'Secondary Market',
-                            regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 900,
-                        },
-                    ],
-                    filled: false,
-                },
-                {
-                    startDate: new Date('2023-10-13').toJSON(),
+                    startDate: new Date('2023-10-06').toJSON(),
                     classType: 'In-Person class',
-                    endDate: new Date('2023-10-14').toJSON(),
+                    endDate: new Date('2023-10-07').toJSON(),
                     time: '09:00 - 17:00 Lagos, Africa',
                     price: [
                         {
