@@ -870,74 +870,16 @@ export const training: TrainingObject = {
         },
         {
             id: 6,
-            title: 'Applying Professional Scrum',
-            acronym: 'APS',
-            description: `The APS is a hands-on, activity-based course in which students experience how Professional Scrum and the Scrum framework 
-                        improves their capacity to deliver value compared to traditional methods. Scrum enables a better way of working that highlights 
-                        the use of experimentation, incremental delivery of customer value, frequent feedback loops and the fostering of strong team 
-                        dynamics. The course is high recommended for teams that already work together in an organisation to improve their ways of working 
-                        using Scrum. The class is delivered over a two days (8hrs per day).`,
-            imageURL: '/images/morillo.jpg',
-            logo: 'aps.svg',
-            iconBorder: 'https://static.scrum.org/web/tokens/token-psm-color.svg',
-            articles: [
-                {
-                    title: 'Course Learning Objectives',
-                    content: `The course objectives include:`,
-                    contentList: [
-                        `Learn about Agility and how Scrum differs from traditional plan-driven work models`,
-                        `Develop an Agile mindset by focusing on professionalism, experimentation, and outcomes`,
-                        `Learn (or relearn) the fundamentals of Scrum and how to apply them correctly`,
-                        `Develop an understanding of what it is like to use Scrum and if it is right for your team`,
-                        `Learn how to be a great Scrum Team member, or how to support a great Scrum Team`,
-                        `Leave the class with ways to identify common pitfalls and how to avoid them`,
-                        `Students use a set of proven practices throughout the class that can be used to enhance their application of Scrum`,
-                        `Leave with tools that help Identify first steps in applying Professional Scrum with your team`,
-                    ],
-                },
-                {
-                    title: 'Who should attend?',
-                    content: ``,
-                    contentList: [
-                        `Professionals that are interested in starting a career as a Scrum Master`,
-                        `Professionals that is seeking to improve their use of Scrum`,
-                        `Entire Teams that would like to refresh their knowledge of Scrum`,
-                        `Anyone that would explore the use of Scrum in product development`,
-                    ],
-                },
-                {
-                    title: 'Assessment Certification',
-                    content: `All participants will receive a password to attempt the Professional Scrum Master I (PSM I) assessment. 
-                    PSM class participants who attempt the PSM I assessment within 14 days of receiving their free password and 
-                    do not score at least 85% will be granted a 2nd attempt at no additional cost.`,
-                },
-                {
-                    title: 'More information',
-                    content: ``,
-                    contentList: [
-                        `Mode of delivery is Virtual using Zoom`,
-                        `The price for the class is dependent on your home address.`,
-                    ],
-                    links: [
-                        {
-                            label: 'Click here for more reasons to train with ValueHut limited',
-                            url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
-                        },
-                    ],
-                },
-            ],
-            streams: [],
-            isTraining: true,
-        },
-        {
-            id: 7,
             title: 'Professional Scrum Master Immersion Program',
             acronym: 'PSM - Immersion',
-            description: `Professional Scrum Master (PSM) is an interactive, activity-based course 
-            where students gain a thorough understanding of Professional Scrum and the role of the 
-            Scrum Master. Students develop a deep understanding of the underlying principles of Scrum 
-            and the Agile mindset while learning the practices applied by successful Scrum Teams through 
-            a combination of discussion and exercises in class.`,
+            description: `Professional Scrum Master (PSM) Immersion program is an interactive, activity-based course 
+            that combines classroom sessions, outcome-based assignments and classroom reflection over 7 weeks to help 
+            students thoroughly understand Professional Scrum and the role of the Scrum Master.
+            
+            Students develop a deep understanding of the underlying principles of Scrum and the Agile mindset while learning 
+            the practices applied by successful Scrum Teams through a combination of class exercises and out-of-class 
+            outcome-based assignments.The PSM immersion program emphasises practical application beyond the classroom and helps 
+            students explore the principles of Professional Scrum in short weekly sessions, typically 3 hours over 7 weeks.`,
             imageURL: '/images/energy.jpg',
             logo: 'psm.svg',
             iconBorder: 'https://static.scrum.org/web/tokens/token-psm-color.svg',
@@ -1048,6 +990,67 @@ export const training: TrainingObject = {
                     filled: false,
                 },
             ],
+            isTraining: true,
+        },
+        {
+            id: 7,
+            title: 'Applying Professional Scrum',
+            acronym: 'APS',
+            description: `The APS is a hands-on, activity-based course in which students experience how Professional Scrum and the Scrum framework 
+                        improves their capacity to deliver value compared to traditional methods. Scrum enables a better way of working that highlights 
+                        the use of experimentation, incremental delivery of customer value, frequent feedback loops and the fostering of strong team 
+                        dynamics. The course is high recommended for teams that already work together in an organisation to improve their ways of working 
+                        using Scrum. The class is delivered over a two days (8hrs per day).`,
+            imageURL: '/images/morillo.jpg',
+            logo: 'aps.svg',
+            iconBorder: 'https://static.scrum.org/web/tokens/token-psm-color.svg',
+            articles: [
+                {
+                    title: 'Course Learning Objectives',
+                    content: `The course objectives include:`,
+                    contentList: [
+                        `Learn about Agility and how Scrum differs from traditional plan-driven work models`,
+                        `Develop an Agile mindset by focusing on professionalism, experimentation, and outcomes`,
+                        `Learn (or relearn) the fundamentals of Scrum and how to apply them correctly`,
+                        `Develop an understanding of what it is like to use Scrum and if it is right for your team`,
+                        `Learn how to be a great Scrum Team member, or how to support a great Scrum Team`,
+                        `Leave the class with ways to identify common pitfalls and how to avoid them`,
+                        `Students use a set of proven practices throughout the class that can be used to enhance their application of Scrum`,
+                        `Leave with tools that help Identify first steps in applying Professional Scrum with your team`,
+                    ],
+                },
+                {
+                    title: 'Who should attend?',
+                    content: ``,
+                    contentList: [
+                        `Professionals that are interested in starting a career as a Scrum Master`,
+                        `Professionals that is seeking to improve their use of Scrum`,
+                        `Entire Teams that would like to refresh their knowledge of Scrum`,
+                        `Anyone that would explore the use of Scrum in product development`,
+                    ],
+                },
+                {
+                    title: 'Assessment Certification',
+                    content: `All participants will receive a password to attempt the Professional Scrum Master I (PSM I) assessment. 
+                    PSM class participants who attempt the PSM I assessment within 14 days of receiving their free password and 
+                    do not score at least 85% will be granted a 2nd attempt at no additional cost.`,
+                },
+                {
+                    title: 'More information',
+                    content: ``,
+                    contentList: [
+                        `Mode of delivery is Virtual using Zoom`,
+                        `The price for the class is dependent on your home address.`,
+                    ],
+                    links: [
+                        {
+                            label: 'Click here for more reasons to train with ValueHut limited',
+                            url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
+                        },
+                    ],
+                },
+            ],
+            streams: [],
             isTraining: true,
         },
     ],
