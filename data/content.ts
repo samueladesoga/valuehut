@@ -156,7 +156,7 @@ export const content = {
                 {
                     imageURL: '/images/training.jpg',
                     header: 'Training',
-                    description: `Our <a class="link" href="https://www.valuehut.co/services/training/schedule">training courses</a> have been carefully designed to provide individuals and teams with skills
+                    description: `Our <a class="link" href="/services/training/schedule">training courses</a> have been carefully designed to provide individuals and teams with skills
                     that help kickstart the journey to better ways of working. These classes are structured to be engaging, 
                     interactive and laced with loads of real life case studies; including the experiences of our trainers.
 
