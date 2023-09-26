@@ -567,7 +567,7 @@ export const training: TrainingObject = {
         {
             id: 4,
             title: 'Professional Scrum Facilitation Skills',
-            acronym: 'PSFS',
+            acronym: 'PSF Skills',
             description: `Professional Scrum Facilitation Skills™ is an interactive class designed to help 
             Scrum Masters, Scrum Team Members and Leaders working with the Scrum Framework develop a facilitator’s mindset, 
             proficiency in facilitation skills, and learn when and how to select effective techniques for various circumstances. 
@@ -575,7 +575,7 @@ export const training: TrainingObject = {
             all leading to better outcomes. Often times, new Scrum Practitioners struggle with how to facilitate Scrum Event and this 
             class aims to provide a set of facilitation tools that participants can try out the very next day with their scrum teams.`,
             imageURL: '/images/energy.jpg',
-            logo: 'psfs.svg',
+            logo: 'PSF Skills.svg',
             iconBorder: 'https://static.scrum.org/web/tokens/token-psm-color.svg',
             articles: [
                 {
@@ -741,6 +741,149 @@ export const training: TrainingObject = {
         },
         {
             id: 5,
+            title: 'Professional Scrum Product Backlog Management Skills',
+            acronym: 'PSPBM Skills',
+            description: `Professional Scrum Product Backlog Management Skills™ is an interactive course 
+            designed to help Scrum practitioners improve their ability to manage all aspects of the Product 
+            Backlog and improve communication with stakeholders.
+
+            In this one-day skills-building course, participants will learn techniques and methods for 
+            effectively managing a Product Backlog that clearly expresses the product's future vision and 
+            brings transparency to what is most valuable for the Scrum Team to work on to delight stakeholders 
+            and customers. Students will gain hands-on experience with refinement techniques such as decomposing 
+            and slicing Product Backlog items, as well as an understanding of how simplicity may significantly 
+            improve complex Product Backlogs.`,
+            imageURL: '/images/energy.jpg',
+            logo: 'PSPBM Skills.svg',
+            iconBorder: 'https://static.scrum.org/web/tokens/token-psm-color.svg',
+            articles: [
+                {
+                    title: 'Course Learning Objectives',
+                    content: `The course objectives include:`,
+                    contentList: [
+                        `Apply practical techniques to create, refine, and order the Product Backlog`,
+                        `Identify and effectively communicate with stakeholders`,
+                        `Capture stakeholder’s needs on a Product Backlog`,
+                        `Find better ways to improve the transparency of  the Product Backlog`,
+                        `Use empiricism as a competitive advantage for the organisation`,
+                    ],
+                },
+                {
+                    title: 'Who should attend?',
+                    content: ``,
+                    contentList: [
+                        `Scrum Practitioners who are currently working as Product Owners and are looking for practical ways to manage their Stakeholders and Product Backlog.`,
+                        `Professionals interested in learning essential Product Owner practices`,
+                        `Product Owners looking to improve their understanding of their customers and stakeholders`,
+                        `Scrum Masters wishing to be an effective coach to Product Owners`,
+                        `Product Managers and Business Analysts looking to improve their Product Backlog management skills`,
+                    ],
+                },
+                {
+                    title: 'Assessment Certification',
+                    content: `All participants completing the Professional Scrum Product Backlog Management Skills course will 
+                    receive a password to attempt the Professional Scrum Product Backlog Management Skills (PSPBMS) assessment. 
+                    PSPBMS class participants who attempt the PSPBMS assessment within 14 days of receiving their free password 
+                    and do not score at least 85% will be granted a 2nd attempt at no additional cost.`,
+                },
+                {
+                    title: 'Additional Benefits',
+                    content: ``,
+                    contentList: [
+                        `All participants get an invite to the ValueHut support platform where they can get access to our trainers.`,
+                    ],
+                },
+                {
+                    title: 'More information',
+                    content: ``,
+                    contentList: [
+                        `Mode of delivery is either In-Person or Virtual, view course dates for more details.`,
+                        `The price for the class is dependent on your home address.`,
+                    ],
+                    links: [
+                        {
+                            label: 'Click here for more reasons to train with ValueHut limited',
+                            url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
+                        },
+                    ],
+                },
+            ],
+            streams: [
+                {
+                    startDate: new Date('2023-10-05').toJSON(),
+                    endDate: new Date('2023-10-05').toJSON(),
+                    classType: 'Virtual',
+                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 450,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 500,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 300,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 400,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    startDate: new Date('2023-11-03').toJSON(),
+                    endDate: new Date('2023-11-03').toJSON(),
+                    classType: 'Virtual',
+                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 450,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 500,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 300,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 400,
+                        },
+                    ],
+                    filled: false,
+                },
+            ],
+            isTraining: true,
+        },
+        {
+            id: 6,
             title: 'Professional Agile Leadership',
             acronym: 'PAL-E',
             description: `Professional Agile Leadership is a 2 day workshop to equip leaders and managers 
@@ -869,7 +1012,7 @@ export const training: TrainingObject = {
             isTraining: true,
         },
         {
-            id: 6,
+            id: 7,
             title: 'Professional Scrum Master Immersion Program',
             acronym: 'PSM - Immersion',
             description: `Professional Scrum Master (PSM) Immersion program is an interactive, activity-based course 
@@ -993,7 +1136,7 @@ export const training: TrainingObject = {
             isTraining: true,
         },
         {
-            id: 7,
+            id: 8,
             title: 'Applying Professional Scrum',
             acronym: 'APS',
             description: `The APS is a hands-on, activity-based course in which students experience how Professional Scrum and the Scrum framework 

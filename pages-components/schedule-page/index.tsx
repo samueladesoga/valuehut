@@ -66,11 +66,19 @@ function SchedulePage() {
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
-                                    'border-primary-default bg-primary-light': filters.includes('PSFS'),
+                                    'border-primary-default bg-primary-light': filters.includes('PSF Skills'),
                                 })}
-                                onClick={() => handleFilter('PSFS')}
+                                onClick={() => handleFilter('PSF Skills')}
                             >
-                                PSFS
+                                PSF Skills
+                            </li>
+                            <li
+                                className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
+                                    'border-primary-default bg-primary-light': filters.includes('PSPBM Skills'),
+                                })}
+                                onClick={() => handleFilter('PSPBM Skills')}
+                            >
+                                PSPBM Skills
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
