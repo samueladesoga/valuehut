@@ -125,6 +125,7 @@ export const training: TrainingObject = {
                     contentList: [
                         `Mode of delivery is either In-Person or Virtual, view course dates for more details.`,
                         `The price for the class is dependent on your home address.`,
+                        `Attendees are able to claim 14 PDU credits from the Project Management Institute (PMI) after attending this two-day course.`,
                     ],
                     links: [
                         {
@@ -303,6 +304,7 @@ export const training: TrainingObject = {
                     contentList: [
                         `Mode of delivery is either In-Person or Virtual, view course dates for more details.`,
                         `The price for the class is dependent on your home address.`,
+                        `Attendees are able to claim 14 PDU credits from the Project Management Institute (PMI) after attending this two-day course.`,
                     ],
                     links: [
                         {
@@ -481,6 +483,7 @@ export const training: TrainingObject = {
                     contentList: [
                         `Mode of delivery is either In-Person or Virtual, view course dates for more details.`,
                         `The price for the class is dependent on your home address.`,
+                        `Attendees are able to claim 14 PDU credits from the Project Management Institute (PMI) after attending this two-day course.`,
                     ],
                     links: [
                         {
@@ -621,6 +624,7 @@ export const training: TrainingObject = {
                     contentList: [
                         `Mode of delivery is either In-Person or Virtual, view course dates for more details.`,
                         `The price for the class is dependent on your home address.`,
+                        `Attendees are able to claim 7 PDU credits from the Project Management Institute (PMI) after attending this one-day course.`,
                     ],
                     links: [
                         {
@@ -799,6 +803,7 @@ export const training: TrainingObject = {
                     contentList: [
                         `Mode of delivery is either In-Person or Virtual, view course dates for more details.`,
                         `The price for the class is dependent on your home address.`,
+                        `Attendees are able to claim 7 PDU credits from the Project Management Institute (PMI) after attending this one-day course.`,
                     ],
                     links: [
                         {
@@ -928,6 +933,7 @@ export const training: TrainingObject = {
                     contentList: [
                         `Mode of delivery is Virtual using Zoom`,
                         `The price for the class is dependent on your home address.`,
+                        `Attendees are able to claim 14 PDU credits from the Project Management Institute (PMI) after attending this two-day course.`,
                     ],
                     links: [
                         {
@@ -1087,6 +1093,7 @@ export const training: TrainingObject = {
                     contentList: [
                         `Mode of delivery is either In-Person or Virtual, view course dates for more details.`,
                         `The price for the class is dependent on your home address.`,
+                        `Attendees are able to claim 14 PDU credits from the Project Management Institute (PMI) after attending this course.`,
                     ],
                     links: [
                         {
@@ -1184,6 +1191,7 @@ export const training: TrainingObject = {
                     contentList: [
                         `Mode of delivery is Virtual using Zoom`,
                         `The price for the class is dependent on your home address.`,
+                        `Attendees are able to claim 14 PDU credits from the Project Management Institute (PMI) after attending this two-day course.`,
                     ],
                     links: [
                         {
