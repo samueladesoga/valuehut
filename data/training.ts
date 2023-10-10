@@ -566,41 +566,6 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    startDate: new Date('2023-08-25').toJSON(),
-                    endDate: new Date('2023-08-25').toJSON(),
-                    classType: 'Virtual',
-                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
-                    price: [
-                        {
-                            region: 'United Kingdom',
-                            regionDescription: ['United Kingdom'],
-                            amount: 600,
-                            currency: {
-                                name: 'gbp',
-                                symbol: '£',
-                                locale: 'en_GB',
-                                template: 'GBP',
-                            },
-                        },
-                        {
-                            region: 'Primary Market',
-                            regionDescription: primaryMarket,
-                            amount: 600,
-                        },
-                        {
-                            region: 'Tertiary Market',
-                            regionDescription: tertiaryMarket,
-                            amount: 450,
-                        },
-                        {
-                            region: 'Secondary Market',
-                            regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 500,
-                        },
-                    ],
-                    filled: true,
-                },
-                {
                     startDate: new Date('2023-09-30').toJSON(),
                     endDate: new Date('2023-09-30').toJSON(),
                     classType: 'Virtual',
@@ -633,7 +598,7 @@ export const training: TrainingObject = {
                             amount: 500,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
                     startDate: new Date('2023-11-30').toJSON(),
