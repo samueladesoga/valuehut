@@ -492,7 +492,7 @@ export const training: TrainingObject = {
                             amount: 950,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
             ],
             isTraining: true,
@@ -718,7 +718,7 @@ export const training: TrainingObject = {
                         {
                             region: 'United Kingdom',
                             regionDescription: ['United Kingdom'],
-                            amount: 450,
+                            amount: 475,
                             currency: {
                                 name: 'gbp',
                                 symbol: '£',
@@ -753,7 +753,7 @@ export const training: TrainingObject = {
                         {
                             region: 'United Kingdom',
                             regionDescription: ['United Kingdom'],
-                            amount: 450,
+                            amount: 475,
                             currency: {
                                 name: 'gbp',
                                 symbol: '£',
