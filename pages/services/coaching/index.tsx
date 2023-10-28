@@ -6,15 +6,15 @@ import { coaching } from '../../../data/coaching';
 import ConsultingPage from '../../../pages-components/trainings-page/consulting-page';
 
 export function getStaticProps() {
-    const introdution = content.pages.whatWeDo.introdution;
+    const introduction = content.pages.whatWeDo.introduction;
     return {
         props: { 
-            introdution
+            introduction
         }
     }
 }
 
-const Coaching: NextPage = ({ introdution }: any) => {
+const Coaching: NextPage = ({ introduction }: any) => {
     const [coaching, setCoaching] = useState({
         title: " ",
         imageURL: " ",
@@ -40,7 +40,7 @@ const Coaching: NextPage = ({ introdution }: any) => {
                 <meta name="description" content="Transform your organisation with ValueHut. Our Agile Coaching and Consulting Service by ValueHut, improving teams effectiveness and efficiency. For more details, our services contact us today!" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <ConsultingPage url={"coaching"} consulting={coaching} introdution={content.pages.whatWeDo.introdution} />
+            <ConsultingPage url={"coaching"} consulting={coaching} introduction={content.pages.whatWeDo.introduction} />
         </>
     )
 }

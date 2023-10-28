@@ -5,21 +5,21 @@ import MainArticle from '../../components/main-article/main-article.component';
 import Spinner from '../../components/spinner/spinner.component';
 
 import { TrainingTypes } from '../../data/training';
-import { IntrodutionTypes } from '../../data/content';
+import { introductionTypes } from '../../data/content';
 import TrustBox from '../../components/trustbox/trustbox.component';
 
 interface TrainingsPageTypes {
     url: string;
     trainings: TrainingTypes[];
-    introdution: any;
+    introduction: any;
     children?: any;
 }
 
-const TrainingsPage: React.FC<TrainingsPageTypes> = ({ url, trainings, introdution }) => {
-    const introdutionArticle = introdution.filter((item: any) => item.header.toLowerCase() === 'training')[0];
+const TrainingsPage: React.FC<TrainingsPageTypes> = ({ url, trainings, introduction }) => {
+    const introductionArticle = introduction.filter((item: any) => item.header.toLowerCase() === 'training')[0];
     return (
         <div className={`${trainingsStyles.trainingsPage}`}>
-            <MainArticle {...introdutionArticle} isHeader />
+            <MainArticle {...introductionArticle} isHeader />
             <Suspense fallback={<Spinner />}>
                 {trainings.map((training: TrainingTypes, i: number) => {
                     return (

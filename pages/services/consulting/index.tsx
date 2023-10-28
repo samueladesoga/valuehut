@@ -6,15 +6,15 @@ import ConsultingPage from '../../../pages-components/trainings-page/consulting-
 import Spinner from '../../../components/spinner/spinner.component';
 
 export function getStaticProps() {
-    const introdution = content.pages.whatWeDo.introdution;
+    const introduction = content.pages.whatWeDo.introduction;
     return {
         props: {
-            introdution,
+            introduction,
         },
     };
 }
 
-const Consulting: NextPage = ({ introdution }: any) => {
+const Consulting: NextPage = ({ introduction }: any) => {
     const [consulting, setConsulting] = useState({
         title: ' ',
         imageURL: ' ',
@@ -51,7 +51,7 @@ const Consulting: NextPage = ({ introdution }: any) => {
                 <ConsultingPage
                     url={'consulting'}
                     consulting={consulting}
-                    introdution={content.pages.whatWeDo.introdution}
+                    introduction={content.pages.whatWeDo.introduction}
                 />
             )}
         </>

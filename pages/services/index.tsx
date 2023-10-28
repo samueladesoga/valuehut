@@ -4,15 +4,15 @@ import WhatWeDoPage from '../../pages-components/what-we-do-page/what-we-do-page
 import { content } from '../../data/content';
 
 export function getStaticProps() {
-    const introdution = content.pages.whatWeDo.introdution;
+    const introduction = content.pages.whatWeDo.introduction;
     return {
         props: {
-            introdution,
+            introduction,
         },
     };
 }
 
-const Services: NextPage = ({ introdution }: any) => {
+const Services: NextPage = ({ introduction }: any) => {
     return (
         <>
             <Head>
@@ -25,7 +25,7 @@ const Services: NextPage = ({ introdution }: any) => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <WhatWeDoPage introdution={introdution} />
+            <WhatWeDoPage introduction={introduction} />
         </>
     );
 };

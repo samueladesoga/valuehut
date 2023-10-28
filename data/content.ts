@@ -13,12 +13,12 @@ export interface ContactDataTypes {
     phone: string | number;
 }
 
-export interface IntrodutionTypes {
+export interface introductionTypes {
     [key: string]: ArticleTypes;
 }
 
 export interface WhatWeDoTypes {
-    introdution: ArticleTypes[];
+    introduction: ArticleTypes[];
 }
 
 export interface PreviousClientsTypes {
@@ -140,7 +140,7 @@ export const content = {
             ],
         },
         whatWeDo: {
-            introdution: [
+            introduction: [
                 {
                     imageURL: '/images/coaching-1.png',
                     header: 'Coaching',

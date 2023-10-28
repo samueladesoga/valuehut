@@ -3,13 +3,13 @@ import wwdStyles from './what-we-do-page.module.scss';
 import Link from 'next/link';
 import MainArticle from '../../components/main-article/main-article.component';
 
-import { WhatWeDoTypes, IntrodutionTypes } from '../../data/content';
+import { WhatWeDoTypes, introductionTypes } from '../../data/content';
 
 // interface WhatWeDoTypes {
 //     children?: any
 // }
 
-const WhatWeDoPage: React.FC<WhatWeDoTypes> = ({ introdution }) => {
+const WhatWeDoPage: React.FC<WhatWeDoTypes> = ({ introduction }) => {
     return (
         <div className={`${wwdStyles.servicesPage}`}>
             <div className={`${wwdStyles.whatWeDoPage}`}>
@@ -17,7 +17,7 @@ const WhatWeDoPage: React.FC<WhatWeDoTypes> = ({ introdution }) => {
                     <h1>Our Services</h1>
                 </div>
                 <div className={`${wwdStyles.whatWeDoPage__content}`}>
-                    {introdution.map((s) => (
+                    {introduction.map((s) => (
                         <MainArticle imageURL={s.imageURL} header={s.header} description={s.description}>
                             <Link className="button button-secondary button-secondary-default" 
                                  style={{ marginBottom: 30 }}

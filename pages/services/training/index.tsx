@@ -7,15 +7,15 @@ import Spinner from '../../../components/spinner/spinner.component';
 import TrainingsPage from '../../../pages-components/trainings-page/trainings-page.component';
 
 export function getStaticProps() {
-    const introdution = content.pages.whatWeDo.introdution;
+    const introduction = content.pages.whatWeDo.introduction;
     return {
         props: { 
-            introdution
+            introduction
         }
     }
 }
 
-const Trainings: NextPage = ({ introdution }: any) => {
+const Trainings: NextPage = ({ introduction }: any) => {
     const [trainings, setTrainings] = useState(training.training);
     const [loading, setLoading] = useState(false)
     useEffect(() => {
@@ -35,7 +35,7 @@ const Trainings: NextPage = ({ introdution }: any) => {
                 <meta name="description" content="Professional Scrum and Agile Training offered by ValueHut Limited. Gain valuable insights and practical knowledge to develop your organisational agile capabilities. Contact us today!" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <TrainingsPage url={"training"} trainings={trainings} introdution={content.pages.whatWeDo.introdution} />
+            <TrainingsPage url={"training"} trainings={trainings} introduction={content.pages.whatWeDo.introduction} />
         </>
     )
 }

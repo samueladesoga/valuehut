@@ -6,21 +6,21 @@ import Spinner from '../../components/spinner/spinner.component';
 
 import { TrainingTypes } from '../../data/training';
 import { consulting, ConsultingTypes, ConsultingArticleTypes } from '../../data/consulting';
-import { content, IntrodutionTypes } from '../../data/content';
+import { content, introductionTypes } from '../../data/content';
 import ServiceArticle from '../../components/service-article/service-article.component';
 
 interface ConsultingPageTypes {
     url: string;
     consulting: ConsultingTypes;
-    introdution: any;
+    introduction: any;
     children?: any;
 }
 
-const ConsultingPage: React.FC<ConsultingPageTypes> = ({ url, consulting, introdution }) => {
-    const introdutionArticle = introdution.filter((item: any) => item.header.toLowerCase() === url)[0];
+const ConsultingPage: React.FC<ConsultingPageTypes> = ({ url, consulting, introduction }) => {
+    const introductionArticle = introduction.filter((item: any) => item.header.toLowerCase() === url)[0];
     return (
         <div className={`${trainingsStyles.trainingsPage}`}>
-            <MainArticle {...introdutionArticle} isHeader />
+            <MainArticle {...introductionArticle} isHeader />
             <Suspense fallback={<Spinner />}>
                 {consulting.articles.map((consult: ConsultingArticleTypes, i: number) => {
                     return (
