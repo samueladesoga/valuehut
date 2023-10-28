@@ -26,10 +26,10 @@ const Contact: NextPage<ContactProps> = ({ howto }) => {
     return (
         <>
             <Head>
-                <title>Contact us - Valuehut</title>
+                <title>Coaching Agile Organisation and Teams; Improving Effectiveness and Efficiency | Valuehut</title>
                 <meta
                     name="description"
-                    content="ValueHut is an agile coaching and training consultancy that is helping Organisations to rethink their ways of working in other to help these organisations deliver most value to their customers."
+                    content="Improve your organisation's agile capabilities with ValueHut; our services include Coaching, Consultancy and Training. Contact us today for a no-obligation consultation. Visit Now!"
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

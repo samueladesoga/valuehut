@@ -17,12 +17,11 @@ const Services: NextPage = ({ introdution }: any) => {
         <>
             <Head>
                 <title>
-                    Valuehut - Agile Coaching, Training and Consultancy Services delivered all over Africa including
-                    Lagos, Abuja, Accra, Nairobi.
+                    Agile Coaching, Training and Consultancy Service | Valuehut
                 </title>
                 <meta
                     name="description"
-                    content="Agile Coaching, Training and Consultancy Services delivered all over Africa including Lagos, Abuja, Accra, Nairobi."
+                    content="Transforming your organisation, the leading agile coaching, training, and consultancy service offered by Valuehut. Drive innovation by improving effectivesness and efficiency."
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

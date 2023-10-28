@@ -38,10 +38,10 @@ const Consulting: NextPage = ({ introdution }: any) => {
     return (
         <>
             <Head>
-                <title>ValueHut Limited - Consultancy</title>
+                <title>Agile Consultancy Services | ValueHut</title>
                 <meta
                     name="description"
-                    content="ValueHut's consultants are able to support you after your training to help embed the Agile Practices into your day to day operations. Our consultants are based in Lagos, Accra, Nairobi and all over the world."
+                    content="Our agile consultancy services include Team Augumentation, Product Backlog Management services, Product Inception and Discovery Services, Test Automation and Continous Delivery Capabilities. Try ValueHut today!"
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
