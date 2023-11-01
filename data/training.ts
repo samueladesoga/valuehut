@@ -425,41 +425,6 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    startDate: new Date('2023-07-28').toJSON(),
-                    endDate: new Date('2023-07-29').toJSON(),
-                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
-                    classType: 'Virtual',
-                    price: [
-                        {
-                            region: 'United Kingdom',
-                            regionDescription: ['United Kingdom'],
-                            amount: 1100,
-                            currency: {
-                                name: 'gbp',
-                                symbol: '£',
-                                locale: 'en_GB',
-                                template: 'GBP',
-                            },
-                        },
-                        {
-                            region: 'Primary Market',
-                            regionDescription: primaryMarket,
-                            amount: 1100,
-                        },
-                        {
-                            region: 'Tertiary Market',
-                            regionDescription: tertiaryMarket,
-                            amount: 850,
-                        },
-                        {
-                            region: 'Secondary Market',
-                            regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 950,
-                        },
-                    ],
-                    filled: true,
-                },
-                {
                     startDate: new Date('2023-10-20').toJSON(),
                     endDate: new Date('2023-10-21').toJSON(),
                     classType: 'In-Person class',
@@ -493,6 +458,41 @@ export const training: TrainingObject = {
                         },
                     ],
                     filled: true,
+                },
+                {
+                    startDate: new Date('2024-03-22').toJSON(),
+                    endDate: new Date('2024-03-23').toJSON(),
+                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    classType: 'Virtual',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1100,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1100,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 850,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 950,
+                        },
+                    ],
+                    filled: false,
                 },
             ],
             isTraining: true,
@@ -601,10 +601,10 @@ export const training: TrainingObject = {
                     filled: true,
                 },
                 {
-                    startDate: new Date('2023-11-30').toJSON(),
-                    endDate: new Date('2023-11-30').toJSON(),
+                    startDate: new Date('2023-12-01').toJSON(),
+                    endDate: new Date('2023-12-01').toJSON(),
                     classType: 'Virtual',
-                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    time: '9:00 - 17:00 GMT (10:00 - 18:00 WAT)',
                     price: [
                         {
                             region: 'United Kingdom',
