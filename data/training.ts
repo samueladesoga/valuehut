@@ -175,7 +175,7 @@ export const training: TrainingObject = {
                     startDate: new Date('2023-12-08').toJSON(),
                     classType: 'Virtual class',
                     endDate: new Date('2023-12-09').toJSON(),
-                    time: '09:00 - 17:00 London, UK & Lagos, Africa',
+                    time: '09:00 - 17:00 GMT',
                     price: [
                         {
                             region: 'United Kingdom',
@@ -319,7 +319,7 @@ export const training: TrainingObject = {
                     startDate: new Date('2023-11-10').toJSON(),
                     classType: 'Virtual',
                     endDate: new Date('2023-11-11').toJSON(),
-                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    time: '9:00 - 17:00 GMT',
                     price: [
                         {
                             region: 'United Kingdom',
@@ -877,7 +877,7 @@ export const training: TrainingObject = {
                 {
                     startDate: new Date('2023-12-19').toJSON(),
                     endDate: new Date('2023-12-20').toJSON(),
-                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    time: '9:00 - 17:00 GMT',
                     classType: 'Virtual',
                     price: [
                         {
@@ -1032,7 +1032,7 @@ export const training: TrainingObject = {
                             amount: 1100,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
             ],
             isTraining: true,
