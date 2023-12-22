@@ -206,6 +206,41 @@ export const training: TrainingObject = {
                     ],
                     filled: false,
                 },
+                {
+                    startDate: new Date('2024-04-12').toJSON(),
+                    classType: 'Virtual class',
+                    endDate: new Date('2024-04-13').toJSON(),
+                    time: '09:00 - 17:00 GMT',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1000,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1000,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 800,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 900,
+                        },
+                    ],
+                    filled: false,
+                },
             ],
             isTraining: true,
         },
@@ -462,6 +497,41 @@ export const training: TrainingObject = {
                 {
                     startDate: new Date('2024-03-22').toJSON(),
                     endDate: new Date('2024-03-23').toJSON(),
+                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    classType: 'Virtual',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1100,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1100,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 850,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 950,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    startDate: new Date('2024-05-24').toJSON(),
+                    endDate: new Date('2024-05-25').toJSON(),
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
                     classType: 'Virtual',
                     price: [
@@ -910,9 +980,9 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    startDate: new Date('2023-06-09').toJSON(),
-                    endDate: new Date('2023-06-10').toJSON(),
-                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    startDate: new Date('2023-12-19').toJSON(),
+                    endDate: new Date('2023-12-20').toJSON(),
+                    time: '9:00 - 17:00 GMT',
                     classType: 'Virtual',
                     price: [
                         {
@@ -945,8 +1015,8 @@ export const training: TrainingObject = {
                     filled: true,
                 },
                 {
-                    startDate: new Date('2023-12-19').toJSON(),
-                    endDate: new Date('2023-12-20').toJSON(),
+                    startDate: new Date('2024-03-15').toJSON(),
+                    endDate: new Date('2024-03-16').toJSON(),
                     time: '9:00 - 17:00 GMT',
                     classType: 'Virtual',
                     price: [
@@ -980,8 +1050,8 @@ export const training: TrainingObject = {
                     filled: false,
                 },
                 {
-                    startDate: new Date('2024-03-15').toJSON(),
-                    endDate: new Date('2024-03-16').toJSON(),
+                    startDate: new Date('2024-10-18').toJSON(),
+                    endDate: new Date('2024-10-19').toJSON(),
                     time: '9:00 - 17:00 GMT',
                     classType: 'Virtual',
                     price: [
@@ -1019,131 +1089,6 @@ export const training: TrainingObject = {
         },
         {
             id: 7,
-            title: 'Professional Scrum Master Immersion Program',
-            acronym: 'PSM - Immersion',
-            description: `Professional Scrum Master (PSM) Immersion program is an interactive, activity-based course 
-            that combines classroom sessions, outcome-based assignments and classroom reflection over 7 weeks to help 
-            students thoroughly understand Professional Scrum and the role of the Scrum Master.
-            
-            Students develop a deep understanding of the underlying principles of Scrum and the Agile mindset while learning 
-            the practices applied by successful Scrum Teams through a combination of class exercises and out-of-class 
-            outcome-based assignments.The PSM immersion program emphasises practical application beyond the classroom and helps 
-            students explore the principles of Professional Scrum in short weekly sessions, typically 3 hours over 7 weeks.`,
-            imageURL: '/images/energy.jpg',
-            logo: 'psm.svg',
-            iconBorder: 'https://static.scrum.org/web/tokens/token-psm-color.svg',
-            articles: [
-                {
-                    title: 'Course Learning Objectives',
-                    content: `The course objectives include:`,
-                    contentList: [
-                        `Help Scrum Teams deliver value to their organization`,
-                        `Understand the theory and principles behind Scrum such as Empiricism`,
-                        `Understand how each part of the Scrum framework ties back to the principles and theory`,
-                        `Understand uncertainty and complexity in product delivery`,
-                        `Understand the meaning and importance of the Scrum values`,
-                        `Learn what Done means and why it is crucial to transparency`,
-                        `Know how to use the Product Backlog to plan with agility`,
-                        `Understand the importance of self-managing teams and the role of Scrum Master in developing the self-managing abilities of the Scrum Team`,
-                        `Clarify the leadership role a Scrum Master play on the team`,
-                        `Learn the skills, traits and behaviour shifts required to be a Scrum Master`,
-                    ],
-                },
-                {
-                    title: 'Structure of Immersion Program',
-                    content: `Each session runs for 3hrs and at the end of each week, attendees will be given an assignment to be reviewed in the subsequent session.`,
-                    contentList: [
-                        `Week 1: Theory & First Principles`,
-                        `Week 2: The Scrum Framework`,
-                        `Week 3: Done`,
-                        `Week 4: Product Delivery with Scrum`,
-                        `Week 5: People & Teams`,
-                        `Week 6: The Scrum Master`,
-                        `Week 7: Debrief on How to Become a great scrum master`,
-                    ],
-                },
-
-                {
-                    title: 'Who should attend?',
-                    content: ``,
-                    contentList: [
-                        `Practitioners that are interested in starting a career as a Scrum Master`,
-                        `Scrum Masters, Agile/Scrum Coaches and consultant looking to improve their use of Scrum`,
-                        `Anyone involved in product delivery using Scrum`,
-                    ],
-                },
-                {
-                    title: 'Assessment Certification',
-                    content: `All participants completing the Professional Scrum Master course will receive 
-                    a password to attempt the Professional Scrum Master I (PSM I) assessment. 
-                    The industry-recognized PSM I certification requires a minimum passing score of 85%. 
-                    PSM class participants who attempt the PSM I assessment within 14 days of receiving their 
-                    free password and do not score at least 85% will be granted a 2nd attempt at no additional cost.`,
-                },
-                {
-                    title: 'Additional Benefits',
-                    content: ``,
-                    contentList: [
-                        `All participants get an invite to the ValueHut support platform where they can get access to our trainers.`,
-                    ],
-                },
-                {
-                    title: 'More information',
-                    content: ``,
-                    contentList: [
-                        `Mode of delivery is either In-Person or Virtual, view course dates for more details.`,
-                        `The price for the class is dependent on your home address.`,
-                        `Attendees are able to claim 14 PDU credits from the Project Management Institute (PMI) after attending this course.`,
-                    ],
-                    links: [
-                        {
-                            label: 'Click here for more reasons to train with ValueHut limited',
-                            url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
-                        },
-                    ],
-                },
-            ],
-            streams: [
-                {
-                    startDate: new Date('2023-10-25').toJSON(),
-                    classType: 'Virtual',
-                    endDate: new Date('2023-12-06').toJSON(),
-                    time: 'Every Wednesday, 17:00 - 20:00 London, UK & Lagos, Africa',
-                    price: [
-                        {
-                            region: 'United Kingdom',
-                            regionDescription: ['United Kingdom'],
-                            amount: 1200,
-                            currency: {
-                                name: 'gbp',
-                                symbol: '£',
-                                locale: 'en_GB',
-                                template: 'GBP',
-                            },
-                        },
-                        {
-                            region: 'Primary Market',
-                            regionDescription: primaryMarket,
-                            amount: 1200,
-                        },
-                        {
-                            region: 'Tertiary Market',
-                            regionDescription: tertiaryMarket,
-                            amount: 1000,
-                        },
-                        {
-                            region: 'Secondary Market',
-                            regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 1100,
-                        },
-                    ],
-                    filled: true,
-                },
-            ],
-            isTraining: true,
-        },
-        {
-            id: 8,
             title: 'Applying Professional Scrum',
             acronym: 'APS',
             description: `The APS is a hands-on, activity-based course in which students experience how Professional Scrum and the Scrum framework 
