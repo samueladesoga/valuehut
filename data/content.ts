@@ -137,6 +137,14 @@ export const content = {
                     name: 'Fidelity Bank',
                     imageURL: 'fidelity-bank.svg',
                 },
+                {
+                    name: 'Legal & General',
+                    imageURL: 'legal_general.png',
+                },
+                {
+                    name: 'Sanofi',
+                    imageURL: 'sanofi.png',
+                },
             ],
         },
         whatWeDo: {
