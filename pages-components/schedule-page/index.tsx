@@ -54,7 +54,7 @@ function SchedulePage() {
                                 })}
                                 onClick={() => handleFilter('PSM-A')}
                             >
-                                PSM II
+                                PSM Advanced
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
