@@ -390,9 +390,9 @@ export const training: TrainingObject = {
         },
         {
             id: 3,
-            title: 'Professional Scrum Master II',
-            acronym: 'PSM II',
-            description: `Professional Scrum Master II (PSM II) is an advanced course that helps students to 
+            title: 'Professional Scrum Master - Advanced',
+            acronym: 'PSM-A',
+            description: `Professional Scrum Master - Advanced is a course that helps students to 
             understand the stances of an effective Scrum Master  while diving deep into how they serve the 
             Developers, Product Owner and organization. Students learn about practices and skills that enable 
             them have the right conversations and how to apply them to become better Scrum Masters. 
@@ -400,7 +400,7 @@ export const training: TrainingObject = {
             Scrum Framework, with at least one year of experience looking to grow their knowledge and abilities 
             as a Scrum Master.`,
             imageURL: '/images/energy.jpg',
-            logo: 'psmii.svg',
+            logo: 'PSM-A.svg',
             iconBorder: 'https://static.scrum.org/web/tokens/token-psm-color.svg',
             articles: [
                 {
@@ -430,8 +430,8 @@ export const training: TrainingObject = {
                 {
                     title: 'Assessment Certification',
                     content: `All participants completing the Professional Scrum Master II course will receive a password to 
-                    attempt the Professional Scrum Master II (PSM II) assessment. PSM II class participants who attempt 
-                    the PSM II assessment within 14 days of receiving their free password and do not score at least 85% 
+                    attempt the Professional Scrum Master - Advanced (PSM-A) assessment. PSM-A class participants who attempt 
+                    the PSM-A assessment within 14 days of receiving their free password and do not score at least 85% 
                     will be granted a 2nd attempt at no additional cost.`,
                 },
                 {
