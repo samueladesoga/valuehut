@@ -429,7 +429,7 @@ export const training: TrainingObject = {
                 },
                 {
                     title: 'Assessment Certification',
-                    content: `All participants completing the Professional Scrum Master II course will receive a password to 
+                    content: `All participants completing the Professional Scrum Master - Advanced course will receive a password to 
                     attempt the Professional Scrum Master - Advanced (PSM-A) assessment. PSM-A class participants who attempt 
                     the PSM-A assessment within 14 days of receiving their free password and do not score at least 85% 
                     will be granted a 2nd attempt at no additional cost.`,
