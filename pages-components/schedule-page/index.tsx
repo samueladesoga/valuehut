@@ -38,7 +38,7 @@ function SchedulePage() {
                                 })}
                                 onClick={() => setFilters([])}
                             >
-                                All
+                                All Courses
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
@@ -46,7 +46,7 @@ function SchedulePage() {
                                 })}
                                 onClick={() => handleFilter('PSM')}
                             >
-                                PSM
+                                Professional Scrum Master
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
@@ -54,7 +54,7 @@ function SchedulePage() {
                                 })}
                                 onClick={() => handleFilter('PSM-A')}
                             >
-                                PSM Advanced
+                                Professional Scrum Master - Advanced
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
@@ -62,7 +62,7 @@ function SchedulePage() {
                                 })}
                                 onClick={() => handleFilter('PSF Skills')}
                             >
-                                PSF Skills
+                                Professional Scrum Facilitation Skills
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
@@ -70,7 +70,7 @@ function SchedulePage() {
                                 })}
                                 onClick={() => handleFilter('PSPBM Skills')}
                             >
-                                PSPBM Skills
+                                Professional Scrum Product Backlog Management Skills
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
@@ -78,7 +78,7 @@ function SchedulePage() {
                                 })}
                                 onClick={() => handleFilter('PSPO')}
                             >
-                                PSPO
+                                Professional Scrum Product Owner
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
@@ -86,7 +86,7 @@ function SchedulePage() {
                                 })}
                                 onClick={() => handleFilter('PAL-E')}
                             >
-                                PAL-E
+                                Professional Agile Leadership - Essential
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
@@ -94,7 +94,7 @@ function SchedulePage() {
                                 })}
                                 onClick={() => handleFilter('APS')}
                             >
-                                APS
+                                Applying Professional Scrum
                             </li>
                         </ul>
                     </div>
