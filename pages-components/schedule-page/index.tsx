@@ -26,10 +26,10 @@ function SchedulePage() {
 
             <div className="max-w-5xl m-auto p-5">
                 <div className="flex justify-between mb-4">
-                    <h3 className="text-3xl text-gray-dark">Our next classes</h3>
+                    <h2 className="text-3xl text-gray-dark">Upcoming Workshops</h2>
                 </div>
                 <div className="mb-8">
-                    <p className="text-base mb-2">Select Training:</p>
+                    <p className="text-base mb-2">Filter:</p>
                     <div>
                         <ul className="flex flex-wrap gap-2 text-sm">
                             <li
@@ -38,47 +38,7 @@ function SchedulePage() {
                                 })}
                                 onClick={() => setFilters([])}
                             >
-                                All Courses
-                            </li>
-                            <li
-                                className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
-                                    'border-primary-default bg-primary-light': filters.includes('PSM'),
-                                })}
-                                onClick={() => handleFilter('PSM')}
-                            >
-                                Professional Scrum Master
-                            </li>
-                            <li
-                                className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
-                                    'border-primary-default bg-primary-light': filters.includes('PSM-A'),
-                                })}
-                                onClick={() => handleFilter('PSM-A')}
-                            >
-                                Professional Scrum Master - Advanced
-                            </li>
-                            <li
-                                className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
-                                    'border-primary-default bg-primary-light': filters.includes('PSF Skills'),
-                                })}
-                                onClick={() => handleFilter('PSF Skills')}
-                            >
-                                Professional Scrum Facilitation Skills
-                            </li>
-                            <li
-                                className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
-                                    'border-primary-default bg-primary-light': filters.includes('PSPBM Skills'),
-                                })}
-                                onClick={() => handleFilter('PSPBM Skills')}
-                            >
-                                Professional Scrum Product Backlog Management Skills
-                            </li>
-                            <li
-                                className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
-                                    'border-primary-default bg-primary-light': filters.includes('PSPO'),
-                                })}
-                                onClick={() => handleFilter('PSPO')}
-                            >
-                                Professional Scrum Product Owner
+                                All
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
@@ -86,7 +46,47 @@ function SchedulePage() {
                                 })}
                                 onClick={() => handleFilter('PAL-E')}
                             >
-                                Professional Agile Leadership - Essential
+                                PAL - Essential
+                            </li>
+                            <li
+                                className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
+                                    'border-primary-default bg-primary-light': filters.includes('PSM'),
+                                })}
+                                onClick={() => handleFilter('PSM')}
+                            >
+                                PSM
+                            </li>
+                            <li
+                                className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
+                                    'border-primary-default bg-primary-light': filters.includes('PSM-A'),
+                                })}
+                                onClick={() => handleFilter('PSM-A')}
+                            >
+                                PSM - Advanced
+                            </li>
+                            <li
+                                className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
+                                    'border-primary-default bg-primary-light': filters.includes('PSPO'),
+                                })}
+                                onClick={() => handleFilter('PSPO')}
+                            >
+                                PSPO
+                            </li>
+                            <li
+                                className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
+                                    'border-primary-default bg-primary-light': filters.includes('PSF Skills'),
+                                })}
+                                onClick={() => handleFilter('PSF Skills')}
+                            >
+                                PSF Skills
+                            </li>
+                            <li
+                                className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
+                                    'border-primary-default bg-primary-light': filters.includes('PSPBM Skills'),
+                                })}
+                                onClick={() => handleFilter('PSPBM Skills')}
+                            >
+                                PSPBM Skills
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
@@ -94,7 +94,7 @@ function SchedulePage() {
                                 })}
                                 onClick={() => handleFilter('APS')}
                             >
-                                Applying Professional Scrum
+                                APS
                             </li>
                         </ul>
                     </div>
