@@ -636,41 +636,6 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    startDate: new Date('2024-01-19').toJSON(),
-                    endDate: new Date('2024-01-19').toJSON(),
-                    classType: 'Virtual',
-                    time: '9:00 - 17:00 GMT (10:00 - 18:00 WAT)',
-                    price: [
-                        {
-                            region: 'United Kingdom',
-                            regionDescription: ['United Kingdom'],
-                            amount: 600,
-                            currency: {
-                                name: 'gbp',
-                                symbol: '£',
-                                locale: 'en_GB',
-                                template: 'GBP',
-                            },
-                        },
-                        {
-                            region: 'Primary Market',
-                            regionDescription: primaryMarket,
-                            amount: 600,
-                        },
-                        {
-                            region: 'Tertiary Market',
-                            regionDescription: tertiaryMarket,
-                            amount: 450,
-                        },
-                        {
-                            region: 'Secondary Market',
-                            regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 500,
-                        },
-                    ],
-                    filled: true,
-                },
-                {
                     startDate: new Date('2024-02-29').toJSON(),
                     endDate: new Date('2024-02-29').toJSON(),
                     classType: 'Virtual',
@@ -703,7 +668,7 @@ export const training: TrainingObject = {
                             amount: 500,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
                     startDate: new Date('2024-04-19').toJSON(),
