@@ -2,6 +2,7 @@
   "name": "Valuehut",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://api.foxycart.com",
   "homepage": "https://www.valuehut.co",
   "scripts": {
     "dev": "next dev",

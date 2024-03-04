@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { InvoiceSchemaType } from '../../lib/schemas/invoice.schema'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { Button } from '@mui/material'
 import InvoiceDocument from './file'
 import { pdf } from '@react-pdf/renderer'
+import { getCartItems } from '../../lib/foxycart'
 
 function InvoicePage() {
     const {
@@ -12,6 +13,19 @@ function InvoicePage() {
         watch,
         formState: { errors },
     } = useForm<InvoiceSchemaType>()
+
+    const [items, setItems] = useState([])
+
+    useEffect(() => {
+        const fetchCartItems = async () => {
+            const data = await getCartItems()
+            if (data) {
+                console.log('data', data)
+            }
+        }
+
+        fetchCartItems()
+    }, [])
 
     const onSubmit: SubmitHandler<InvoiceSchemaType> = async (data) => {
         const doc = <InvoiceDocument data={data} />
