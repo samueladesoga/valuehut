@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { InvoiceSchemaType } from '../../lib/schemas/invoice.schema'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { Button } from '@mui/material'
-import InvoiceDocument from './file'
 import { pdf } from '@react-pdf/renderer'
 import { getCartItems } from '../../lib/foxycart'
+import InvoiceDocument from '../../components/invoice-file/file'
 
 function InvoicePage() {
     const {
