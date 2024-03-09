@@ -137,41 +137,6 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    startDate: new Date('2023-12-08').toJSON(),
-                    classType: 'Virtual class',
-                    endDate: new Date('2023-12-09').toJSON(),
-                    time: '09:00 - 17:00 GMT',
-                    price: [
-                        {
-                            region: 'United Kingdom',
-                            regionDescription: ['United Kingdom'],
-                            amount: 1000,
-                            currency: {
-                                name: 'gbp',
-                                symbol: '£',
-                                locale: 'en_GB',
-                                template: 'GBP',
-                            },
-                        },
-                        {
-                            region: 'Primary Market',
-                            regionDescription: primaryMarket,
-                            amount: 1000,
-                        },
-                        {
-                            region: 'Tertiary Market',
-                            regionDescription: tertiaryMarket,
-                            amount: 800,
-                        },
-                        {
-                            region: 'Secondary Market',
-                            regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 900,
-                        },
-                    ],
-                    filled: true,
-                },
-                {
                     startDate: new Date('2024-03-01').toJSON(),
                     classType: 'Virtual class',
                     endDate: new Date('2024-03-02').toJSON(),
@@ -204,13 +169,48 @@ export const training: TrainingObject = {
                             amount: 900,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
                     startDate: new Date('2024-04-12').toJSON(),
                     classType: 'Virtual class',
                     endDate: new Date('2024-04-13').toJSON(),
-                    time: '09:00 - 17:00 GMT',
+                    time: '09:00 - 17:00 BST',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1000,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1000,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 800,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 900,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    startDate: new Date('2024-05-03').toJSON(),
+                    classType: 'Virtual class',
+                    endDate: new Date('2024-05-04').toJSON(),
+                    time: '09:00 - 17:00 BST',
                     price: [
                         {
                             region: 'United Kingdom',
@@ -351,10 +351,45 @@ export const training: TrainingObject = {
                     filled: true,
                 },
                 {
-                    startDate: new Date('2024-03-29').toJSON(),
+                    startDate: new Date('2024-04-05').toJSON(),
                     classType: 'Virtual',
-                    endDate: new Date('2024-03-30').toJSON(),
-                    time: '9:00 - 17:00 GMT',
+                    endDate: new Date('2024-04-06').toJSON(),
+                    time: '9:00 - 17:00 BST',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1000,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1000,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 800,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 900,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    startDate: new Date('2024-06-07').toJSON(),
+                    classType: 'Virtual',
+                    endDate: new Date('2024-06-08').toJSON(),
+                    time: '9:00 - 17:00 BST',
                     price: [
                         {
                             region: 'United Kingdom',
@@ -394,10 +429,10 @@ export const training: TrainingObject = {
             acronym: 'PSM-A',
             description: `Professional Scrum Master - Advanced is a course that helps students to 
             understand the stances of an effective Scrum Master  while diving deep into how they serve the 
-            Developers, Product Owner and organization. Students learn about practices and skills that enable 
+            Developers, Product Owner and the Organization. Students learn about practices and skills that enable 
             them have the right conversations and how to apply them to become better Scrum Masters. 
-            It is specifically designed for experienced Scrum Masters who have a thorough understanding of the 
-            Scrum Framework, with at least one year of experience looking to grow their knowledge and abilities 
+            It is specifically designed for Scrum Masters who have a thorough understanding of the 
+            Scrum Framework, with at least one year of experience and looking to grow their knowledge and abilities 
             as a Scrum Master.`,
             imageURL: '/images/energy.jpg',
             logo: 'PSM-A.svg',
@@ -497,7 +532,7 @@ export const training: TrainingObject = {
                 {
                     startDate: new Date('2024-03-22').toJSON(),
                     endDate: new Date('2024-03-23').toJSON(),
-                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    time: '9:00 - 17:00 GMT',
                     classType: 'Virtual',
                     price: [
                         {
@@ -532,7 +567,42 @@ export const training: TrainingObject = {
                 {
                     startDate: new Date('2024-05-24').toJSON(),
                     endDate: new Date('2024-05-25').toJSON(),
-                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    time: '9:00 - 17:00 BST',
+                    classType: 'Virtual',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1100,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1100,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 850,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 950,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    startDate: new Date('2024-08-23').toJSON(),
+                    endDate: new Date('2024-08-24').toJSON(),
+                    time: '9:00 - 17:00 MST',
                     classType: 'Virtual',
                     price: [
                         {
@@ -674,7 +744,42 @@ export const training: TrainingObject = {
                     startDate: new Date('2024-04-19').toJSON(),
                     endDate: new Date('2024-04-19').toJSON(),
                     classType: 'Virtual',
-                    time: '9:00 - 17:00 GMT (10:00 - 18:00 WAT)',
+                    time: '9:00 - 17:00 GMT',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 600,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 600,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 450,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 500,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    startDate: new Date('2024-05-10').toJSON(),
+                    endDate: new Date('2024-05-10').toJSON(),
+                    classType: 'Virtual',
+                    time: '9:00 - 17:00 BST',
                     price: [
                         {
                             region: 'United Kingdom',
@@ -788,7 +893,7 @@ export const training: TrainingObject = {
                         {
                             region: 'United Kingdom',
                             regionDescription: ['United Kingdom'],
-                            amount: 495,
+                            amount: 550,
                             currency: {
                                 name: 'gbp',
                                 symbol: '£',
@@ -799,31 +904,31 @@ export const training: TrainingObject = {
                         {
                             region: 'Primary Market',
                             regionDescription: primaryMarket,
-                            amount: 500,
+                            amount: 550,
                         },
                         {
                             region: 'Tertiary Market',
                             regionDescription: tertiaryMarket,
-                            amount: 400,
+                            amount: 450,
                         },
                         {
                             region: 'Secondary Market',
                             regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 450,
+                            amount: 500,
                         },
                     ],
                     filled: true,
                 },
                 {
-                    startDate: new Date('2024-03-08').toJSON(),
-                    endDate: new Date('2024-03-08').toJSON(),
+                    startDate: new Date('2024-04-26').toJSON(),
+                    endDate: new Date('2024-04-26').toJSON(),
                     classType: 'Virtual',
                     time: '9:00 - 17:00 GMT',
                     price: [
                         {
                             region: 'United Kingdom',
                             regionDescription: ['United Kingdom'],
-                            amount: 495,
+                            amount: 550,
                             currency: {
                                 name: 'gbp',
                                 symbol: '£',
@@ -834,20 +939,55 @@ export const training: TrainingObject = {
                         {
                             region: 'Primary Market',
                             regionDescription: primaryMarket,
-                            amount: 500,
+                            amount: 550,
                         },
                         {
                             region: 'Tertiary Market',
                             regionDescription: tertiaryMarket,
-                            amount: 400,
+                            amount: 450,
                         },
                         {
                             region: 'Secondary Market',
                             regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 450,
+                            amount: 500,
                         },
                     ],
-                    filled: false,
+                    filled: true,
+                },
+                {
+                    startDate: new Date('2024-05-31').toJSON(),
+                    endDate: new Date('2024-05-31').toJSON(),
+                    classType: 'Virtual',
+                    time: '9:00 - 17:00 GMT',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 550,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 550,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 450,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 500,
+                        },
+                    ],
+                    filled: true,
                 },
             ],
             isTraining: true,
