@@ -3,7 +3,6 @@ import { InvoiceSchemaType } from '../../lib/schemas/invoice.schema'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { Button, Input } from '@nextui-org/react'
 import { pdf } from '@react-pdf/renderer'
-import { getCartItems } from '../../lib/foxycart'
 import InvoiceDocument from '../../components/invoice-file/file'
 
 function InvoicePage() {
@@ -14,19 +13,6 @@ function InvoicePage() {
         formState: { errors },
     } = useForm<InvoiceSchemaType>()
 
-    const [items, setItems] = useState([])
-
-    useEffect(() => {
-        const fetchCartItems = async () => {
-            const data = await getCartItems()
-            if (data) {
-                console.log('data', data)
-            }
-        }
-
-        fetchCartItems()
-    }, [])
-
     const onSubmit: SubmitHandler<InvoiceSchemaType> = async (data) => {
         const doc = <InvoiceDocument data={data} />
         const asPdf = pdf()
@@ -35,9 +21,7 @@ function InvoicePage() {
 
         const blob = await asPdf.toBlob()
 
-        const fileName = `Invoice_${data.firstName}_${data.lastName}_${new Date()
-            .toLocaleDateString()
-            .replace(/\s+/g, '_')}.pdf`
+        const fileName = `Invoice__${data.fullName}_${new Date().toLocaleDateString().replace(/\s+/g, '_')}.pdf`
 
         const file = new File([blob], fileName, { type: 'application/pdf' })
         const url = URL.createObjectURL(file)
@@ -54,16 +38,10 @@ function InvoicePage() {
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="flex w-full flex-wrap md:flex-nowrap gap-2 mb-4">
                     <Input
-                        label="First name"
+                        label="Full name (or company name)"
                         fullWidth
-                        {...register('firstName', { required: true })}
-                        className={`${errors?.firstName?.message ? '!outline-red-400' : ''}`}
-                    />
-                    <Input
-                        label="Last name"
-                        fullWidth
-                        {...register('lastName', { required: true })}
-                        className={`${errors?.lastName?.message ? '!outline-red-400' : ''}`}
+                        {...register('fullName', { required: true })}
+                        className={`${errors?.fullName?.message ? '!outline-red-400' : ''}`}
                     />
                 </div>
                 <div className="flex w-full flex-wrap md:flex-nowrap gap-2 mb-4">

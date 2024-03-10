@@ -22,16 +22,13 @@ export const styles = StyleSheet.create({
     title: {
         fontSize: 13,
         color: '#4B465C',
-        fontFamily: 'PublicSansBold',
     },
     lightDescription: {
         fontSize: '8px',
         color: '#4B465C',
-        fontFamily: 'PublicSansRegular',
     },
     boldDescription: {
         fontSize: '8px',
-        fontFamily: 'PublicSansSemiBold',
         color: '#4B465C',
     },
 })

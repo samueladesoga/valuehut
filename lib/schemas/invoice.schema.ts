@@ -2,12 +2,9 @@ import { z } from 'zod'
 import validator from 'validator'
 
 export const invoiceSchema = z.object({
-    firstName: z
+    fullName: z
         .string({ required_error: 'First name is required', invalid_type_error: 'Please enter a valid first name' })
         .min(2, 'Please enter a valid first name'),
-    lastName: z
-        .string({ required_error: 'Last name is required', invalid_type_error: 'Please enter a valid last name' })
-        .min(2, 'Please enter a valid last name'),
     email: z.string().email('Please provide a valid email.'),
     phoneNumber: z.string().refine(validator.isMobilePhone),
     address: z

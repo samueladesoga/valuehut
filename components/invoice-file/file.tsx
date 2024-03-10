@@ -3,7 +3,6 @@ import { Page, Text, View, Document, Image } from '@react-pdf/renderer'
 import { styles } from '../../lib/file.styles'
 import { InvoiceSchemaType } from '../../lib/schemas/invoice.schema'
 import LogoVH from '../../public/logo192.png'
-import { getCartItems } from '../../lib/foxycart'
 
 // Create Document Component
 const InvoiceDocument = ({ data }: { data: InvoiceSchemaType }) => {
@@ -28,7 +27,7 @@ const InvoiceDocument = ({ data }: { data: InvoiceSchemaType }) => {
                                 fontWeight: 'bold',
                             }}
                         >
-                            Invoice N° --
+                            Invoice N° {new Date()}
                         </Text>
                         <Text>Date: {today}</Text>
                         <Text>Due Date: {today}</Text>
