@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { InvoiceSchemaType } from '../../lib/schemas/invoice.schema'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { Button, Input } from '@nextui-org/react'
+import { pdf } from '@react-pdf/renderer'
+import { getCartItems } from '../../lib/foxycart'
+import InvoiceDocument from '../../components/invoice-file/file'
 
 function InvoicePage() {
     const {
@@ -11,8 +14,39 @@ function InvoicePage() {
         formState: { errors },
     } = useForm<InvoiceSchemaType>()
 
-    const onSubmit: SubmitHandler<InvoiceSchemaType> = (data) => {
-        console.log(data)
+    const [items, setItems] = useState([])
+
+    useEffect(() => {
+        const fetchCartItems = async () => {
+            const data = await getCartItems()
+            if (data) {
+                console.log('data', data)
+            }
+        }
+
+        fetchCartItems()
+    }, [])
+
+    const onSubmit: SubmitHandler<InvoiceSchemaType> = async (data) => {
+        const doc = <InvoiceDocument data={data} />
+        const asPdf = pdf()
+
+        asPdf.updateContainer(doc)
+
+        const blob = await asPdf.toBlob()
+
+        const fileName = `Invoice_${data.firstName}_${data.lastName}_${new Date()
+            .toLocaleDateString()
+            .replace(/\s+/g, '_')}.pdf`
+
+        const file = new File([blob], fileName, { type: 'application/pdf' })
+        const url = URL.createObjectURL(file)
+
+        const link = document.createElement('a')
+        link.href = url
+        link.download = fileName
+        link.click()
+        link.remove()
     }
 
     return (
