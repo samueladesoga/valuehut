@@ -495,10 +495,10 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    startDate: new Date('2023-10-20').toJSON(),
-                    endDate: new Date('2023-10-21').toJSON(),
-                    classType: 'In-Person class',
-                    time: 'Lagos, Africa',
+                    startDate: new Date('2024-03-22').toJSON(),
+                    endDate: new Date('2024-03-23').toJSON(),
+                    time: '9:00 - 17:00 GMT',
+                    classType: 'Virtual',
                     price: [
                         {
                             region: 'United Kingdom',
@@ -519,7 +519,7 @@ export const training: TrainingObject = {
                         {
                             region: 'Tertiary Market',
                             regionDescription: tertiaryMarket,
-                            amount: 950,
+                            amount: 850,
                         },
                         {
                             region: 'Secondary Market',
@@ -527,12 +527,12 @@ export const training: TrainingObject = {
                             amount: 950,
                         },
                     ],
-                    filled: true,
+                    filled: false,
                 },
                 {
-                    startDate: new Date('2024-03-22').toJSON(),
-                    endDate: new Date('2024-03-23').toJSON(),
-                    time: '9:00 - 17:00 GMT',
+                    startDate: new Date('2024-04-06').toJSON(),
+                    endDate: new Date('2024-04-07').toJSON(),
+                    time: '08:00 - 16:00 CST',
                     classType: 'Virtual',
                     price: [
                         {
