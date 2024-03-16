@@ -29,7 +29,7 @@ const DatesTable: React.FC<DatesTableTypes> = ({ training, streams }) => {
 
     return (
         <div style={{ maxWidth: '90%', margin: '0 auto', marginTop: 20, marginBottom: 30 }}>
-            <h2 style={{ marginBottom: 20 }}>Class Schedule</h2>
+            <h2 style={{ marginBottom: 20 }}>Upcoming classes</h2>
             <TableContainer component={Paper}>
                 <Table
                     sx={{
