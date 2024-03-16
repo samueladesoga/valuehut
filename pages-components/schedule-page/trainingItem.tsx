@@ -21,6 +21,11 @@ function TrainingItem({ stream, training }: { stream: StreamTypes; training: Tra
         }
 
     const today = new Date()
+    const dateOptions :Intl.DateTimeFormatOptions =  {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+      }
 
     if (new Date(stream.endDate) < today) return <></>
 
@@ -29,7 +34,7 @@ function TrainingItem({ stream, training }: { stream: StreamTypes; training: Tra
             <div className="flex justify-between mb-2">
                 <span className="flex items-center font-medium text-base text-gray-dark">
                     <BsFillCalendarCheckFill color="#528ecc" className="mr-2" />
-                    {new Date(stream.startDate).toLocaleDateString()} - {new Date(stream.endDate).toLocaleDateString()}
+                    {new Date(stream.startDate).toLocaleDateString(undefined, dateOptions)} - {new Date(stream.endDate).toLocaleDateString(undefined, dateOptions)}
                 </span>
             </div>
             <div className="mb-2">
