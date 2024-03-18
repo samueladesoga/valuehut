@@ -386,9 +386,9 @@ export const training: TrainingObject = {
                     filled: false,
                 },
                 {
-                    startDate: new Date('2024-04-04').toJSON(),
+                    startDate: new Date('2024-05-03').toJSON(),
                     classType: 'Virtual',
-                    endDate: new Date('2024-04-05').toJSON(),
+                    endDate: new Date('2024-05-04').toJSON(),
                     time: '9:00 - 17:00 BST',
                     price: [
                         {
