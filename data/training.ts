@@ -207,9 +207,9 @@ export const training: TrainingObject = {
                     filled: false,
                 },
                 {
-                    startDate: new Date('2024-05-03').toJSON(),
+                    startDate: new Date('2024-06-28').toJSON(),
                     classType: 'Virtual class',
-                    endDate: new Date('2024-05-04').toJSON(),
+                    endDate: new Date('2024-06-29').toJSON(),
                     time: '09:00 - 17:00 BST',
                     price: [
                         {
@@ -287,7 +287,7 @@ export const training: TrainingObject = {
                     content: `All participants completing the Professional Scrum Product Owner course will receive 
                     a password to attempt the Professional Scrum Product Owner I (PSPO I) assessment. 
                     The industry-recognized PSPO I certification requires a minimum passing score of 85%. 
-                    PSM class participants who attempt the PSM I assessment within 14 days of receiving their 
+                    PSPO class participants who attempt the PSPO I assessment within 14 days of receiving their 
                     free password and do not score at least 85% will be granted a 2nd attempt at no additional cost.`,
                 },
                 {
@@ -1155,9 +1155,9 @@ export const training: TrainingObject = {
                     filled: false,
                 },
                 {
-                    startDate: new Date('2024-05-17').toJSON(),
-                    endDate: new Date('2024-05-18').toJSON(),
-                    time: '9:00 - 17:00 GMT',
+                    startDate: new Date('2024-05-16').toJSON(),
+                    endDate: new Date('2024-05-17').toJSON(),
+                    time: '9:00 - 17:00 BST',
                     classType: 'Virtual',
                     price: [
                         {
@@ -1190,9 +1190,9 @@ export const training: TrainingObject = {
                     filled: false,
                 },
                 {
-                    startDate: new Date('2024-10-18').toJSON(),
-                    endDate: new Date('2024-10-19').toJSON(),
-                    time: '9:00 - 17:00 GMT',
+                    startDate: new Date('2024-08-30').toJSON(),
+                    endDate: new Date('2024-08-31').toJSON(),
+                    time: '9:00 - 17:00 BST',
                     classType: 'Virtual',
                     price: [
                         {
