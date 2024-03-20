@@ -562,7 +562,7 @@ export const training: TrainingObject = {
                             amount: 950,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
                     startDate: new Date('2024-04-06').toJSON(),
@@ -987,7 +987,7 @@ export const training: TrainingObject = {
                             amount: 500,
                         },
                     ],
-                    filled: true,
+                    filled: false,
                 },
                 {
                     startDate: new Date('2024-05-31').toJSON(),
@@ -1022,7 +1022,7 @@ export const training: TrainingObject = {
                             amount: 500,
                         },
                     ],
-                    filled: true,
+                    filled: false,
                 },
             ],
             isTraining: true,
@@ -1085,41 +1085,6 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    startDate: new Date('2023-12-19').toJSON(),
-                    endDate: new Date('2023-12-20').toJSON(),
-                    time: '9:00 - 17:00 GMT',
-                    classType: 'Virtual',
-                    price: [
-                        {
-                            region: 'United Kingdom',
-                            regionDescription: ['United Kingdom'],
-                            amount: 1100,
-                            currency: {
-                                name: 'gbp',
-                                symbol: '£',
-                                locale: 'en_GB',
-                                template: 'GBP',
-                            },
-                        },
-                        {
-                            region: 'Primary Market',
-                            regionDescription: primaryMarket,
-                            amount: 1100,
-                        },
-                        {
-                            region: 'Tertiary Market',
-                            regionDescription: tertiaryMarket,
-                            amount: 850,
-                        },
-                        {
-                            region: 'Secondary Market',
-                            regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 950,
-                        },
-                    ],
-                    filled: true,
-                },
-                {
                     startDate: new Date('2024-03-15').toJSON(),
                     endDate: new Date('2024-03-16').toJSON(),
                     time: '9:00 - 17:00 GMT',
@@ -1152,7 +1117,7 @@ export const training: TrainingObject = {
                             amount: 950,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
                     startDate: new Date('2024-05-16').toJSON(),
