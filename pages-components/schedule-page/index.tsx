@@ -26,7 +26,7 @@ function SchedulePage() {
 
             <div className="max-w-5xl m-auto p-5">
                 <div className="flex justify-between mb-4">
-                    <h2 className="text-3xl text-gray-dark">Upcoming Workshops</h2>
+                    <h2 className="text-3xl text-gray-dark">Upcoming classes</h2>
                 </div>
                 <div className="mb-8">
                     <p className="text-base mb-2">Filter:</p>
