@@ -17,7 +17,7 @@ export default function Layout({ children }) {
         {/*<!-- End TrustBox script -->*/}
         <meta
           name="description"
-          content="Agile trainings for better work"
+          content="Agile coaching and training consultancy"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
