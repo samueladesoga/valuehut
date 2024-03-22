@@ -238,7 +238,7 @@ export const content = {
                 {
                     region: 'Nigeria',
                     email: 'info@valuehut.co',
-                    phone: '+234(0)8181935501',
+                    phone: '+234(0)8143021499',
                     address: '44, Community Road Off Bamishile Street off Allen Avenue, Ikeja, Lagos, Nigeria',
                 },
             ],
