@@ -34,6 +34,21 @@ export const consulting: ConsultingObject = {
         imageURL: '/images/consulting.jpg',
         articles: [
             {
+                title: 'Product Management',
+                content: `Product Management is a set of practices that helps organisations turn ideas into great products; extract revenue from these products and eventually retire these products.
+                These practices also ensure that products that do not scale, fail very quickly and efforts are made to pivot or kill these products outrightly. There is inherently a lot of waste in
+                organisations by continually investing in products that do not contribute towards the organisation strategy and adopting some of these product management practices help create a connection
+                between the organisational strategy and execution within product teams.
+                Our consultants will help you with:`,
+                contentList: [
+                    `Creation of product goals for products in your organisation using OKR Framework`,
+                    `Design a product framework for effective collaboration with multiple stakeholders across the organisation`,        
+                    `Metrics that help the product teams show progress toward the defined product goals`,
+                    `Embracing an empirical process approach towards Product Management`,
+                    `Defining practices for ordering product backlog items in the product backlog`, 
+                ],
+            },
+            {
                 title: 'Continuous Delivery',
                 content: `A central theme to application delivery is enabling teams to build better products faster. 
                 Continuous Integration and Continuous Delivery are practices that enables the product teams gather feedback in near real time as the product is being built.
@@ -68,19 +83,6 @@ export const consulting: ConsultingObject = {
                 //     label: 'This is a test link',
                 //     url: 'https://google.com',
                 // },
-            },
-            {
-                title: 'Product Backlog Management',
-                content: `Product Backlog Management is a set of Agile Practices that helps organisations structure their product backlog from idea to delivery of product to users.
-                These practices are applicable to old product backlog that might seemingly out of control and new product backlogs for new initiatives. Some of the concerns that we help
-                address as part of this consulting service include:`,
-
-                contentList: [
-                    `Co-creation of product goals for products in your organisation using OKRs`,
-                    `Help define a process for ordering product backlog items in the product backlog`,
-                    `Design a product framework for effective collaboration with multiple stakeholders across the organisation`,
-                    `Metrics that help the product teams show progress across their product backlog items.`,
-                ],
             },
             {
                 title: 'Agile Fundamentals Training',
