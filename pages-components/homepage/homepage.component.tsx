@@ -1,15 +1,15 @@
-import React from 'react';
-import homepageStyles from './homepage.module.scss';
-import { HomepageTypes } from '../../data/content';
+import React from 'react'
+import homepageStyles from './homepage.module.scss'
+import { HomepageTypes } from '../../data/content'
 
-import WidescreenBanner from '../../components/widescreen-banner/widescreen-banner.component';
-import MainArticle from '../../components/main-article/main-article.component';
-import HeaderWithButton from '../../components/header-with-button/header-with-button.component';
-import TripleBox from '../../components/triple-box/triple-box.component';
-import ServiceBox from '../../components/service-box/service-box.component';
-import PreviousClients from '../../components/previous-clients/previous-clients.component';
-import { IPostType } from '../../pages/blog';
-import TheBlog from '../../components/the-blog';
+import WidescreenBanner from '../../components/widescreen-banner/widescreen-banner.component'
+import MainArticle from '../../components/main-article/main-article.component'
+import HeaderWithButton from '../../components/header-with-button/header-with-button.component'
+import TripleBox from '../../components/triple-box/triple-box.component'
+import ServiceBox from '../../components/service-box/service-box.component'
+import PreviousClients from '../../components/previous-clients/previous-clients.component'
+import { IPostType } from '../../pages/blog'
+import TheBlog from '../../components/the-blog'
 
 const Homepage: React.FC<HomepageTypes> = ({
     widescreenBanner,
@@ -23,11 +23,11 @@ const Homepage: React.FC<HomepageTypes> = ({
 }) => {
     const articleTextAlign = {
         textAlign: 'left',
-    };
+    }
 
-    const valuehut_limited = posts?.filter((post: IPostType) => post.slug === 'valuehut-limited')[0];
-    const our_mission = posts?.filter((post: IPostType) => post.slug === 'our-mission')[0];
-    const what_we_do = posts?.filter((post: IPostType) => post.slug === 'what-we-do')[0];
+    const valuehut_limited = posts?.filter((post: IPostType) => post.slug === 'valuehut-limited')[0]
+    const our_mission = posts?.filter((post: IPostType) => post.slug === 'our-mission')[0]
+    const what_we_do = posts?.filter((post: IPostType) => post.slug === 'what-we-do')[0]
 
     return (
         <>
@@ -67,14 +67,14 @@ const Homepage: React.FC<HomepageTypes> = ({
                                     key={`service-${service.header}`}
                                 />
                             )
-                        );
+                        )
                     })}
                 </TripleBox>
                 <PreviousClients previousClients={previousClients} />
                 <TheBlog posts={posts?.filter((post: IPostType) => post.showInHomePage).slice(0, 4) as IPostType[]} />
             </div>
         </>
-    );
-};
+    )
+}
 
-export default Homepage;
+export default Homepage

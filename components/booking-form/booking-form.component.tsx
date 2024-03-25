@@ -3,7 +3,8 @@ import bfStyles from './booking-form.module.scss'
 import Image from 'next/image'
 import { TrainingTypes, StreamTypes, PriceTypes } from '../../data/training'
 import { getDateInWords } from '../dates-table/dates-table.component'
-import { countries, primaryMarket, tertiaryMarket } from '../../data/countries'
+import { countries } from '../../data/countries'
+import Link from 'next/link'
 
 // import InputLabel from '@mui/material/InputLabel';
 // import MenuItem from '@mui/material/MenuItem';
@@ -21,6 +22,7 @@ interface BookingFormTypes {
 const BookingForm: React.FC<BookingFormTypes> = ({ training, stream }) => {
     const [country, setCountry] = useState('United Kingdom')
     const [bookPrice, setBookPrice] = useState(stream.price[0])
+
     const handleChange = (event: any) => {
         setCountry(event.target.value)
         let priceNumber = 0
@@ -38,6 +40,7 @@ const BookingForm: React.FC<BookingFormTypes> = ({ training, stream }) => {
         // }
         setBookPrice(stream.price[priceNumber])
     }
+
     return (
         <div className={`${bfStyles.bookingForm}`}>
             <div className={`${bfStyles.bookingForm__description}`}>
@@ -71,9 +74,9 @@ const BookingForm: React.FC<BookingFormTypes> = ({ training, stream }) => {
                     )
                 })}
             </select>
-            <a
+            <Link
                 id="addToCart"
-                className="button button-primary button-primary-small"
+                className="button button-primary button-primary-small w-full"
                 href={encodeURI(`https://valuehut.foxycart.com/cart?name=${training.title}
                     &Start Date=${getDateInWords(new Date(stream.startDate))}
                     &Time=${stream.time}
@@ -84,7 +87,11 @@ const BookingForm: React.FC<BookingFormTypes> = ({ training, stream }) => {
                     `)}
             >
                 BOOK FOR {bookPrice.currency ? bookPrice.currency.symbol : '$'} {bookPrice.amount.toString()}
-            </a>
+            </Link>
+            <div className="py-2 w-full text-center">OR</div>
+            <Link id="payWithInvoice" className="button button-secondary button-primary-small w-full" href={'/invoice'}>
+                Pay with invoice
+            </Link>
         </div>
     )
 }

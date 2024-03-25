@@ -12,7 +12,7 @@ class Modal extends React.Component {
 	}
 
     permitClick = (e) => {
-        if (e.target !== document.getElementById("addToCart")) {
+        if (e.target !== document.getElementById("addToCart") && e.target !== document.getElementById("payWithInvoice")) {
 			e.stopPropagation();
             e.preventDefault();
 			return false;
