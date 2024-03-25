@@ -229,7 +229,7 @@ const InvoiceDocument = ({ data, selectedCourse }: { data: InvoiceSchemaType; se
                         <Text>Account holder: Valuehut Limited</Text>
                         <Text>Account Number: 92489597</Text>
                         <Text>Sort Code: 40-04-01</Text>
-                        <Text>International Bank Account Number: GB64HBUK40040192489597</Text>
+                        <Text>IBAN: GB64HBUK40040192489597</Text>
                         <Text>Branch Identifier Code: HBUKBG4106V</Text>
                     </View>
                 </View>

@@ -89,7 +89,11 @@ const BookingForm: React.FC<BookingFormTypes> = ({ training, stream }) => {
                 BOOK FOR {bookPrice.currency ? bookPrice.currency.symbol : '$'} {bookPrice.amount.toString()}
             </Link>
             <div className="py-2 w-full text-center">OR</div>
-            <Link id="payWithInvoice" className="button button-secondary button-primary-small w-full" href={'/invoice'}>
+            <Link
+                id="payWithInvoice"
+                className="button button-secondary button-primary-small w-full"
+                href={encodeURI(`/invoice?courseId=${stream.id}`)}
+            >
                 Pay with invoice
             </Link>
         </div>

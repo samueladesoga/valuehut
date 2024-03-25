@@ -25,6 +25,7 @@ export interface CurrencyTypes {
 }
 
 export interface StreamTypes {
+    id: string
     startDate: any
     endDate: any
     time: string
@@ -137,6 +138,7 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
+                    id: 'cb0e3443-7c5b-4198-9ce4-214fd7c8b650',
                     startDate: new Date('2023-12-08').toJSON(),
                     classType: 'Virtual class',
                     endDate: new Date('2023-12-09').toJSON(),
@@ -172,6 +174,7 @@ export const training: TrainingObject = {
                     filled: true,
                 },
                 {
+                    id: '9262daa1-9436-4af1-912d-0d1769a35fd5',
                     startDate: new Date('2024-03-01').toJSON(),
                     classType: 'Virtual class',
                     endDate: new Date('2024-03-02').toJSON(),
@@ -207,6 +210,7 @@ export const training: TrainingObject = {
                     filled: false,
                 },
                 {
+                    id: '471611cf-944b-4029-968b-d84e1db142ac',
                     startDate: new Date('2024-04-12').toJSON(),
                     classType: 'Virtual class',
                     endDate: new Date('2024-04-13').toJSON(),
@@ -316,6 +320,7 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
+                    id: '9c544d91-5b3d-48d9-b0bf-4bd98394188d',
                     startDate: new Date('2024-02-23').toJSON(),
                     classType: 'Virtual',
                     endDate: new Date('2024-02-24').toJSON(),
@@ -351,6 +356,7 @@ export const training: TrainingObject = {
                     filled: false,
                 },
                 {
+                    id: '360af7f3-a02a-4502-9e22-595e78714487',
                     startDate: new Date('2024-03-29').toJSON(),
                     classType: 'Virtual',
                     endDate: new Date('2024-03-30').toJSON(),
@@ -460,6 +466,7 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
+                    id: '771f1b02-0a86-4031-b3eb-09cb466540fb',
                     startDate: new Date('2023-10-20').toJSON(),
                     endDate: new Date('2023-10-21').toJSON(),
                     classType: 'In-Person class',
@@ -495,6 +502,7 @@ export const training: TrainingObject = {
                     filled: true,
                 },
                 {
+                    id: '2d21878c-0c59-45ee-a179-4f52838bf047',
                     startDate: new Date('2024-03-22').toJSON(),
                     endDate: new Date('2024-03-23').toJSON(),
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
@@ -530,6 +538,7 @@ export const training: TrainingObject = {
                     filled: false,
                 },
                 {
+                    id: 'db474e60-f44f-408a-aa16-9ad7840352ca',
                     startDate: new Date('2024-05-24').toJSON(),
                     endDate: new Date('2024-05-25').toJSON(),
                     time: '9:00 - 17:00 London, UK & Lagos, Africa',
@@ -636,6 +645,7 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
+                    id: '63170f48-a405-4ba7-b320-c952de47c232',
                     startDate: new Date('2023-09-30').toJSON(),
                     endDate: new Date('2023-09-30').toJSON(),
                     classType: 'Virtual',
@@ -671,6 +681,7 @@ export const training: TrainingObject = {
                     filled: true,
                 },
                 {
+                    id: 'f93e25e0-84e8-4eac-ba10-e894d69cf8c0',
                     startDate: new Date('2023-12-15').toJSON(),
                     endDate: new Date('2023-12-15').toJSON(),
                     classType: 'Virtual',
@@ -706,6 +717,7 @@ export const training: TrainingObject = {
                     filled: false,
                 },
                 {
+                    id: 'd5f8c60c-9955-4842-96d7-5721e89bb9b6',
                     startDate: new Date('2024-01-19').toJSON(),
                     endDate: new Date('2024-01-19').toJSON(),
                     classType: 'Virtual',
@@ -815,6 +827,7 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
+                    id: '08c2a500-423e-4cbc-a75b-50fa925bd10a',
                     startDate: new Date('2024-01-12').toJSON(),
                     endDate: new Date('2024-01-12').toJSON(),
                     classType: 'Virtual',
@@ -850,6 +863,7 @@ export const training: TrainingObject = {
                     filled: true,
                 },
                 {
+                    id: 'da8b3de8-9c96-498e-b75c-869d69786e7b',
                     startDate: new Date('2024-03-08').toJSON(),
                     endDate: new Date('2024-03-08').toJSON(),
                     classType: 'Virtual',
@@ -945,6 +959,7 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
+                    id: '5354262f-8c6d-47d4-ab88-d43cc4d32ea6',
                     startDate: new Date('2023-12-19').toJSON(),
                     endDate: new Date('2023-12-20').toJSON(),
                     time: '9:00 - 17:00 GMT',
@@ -980,6 +995,7 @@ export const training: TrainingObject = {
                     filled: true,
                 },
                 {
+                    id: '3de50aeb-9aff-402f-a97a-757a7c0704da',
                     startDate: new Date('2024-03-15').toJSON(),
                     endDate: new Date('2024-03-16').toJSON(),
                     time: '9:00 - 17:00 GMT',
@@ -1015,6 +1031,7 @@ export const training: TrainingObject = {
                     filled: false,
                 },
                 {
+                    id: '42e648f0-2a77-488e-a02f-84cb22e09213',
                     startDate: new Date('2024-10-18').toJSON(),
                     endDate: new Date('2024-10-19').toJSON(),
                     time: '9:00 - 17:00 GMT',

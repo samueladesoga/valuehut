@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { InvoiceSchemaType } from '../../lib/schemas/invoice.schema'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { Button, Input, Select, SelectSection, SelectItem } from '@nextui-org/react'
 import { pdf } from '@react-pdf/renderer'
 import InvoiceDocument from '../../components/invoice-file/file'
 import { TrainingTypes, training } from '../../data/training'
+import { useRouter, withRouter } from 'next/router'
+import classNames from 'classnames'
 
 export interface ICourse {
+    id: string
     title: string
     price: number
     startDate: string
@@ -29,22 +32,24 @@ function InvoicePage() {
         return date.toISOString().split('T')[0]
     }
 
+    const router = useRouter()
+    const { query } = router
+
     const [selectedCourse, setSelectedCourse] = useState<ICourse | null>(null)
+    const [loading, setLoading] = useState<boolean>(false)
+    const [success, setSuccess] = useState<string | null>(null)
 
-    useEffect(() => {
-        console.log(selectedCourse)
-    }, [selectedCourse])
+    const [_errors, setError] = useState<string | null>(null)
 
-    const formatStreams = (trainings: TrainingTypes[]): (ICourse | undefined)[] => {
+    const formatStreams = useCallback((trainings: TrainingTypes[]): (ICourse | undefined)[] => {
         return trainings
             .filter((training) => training.isTraining && training.streams && training.streams?.length > 0)
             .flatMap((training) =>
                 training?.streams
                     ?.filter((stream) => !stream.filled)
                     .map((stream) => ({
-                        title: `${training.acronym} (${training.title}) - ${formatDate(
-                            stream.startDate,
-                        )} to ${formatDate(stream.endDate)} (${stream.time})`,
+                        id: stream.id,
+                        title: `${training.acronym} (${training.title})`,
                         price: stream.price[0].amount,
                         startDate: formatDate(stream.startDate),
                         endDate: formatDate(stream.endDate),
@@ -53,9 +58,19 @@ function InvoicePage() {
                         acronym: training.acronym,
                     })),
             )
-    }
+    }, [])
+
+    useEffect(() => {
+        if (query.courseId) {
+            const courseList = formatStreams(training.training)
+            const course = courseList.find((c) => c?.id === query.courseId)
+
+            setSelectedCourse(course ?? null)
+        }
+    }, [formatStreams, query])
 
     const onSubmit: SubmitHandler<InvoiceSchemaType> = async (data) => {
+        setLoading(true)
         const doc = <InvoiceDocument data={data} selectedCourse={selectedCourse} />
         const asPdf = pdf()
 
@@ -65,14 +80,31 @@ function InvoicePage() {
 
         const fileName = `Invoice_ValueHut_${data.fullName}_${new Date().getTime()}.pdf`
 
-        const file = new File([blob], fileName, { type: 'application/pdf' })
-        const url = URL.createObjectURL(file)
+        const formData = new FormData()
 
-        const link = document.createElement('a')
-        link.href = url
-        link.download = fileName
-        link.click()
-        link.remove()
+        formData.append('file', blob, fileName)
+        formData.append('toEmail', data.email) // Assuming you want to send it to the email provided in the form
+        formData.append('subject', 'ValueHut: Your Invoice')
+        formData.append('text', 'Please find attached your invoice.')
+
+        // Send the email with the PDF attached via your API route
+        fetch('/api/sendEmail', {
+            method: 'POST',
+            body: formData,
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                setSuccess('Email sent!')
+                setError(null)
+            })
+            .catch((error) => {
+                console.error(error)
+                setError('An error occurred while sending you an email. please try again later!')
+                setSuccess(null)
+            })
+            .finally(() => {
+                setLoading(false)
+            })
     }
 
     return (
@@ -82,6 +114,7 @@ function InvoicePage() {
                     <Input
                         label="Full name (or company name)"
                         fullWidth
+                        disabled={loading}
                         {...register('fullName', { required: true })}
                         className={`${errors?.fullName?.message ? '!outline-red-400' : ''}`}
                     />
@@ -91,12 +124,14 @@ function InvoicePage() {
                         type="email"
                         label="Email"
                         fullWidth
+                        disabled={loading}
                         {...register('email', { required: true })}
                         className={`${errors?.email?.message ? '!outline-red-400' : ''}`}
                     />
                     <Input
                         label="Phone Number"
                         fullWidth
+                        disabled={loading}
                         {...register('phoneNumber', { required: true })}
                         className={`${errors.phoneNumber ? 'border-red-400' : ''}`}
                     />
@@ -106,45 +141,47 @@ function InvoicePage() {
                     <Input
                         label="Address"
                         fullWidth
+                        disabled={loading}
                         {...register('address', { required: true })}
                         className={`${errors.address ? 'border-red-400' : ''}`}
                     />
                 </div>
-
-                <div className="flex w-full flex-wrap md:flex-nowrap gap-2 mb-4">
-                    <Select
-                        label="Select a course"
-                        value={selectedCourse?.title}
-                        className="max-w"
-                        onChange={(p) => {
-                            setSelectedCourse(formatStreams(training.training)[Number(p.target.value)] ?? null)
-                        }}
-                    >
-                        {formatStreams(training.training)
-                            .filter((_training) => _training)
-                            .map((_training, i) => (
-                                <SelectItem key={i} value={_training?.title}>
-                                    {_training?.title}
-                                </SelectItem>
-                            ))}
-                    </Select>
-                    <div className="w-[30%] mb-8">
-                        <Input
-                            label="Quantity"
-                            fullWidth
-                            type="number"
-                            {...register('quantity', { required: true, valueAsNumber: true })}
-                            className={`${errors.quantity ? 'border-red-400' : ''}`}
-                        />
-                    </div>
+                <div className="w-[100%] mb-4">
+                    <Input
+                        label="Quantity"
+                        fullWidth
+                        type="number"
+                        disabled={loading}
+                        {...register('quantity', { required: true, valueAsNumber: true })}
+                        className={`${errors.quantity ? 'border-red-400' : ''}`}
+                    />
+                </div>
+                <div className="p-3 rounded-lg mb-8 bg-gray-100">
+                    <p className="text-stone-600 text-xs mb-3">Course details:</p>
+                    <h3 className="text-stone-600 text-sm mb-1">Course: {selectedCourse?.title}</h3>
+                    <h3 className="text-stone-600 text-sm mb-1">
+                        Date: {selectedCourse?.startDate} - {selectedCourse?.endDate}
+                    </h3>
+                    <h3 className="text-stone-600 text-sm">Time: {selectedCourse?.time}</h3>
                 </div>
 
-                <Button type="submit" fullWidth variant="bordered">
-                    Send me an invoice
+                <Button type="submit" disabled={loading} fullWidth variant="bordered">
+                    {loading ? 'Loading...' : 'Send me an invoice'}
                 </Button>
+
+                {_errors || success ? (
+                    <p
+                        className={classNames('text-sm mt-4', {
+                            'text-green-600': !!success,
+                            'text-red-600': !!_errors,
+                        })}
+                    >
+                        {_errors ?? success}
+                    </p>
+                ) : null}
             </form>
         </div>
     )
 }
 
-export default InvoicePage
+export default withRouter(InvoicePage)
