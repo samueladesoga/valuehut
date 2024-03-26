@@ -37,7 +37,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             })
 
             const mailOptions = {
-                from: '"ValueHut" <info@valuehut.co>',
+                from: '"ValueHut" <samueladesoga+ctims@gmail.com>',
                 to: toEmail,
                 subject: subject,
                 html: `
