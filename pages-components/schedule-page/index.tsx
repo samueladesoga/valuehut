@@ -20,16 +20,16 @@ function SchedulePage() {
         <div className="min-h-screen bg-[#F9F6F3]">
             <div className="w-full h-80 mb-10 bg-gradient-to-r from-primary-dark to to-primary-default flex items-center justify-center">
                 <h1 className="text-5xl text-white text-center">
-                    Agile and Scrum Training Schedule
+                    Scrum and Agile Leadership Training Schedule
                 </h1>
             </div>
 
             <div className="max-w-5xl m-auto p-5">
                 <div className="flex justify-between mb-4">
-                    <h3 className="text-3xl text-gray-dark">Our next classes</h3>
+                    <h2 className="text-3xl text-gray-dark">Upcoming classes</h2>
                 </div>
                 <div className="mb-8">
-                    <p className="text-base mb-2">Select Training:</p>
+                    <p className="text-base mb-2">Filter:</p>
                     <div>
                         <ul className="flex flex-wrap gap-2 text-sm">
                             <li
@@ -42,6 +42,14 @@ function SchedulePage() {
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
+                                    'border-primary-default bg-primary-light': filters.includes('PAL-E'),
+                                })}
+                                onClick={() => handleFilter('PAL-E')}
+                            >
+                                PAL - Essential
+                            </li>
+                            <li
+                                className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
                                     'border-primary-default bg-primary-light': filters.includes('PSM'),
                                 })}
                                 onClick={() => handleFilter('PSM')}
@@ -50,11 +58,19 @@ function SchedulePage() {
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
-                                    'border-primary-default bg-primary-light': filters.includes('PSM II'),
+                                    'border-primary-default bg-primary-light': filters.includes('PSM-A'),
                                 })}
-                                onClick={() => handleFilter('PSM II')}
+                                onClick={() => handleFilter('PSM-A')}
                             >
-                                PSM II
+                                PSM - Advanced
+                            </li>
+                            <li
+                                className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
+                                    'border-primary-default bg-primary-light': filters.includes('PSPO'),
+                                })}
+                                onClick={() => handleFilter('PSPO')}
+                            >
+                                PSPO
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
@@ -71,22 +87,6 @@ function SchedulePage() {
                                 onClick={() => handleFilter('PSPBM Skills')}
                             >
                                 PSPBM Skills
-                            </li>
-                            <li
-                                className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
-                                    'border-primary-default bg-primary-light': filters.includes('PSPO'),
-                                })}
-                                onClick={() => handleFilter('PSPO')}
-                            >
-                                PSPO
-                            </li>
-                            <li
-                                className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
-                                    'border-primary-default bg-primary-light': filters.includes('PAL-E'),
-                                })}
-                                onClick={() => handleFilter('PAL-E')}
-                            >
-                                PAL-E
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {

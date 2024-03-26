@@ -20,7 +20,6 @@ interface DatesTableTypes {
 }
 
 export function getDateInWords(date: any): string {
-    // let newDate = date.setDate(date.getDate());
     let newDate = date.toString().split(' ').slice(1, 4);
     return `${newDate[0]} ${newDate[1]}, ${newDate[2]}`;
 }
@@ -30,7 +29,7 @@ const DatesTable: React.FC<DatesTableTypes> = ({ training, streams }) => {
 
     return (
         <div style={{ maxWidth: '90%', margin: '0 auto', marginTop: 20, marginBottom: 30 }}>
-            <h2 style={{ marginBottom: 20 }}>Class Schedule</h2>
+            <h2 style={{ marginBottom: 20 }}>Upcoming classes</h2>
             <TableContainer component={Paper}>
                 <Table
                     sx={{

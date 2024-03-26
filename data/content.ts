@@ -65,18 +65,17 @@ export const content = {
     pages: {
         home: {
             widescreenBanner: {
-                slogan: [`Co-creating better ways of working and leading.`, ``],
+                slogan: [`Co-creating better ways of building great products.`, ``],
             },
             headerArticle: {
                 imageURL: 'network.png',
                 header: 'ValueHut Limited',
                 description: `ValueHut is an agile coaching and training consultancy that is helping 
-                Organisations transform into a network of interdependent teams across different business units.
+                Organisations transform into a network of interdependent product teams across different business units.
                 The desire for transformation is driven by a need to respond to changing customer needs  and capabities 
-                to continually deliver product that delight users. We partner with Leaders and support the teams as everyone 
-                has a part to play in the transformation process. Our coaches work with the teams to improve their cross-functional 
+                to continually deliver products that delight users. Our coaches work with product teams to improve their cross-functional 
                 and self-managing capabilities. Leaders are supported and coached to develop the capabilities required to create enabling
-                work environments for teams to succeed.`,
+                work environments for these teams to succeed.`,
             },
             servicesArticle: {
                 header: 'Services',
@@ -239,7 +238,7 @@ export const content = {
                 {
                     region: 'Nigeria',
                     email: 'info@valuehut.co',
-                    phone: '+234(0)8181935501',
+                    phone: '+234(0)8143021499',
                     address: '44, Community Road Off Bamishile Street off Allen Avenue, Ikeja, Lagos, Nigeria',
                 },
             ],

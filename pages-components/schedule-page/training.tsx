@@ -20,7 +20,7 @@ function WrapTraining({ training }: { training: TrainingTypes }) {
                 </div>
                 <div className="w-auto col-start-1 col-end-13 md:col-start-2">
                     <div className="flex justify-between max-w-3xl">
-                        <h3 className="mb-4 font-semibold">{_training.acronym}</h3>
+                        <h3 className="mb-4 font-semibold">{_training.title}</h3>
                     </div>
                     <p className="text-sm max-w-3xl">{_training.description}</p>
                     <div className="flex justify-end max-w-3xl">

@@ -138,43 +138,7 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    id: 'cb0e3443-7c5b-4198-9ce4-214fd7c8b650',
-                    startDate: new Date('2023-12-08').toJSON(),
-                    classType: 'Virtual class',
-                    endDate: new Date('2023-12-09').toJSON(),
-                    time: '09:00 - 17:00 GMT',
-                    price: [
-                        {
-                            region: 'United Kingdom',
-                            regionDescription: ['United Kingdom'],
-                            amount: 1000,
-                            currency: {
-                                name: 'gbp',
-                                symbol: '£',
-                                locale: 'en_GB',
-                                template: 'GBP',
-                            },
-                        },
-                        {
-                            region: 'Primary Market',
-                            regionDescription: primaryMarket,
-                            amount: 1000,
-                        },
-                        {
-                            region: 'Tertiary Market',
-                            regionDescription: tertiaryMarket,
-                            amount: 800,
-                        },
-                        {
-                            region: 'Secondary Market',
-                            regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 900,
-                        },
-                    ],
-                    filled: true,
-                },
-                {
-                    id: '9262daa1-9436-4af1-912d-0d1769a35fd5',
+                    id: '47665c95-c5c3-46ed-bd64-a0e8da2d2dce',
                     startDate: new Date('2024-03-01').toJSON(),
                     classType: 'Virtual class',
                     endDate: new Date('2024-03-02').toJSON(),
@@ -207,14 +171,86 @@ export const training: TrainingObject = {
                             amount: 900,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
                     id: '471611cf-944b-4029-968b-d84e1db142ac',
                     startDate: new Date('2024-04-12').toJSON(),
                     classType: 'Virtual class',
                     endDate: new Date('2024-04-13').toJSON(),
-                    time: '09:00 - 17:00 GMT',
+                    time: '09:00 - 17:00 BST',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1000,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1000,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 800,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 900,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    id: '58d2733a-51f4-46f2-b1e3-7c4646338672',
+                    startDate: new Date('2024-05-11').toJSON(),
+                    classType: 'In Person Class (2 Saturdays)',
+                    endDate: new Date('2024-05-18').toJSON(),
+                    time: '09:00 - 17:00 BST',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1000,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1000,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 800,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 900,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    id: 'b8f8e8b3-246b-4352-b3be-5815b15710f4',
+                    startDate: new Date('2024-06-28').toJSON(),
+                    classType: 'Virtual class',
+                    endDate: new Date('2024-06-29').toJSON(),
+                    time: '09:00 - 17:00 BST',
                     price: [
                         {
                             region: 'United Kingdom',
@@ -291,7 +327,7 @@ export const training: TrainingObject = {
                     content: `All participants completing the Professional Scrum Product Owner course will receive 
                     a password to attempt the Professional Scrum Product Owner I (PSPO I) assessment. 
                     The industry-recognized PSPO I certification requires a minimum passing score of 85%. 
-                    PSM class participants who attempt the PSM I assessment within 14 days of receiving their 
+                    PSPO class participants who attempt the PSPO I assessment within 14 days of receiving their 
                     free password and do not score at least 85% will be granted a 2nd attempt at no additional cost.`,
                 },
                 {
@@ -353,14 +389,86 @@ export const training: TrainingObject = {
                             amount: 900,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
                     id: '360af7f3-a02a-4502-9e22-595e78714487',
                     startDate: new Date('2024-03-29').toJSON(),
                     classType: 'Virtual',
                     endDate: new Date('2024-03-30').toJSON(),
-                    time: '9:00 - 17:00 GMT',
+                    time: '9:00 - 17:00 BST',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1000,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1000,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 800,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 900,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    id: 'c2ac8c6b-5974-45cc-953d-1b29f5908638',
+                    startDate: new Date('2024-05-03').toJSON(),
+                    classType: 'Virtual',
+                    endDate: new Date('2024-05-04').toJSON(),
+                    time: '9:00 - 17:00 BST',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1000,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1000,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 800,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 900,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    id: 'be19b66f-3bba-4fdb-842d-18754062717d',
+                    startDate: new Date('2024-06-07').toJSON(),
+                    classType: 'Virtual',
+                    endDate: new Date('2024-06-08').toJSON(),
+                    time: '9:00 - 17:00 BST',
                     price: [
                         {
                             region: 'United Kingdom',
@@ -396,17 +504,17 @@ export const training: TrainingObject = {
         },
         {
             id: 3,
-            title: 'Professional Scrum Master II',
-            acronym: 'PSM II',
-            description: `Professional Scrum Master II (PSM II) is an advanced course that helps students to 
+            title: 'Professional Scrum Master - Advanced',
+            acronym: 'PSM-A',
+            description: `Professional Scrum Master - Advanced is a course that helps students to 
             understand the stances of an effective Scrum Master  while diving deep into how they serve the 
-            Developers, Product Owner and organization. Students learn about practices and skills that enable 
+            Developers, Product Owner and the Organization. Students learn about practices and skills that enable 
             them have the right conversations and how to apply them to become better Scrum Masters. 
-            It is specifically designed for experienced Scrum Masters who have a thorough understanding of the 
-            Scrum Framework, with at least one year of experience looking to grow their knowledge and abilities 
+            It is specifically designed for Scrum Masters who have a thorough understanding of the 
+            Scrum Framework, with at least one year of experience and looking to grow their knowledge and abilities 
             as a Scrum Master.`,
             imageURL: '/images/energy.jpg',
-            logo: 'psmii.svg',
+            logo: 'PSM-A.svg',
             iconBorder: 'https://static.scrum.org/web/tokens/token-psm-color.svg',
             articles: [
                 {
@@ -435,9 +543,9 @@ export const training: TrainingObject = {
                 },
                 {
                     title: 'Assessment Certification',
-                    content: `All participants completing the Professional Scrum Master II course will receive a password to 
-                    attempt the Professional Scrum Master II (PSM II) assessment. PSM II class participants who attempt 
-                    the PSM II assessment within 14 days of receiving their free password and do not score at least 85% 
+                    content: `All participants completing the Professional Scrum Master - Advanced course will receive a password to 
+                    attempt the Professional Scrum Master - Advanced (PSM-A) assessment. PSM-A class participants who attempt 
+                    the PSM-A assessment within 14 days of receiving their free password and do not score at least 85% 
                     will be granted a 2nd attempt at no additional cost.`,
                 },
                 {
@@ -466,11 +574,11 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    id: '771f1b02-0a86-4031-b3eb-09cb466540fb',
-                    startDate: new Date('2023-10-20').toJSON(),
-                    endDate: new Date('2023-10-21').toJSON(),
-                    classType: 'In-Person class',
-                    time: 'Lagos, Africa',
+                    id: '35e619c3-c983-4ca4-b869-8e36bf3263bb',
+                    startDate: new Date('2024-03-22').toJSON(),
+                    endDate: new Date('2024-03-23').toJSON(),
+                    time: '9:00 - 17:00 GMT',
+                    classType: 'Virtual',
                     price: [
                         {
                             region: 'United Kingdom',
@@ -491,7 +599,7 @@ export const training: TrainingObject = {
                         {
                             region: 'Tertiary Market',
                             regionDescription: tertiaryMarket,
-                            amount: 950,
+                            amount: 850,
                         },
                         {
                             region: 'Secondary Market',
@@ -502,10 +610,10 @@ export const training: TrainingObject = {
                     filled: true,
                 },
                 {
-                    id: '2d21878c-0c59-45ee-a179-4f52838bf047',
-                    startDate: new Date('2024-03-22').toJSON(),
-                    endDate: new Date('2024-03-23').toJSON(),
-                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    id: '33e78141-202d-4884-8b4e-3b55916766da',
+                    startDate: new Date('2024-04-06').toJSON(),
+                    endDate: new Date('2024-04-07').toJSON(),
+                    time: '08:00 - 16:00 CST',
                     classType: 'Virtual',
                     price: [
                         {
@@ -541,7 +649,43 @@ export const training: TrainingObject = {
                     id: 'db474e60-f44f-408a-aa16-9ad7840352ca',
                     startDate: new Date('2024-05-24').toJSON(),
                     endDate: new Date('2024-05-25').toJSON(),
-                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    time: '9:00 - 17:00 BST',
+                    classType: 'Virtual',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1100,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1100,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 850,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 950,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    id: '8a0ca903-1d99-4497-a0b9-95d641507d59',
+                    startDate: new Date('2024-08-23').toJSON(),
+                    endDate: new Date('2024-08-24').toJSON(),
+                    time: '9:00 - 17:00 MST',
                     classType: 'Virtual',
                     price: [
                         {
@@ -645,11 +789,11 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    id: '63170f48-a405-4ba7-b320-c952de47c232',
-                    startDate: new Date('2023-09-30').toJSON(),
-                    endDate: new Date('2023-09-30').toJSON(),
+                    id: '831a9eb0-f348-4b42-bf26-f148799dc06e',
+                    startDate: new Date('2024-02-29').toJSON(),
+                    endDate: new Date('2024-02-29').toJSON(),
                     classType: 'Virtual',
-                    time: '9:00 - 17:00 London, UK & Lagos, Africa',
+                    time: '9:00 - 17:00 GMT (10:00 - 18:00 WAT)',
                     price: [
                         {
                             region: 'United Kingdom',
@@ -681,11 +825,11 @@ export const training: TrainingObject = {
                     filled: true,
                 },
                 {
-                    id: 'f93e25e0-84e8-4eac-ba10-e894d69cf8c0',
-                    startDate: new Date('2023-12-15').toJSON(),
-                    endDate: new Date('2023-12-15').toJSON(),
+                    id: '41c1a869-41fd-4b25-907d-cd45ab0465ce',
+                    startDate: new Date('2024-04-19').toJSON(),
+                    endDate: new Date('2024-04-19').toJSON(),
                     classType: 'Virtual',
-                    time: '9:00 - 17:00 GMT (10:00 - 18:00 WAT)',
+                    time: '9:00 - 17:00 GMT',
                     price: [
                         {
                             region: 'United Kingdom',
@@ -717,11 +861,11 @@ export const training: TrainingObject = {
                     filled: false,
                 },
                 {
-                    id: 'd5f8c60c-9955-4842-96d7-5721e89bb9b6',
-                    startDate: new Date('2024-01-19').toJSON(),
-                    endDate: new Date('2024-01-19').toJSON(),
+                    id: 'd0b4d5c7-eeeb-4552-b8c2-440ced0b0a33',
+                    startDate: new Date('2024-05-10').toJSON(),
+                    endDate: new Date('2024-05-10').toJSON(),
                     classType: 'Virtual',
-                    time: '9:00 - 17:00 GMT (10:00 - 18:00 WAT)',
+                    time: '9:00 - 17:00 BST',
                     price: [
                         {
                             region: 'United Kingdom',
@@ -836,7 +980,7 @@ export const training: TrainingObject = {
                         {
                             region: 'United Kingdom',
                             regionDescription: ['United Kingdom'],
-                            amount: 495,
+                            amount: 550,
                             currency: {
                                 name: 'gbp',
                                 symbol: '£',
@@ -847,32 +991,32 @@ export const training: TrainingObject = {
                         {
                             region: 'Primary Market',
                             regionDescription: primaryMarket,
-                            amount: 500,
+                            amount: 550,
                         },
                         {
                             region: 'Tertiary Market',
                             regionDescription: tertiaryMarket,
-                            amount: 400,
+                            amount: 450,
                         },
                         {
                             region: 'Secondary Market',
                             regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 450,
+                            amount: 500,
                         },
                     ],
                     filled: true,
                 },
                 {
-                    id: 'da8b3de8-9c96-498e-b75c-869d69786e7b',
-                    startDate: new Date('2024-03-08').toJSON(),
-                    endDate: new Date('2024-03-08').toJSON(),
+                    id: '0cc78daf-8ce0-4802-8dbe-de81d037fb9d',
+                    startDate: new Date('2024-04-26').toJSON(),
+                    endDate: new Date('2024-04-26').toJSON(),
                     classType: 'Virtual',
                     time: '9:00 - 17:00 GMT',
                     price: [
                         {
                             region: 'United Kingdom',
                             regionDescription: ['United Kingdom'],
-                            amount: 495,
+                            amount: 550,
                             currency: {
                                 name: 'gbp',
                                 symbol: '£',
@@ -883,17 +1027,53 @@ export const training: TrainingObject = {
                         {
                             region: 'Primary Market',
                             regionDescription: primaryMarket,
-                            amount: 500,
+                            amount: 550,
                         },
                         {
                             region: 'Tertiary Market',
                             regionDescription: tertiaryMarket,
-                            amount: 400,
+                            amount: 450,
                         },
                         {
                             region: 'Secondary Market',
                             regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 500,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    id: 'ee3da410-9bd0-424c-ac57-5f318840ee0d',
+                    startDate: new Date('2024-05-31').toJSON(),
+                    endDate: new Date('2024-05-31').toJSON(),
+                    classType: 'Virtual',
+                    time: '9:00 - 17:00 GMT',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 550,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 550,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
                             amount: 450,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 500,
                         },
                     ],
                     filled: false,
@@ -959,9 +1139,9 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    id: '5354262f-8c6d-47d4-ab88-d43cc4d32ea6',
-                    startDate: new Date('2023-12-19').toJSON(),
-                    endDate: new Date('2023-12-20').toJSON(),
+                    id: '678b90dc-6fee-44b2-8e17-8f39f8fd1775',
+                    startDate: new Date('2024-03-15').toJSON(),
+                    endDate: new Date('2024-03-16').toJSON(),
                     time: '9:00 - 17:00 GMT',
                     classType: 'Virtual',
                     price: [
@@ -995,10 +1175,10 @@ export const training: TrainingObject = {
                     filled: true,
                 },
                 {
-                    id: '3de50aeb-9aff-402f-a97a-757a7c0704da',
-                    startDate: new Date('2024-03-15').toJSON(),
-                    endDate: new Date('2024-03-16').toJSON(),
-                    time: '9:00 - 17:00 GMT',
+                    id: '3c3857bc-9120-4fa8-b430-b512a5c398b0',
+                    startDate: new Date('2024-05-16').toJSON(),
+                    endDate: new Date('2024-05-17').toJSON(),
+                    time: '9:00 - 17:00 BST',
                     classType: 'Virtual',
                     price: [
                         {
@@ -1031,10 +1211,10 @@ export const training: TrainingObject = {
                     filled: false,
                 },
                 {
-                    id: '42e648f0-2a77-488e-a02f-84cb22e09213',
-                    startDate: new Date('2024-10-18').toJSON(),
-                    endDate: new Date('2024-10-19').toJSON(),
-                    time: '9:00 - 17:00 GMT',
+                    id: '8260ce12-4aeb-4447-be0f-6c0ea888acc6',
+                    startDate: new Date('2024-08-30').toJSON(),
+                    endDate: new Date('2024-08-31').toJSON(),
+                    time: '9:00 - 17:00 BST',
                     classType: 'Virtual',
                     price: [
                         {

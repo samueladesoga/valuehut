@@ -43,7 +43,7 @@ function generateSiteMap(paths: any) {
         <loc>${BASEURL}/services/training/professional-scrum-product-owner</loc>
     </url>
     <url>
-        <loc>${BASEURL}/services/training/professional-scrum-master-ii</loc>
+        <loc>${BASEURL}/services/training/professional-scrum-master---advanced</loc>
     </url>
     <url>
         <loc>${BASEURL}/services/training/professional-agile-leadership</loc>
