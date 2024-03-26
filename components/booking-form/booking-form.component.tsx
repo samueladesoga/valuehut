@@ -76,7 +76,7 @@ const BookingForm: React.FC<BookingFormTypes> = ({ training, stream }) => {
             </select>
             <Link
                 id="addToCart"
-                className="button button-primary button-primary-small w-full"
+                className="button button-secondary button-primary-small w-full"
                 href={encodeURI(`https://valuehut.foxycart.com/cart?name=${training.title}
                     &Start Date=${getDateInWords(new Date(stream.startDate))}
                     &Time=${stream.time}

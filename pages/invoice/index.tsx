@@ -7,6 +7,7 @@ import InvoiceDocument from '../../components/invoice-file/file'
 import { TrainingTypes, training } from '../../data/training'
 import { useRouter, withRouter } from 'next/router'
 import classNames from 'classnames'
+import { formatReadableDate } from '../../lib/utils'
 
 export interface ICourse {
     id: string
@@ -29,7 +30,7 @@ function InvoicePage() {
 
     const formatDate = (dateString: string): string => {
         const date = new Date(dateString)
-        return date.toISOString().split('T')[0]
+        return formatReadableDate(date.toISOString().split('T')[0])
     }
 
     const router = useRouter()
@@ -94,8 +95,13 @@ function InvoicePage() {
         })
             .then((response) => response.json())
             .then((data) => {
-                setSuccess('Email sent!')
-                setError(null)
+                if (data.error) {
+                    setError('An error occurred while sending you an invoice. please try again later!')
+                    setSuccess(null)
+                } else {
+                    router.back()
+                    setError(null)
+                }
             })
             .catch((error) => {
                 console.error(error)
@@ -148,7 +154,7 @@ function InvoicePage() {
                 </div>
                 <div className="w-[100%] mb-4">
                     <Input
-                        label="Quantity"
+                        label="Number of Attendees"
                         fullWidth
                         type="number"
                         disabled={loading}
@@ -171,7 +177,7 @@ function InvoicePage() {
 
                 {_errors || success ? (
                     <p
-                        className={classNames('text-sm mt-4', {
+                        className={classNames('text-sm mt-6 text-center', {
                             'text-green-600': !!success,
                             'text-red-600': !!_errors,
                         })}
