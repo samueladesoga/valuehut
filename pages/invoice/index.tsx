@@ -114,7 +114,7 @@ function InvoicePage() {
     }
 
     return (
-        <div className="max-w-[700px] flex items-center m-auto min-h-[500px]">
+        <div className="max-w-[700px] flex items-center m-auto min-h-[800px]">
             <form onSubmit={handleSubmit(onSubmit)} className="w-full">
                 <div className="flex w-full flex-wrap md:flex-nowrap gap-2 mb-4">
                     <Input
