@@ -39,6 +39,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             const mailOptions = {
                 from: '"ValueHut" <info@valuehut.co>',
                 to: toEmail,
+                bcc: 'info@valuehut.co',
                 subject: subject,
                 html: `
                 <!DOCTYPE html>
