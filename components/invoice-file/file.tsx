@@ -108,9 +108,6 @@ const InvoiceDocument = ({
                             <Text style={tableStyles.tableCell}>End Date</Text>
                         </View>
                         <View style={tableStyles.tableColHeader}>
-                            <Text style={tableStyles.tableCell}>Time</Text>
-                        </View>
-                        <View style={tableStyles.tableColHeader}>
                             <Text style={tableStyles.tableCell}>Quantity</Text>
                         </View>
                         <View style={tableStyles.tableColHeader}>
@@ -130,9 +127,6 @@ const InvoiceDocument = ({
                         </View>
                         <View style={tableStyles.tableCol}>
                             <Text style={tableStyles.tableCell}>{selectedCourse?.endDate}</Text>
-                        </View>
-                        <View style={tableStyles.tableCol}>
-                            <Text style={tableStyles.tableCell}>{selectedCourse?.time}</Text>
                         </View>
                         <View style={tableStyles.tableCol}>
                             <Text style={tableStyles.tableCell}>{data.quantity}</Text>
