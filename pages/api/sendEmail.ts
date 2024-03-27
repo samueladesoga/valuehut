@@ -80,7 +80,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
                 <body>
                     <div class="container">
                         <div class="header">
-                            Invoice Sent
+                            ValueHut Invoice for Scrum / Agile Class
                         </div>
                         <div class="content">
                             Hello ,<br><br>
