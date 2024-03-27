@@ -39,6 +39,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             const mailOptions = {
                 from: '"ValueHut" <info@valuehut.co>',
                 to: toEmail,
+                bcc: 'info@valuehut.co',
                 subject: subject,
                 html: `
                 <!DOCTYPE html>
@@ -80,16 +81,20 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
                 <body>
                     <div class="container">
                         <div class="header">
-                            Invoice Sent
+                            ValueHut Invoice for Scrum / Agile Class
                         </div>
                         <div class="content">
                             Hello ,<br><br>
         
-                            We are pleased to inform you that your invoice has been successfully sent. Please check your email inbox for the details.<br><br>
+                            Thank you for requesting an invoice for the workshop. Please find attached an invoice for the class requested<br><br>
         
-                            Should you have any questions or require further assistance, feel free to contact us.<br><br>
+                            Should you have any questions or require further assistance including the Bank Details for your preferred currency, feel free to contact us.<br><br>
         
-                            Thank you for your trust in our services.
+                            Thank you for your trust in ValueHut.
+
+                            Regards, <br>
+                            Debbie <br>
+                            info@valuehut.co
                         </div>
                         <div class="footer">
                             © ValueHut - All rights reserved
