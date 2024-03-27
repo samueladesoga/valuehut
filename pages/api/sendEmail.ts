@@ -18,8 +18,16 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             const uploadedFile = files.file?.[0]
             const toEmail = fields.toEmail?.[0]
             const subject = fields.subject?.[0]
+            const customerName = fields.customerName?.[0]
+            const courseName = fields.courseName?.[0]
 
-            if (!uploadedFile || typeof toEmail !== 'string' || typeof subject !== 'string') {
+            if (
+                !uploadedFile ||
+                typeof toEmail !== 'string' ||
+                typeof subject !== 'string' ||
+                typeof customerName !== 'string' ||
+                typeof courseName !== 'string'
+            ) {
                 return res.status(400).json({ error: 'Invalid request' })
             }
 
@@ -81,10 +89,10 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
                 <body>
                     <div class="container">
                         <div class="header">
-                            ValueHut Invoice for Scrum / Agile Class
+                            ValueHut Invoice for <b>${courseName}</b>
                         </div>
                         <div class="content">
-                            Hello ,<br><br>
+                            Hello ${customerName},<br><br>
         
                             Thank you for requesting an invoice for the workshop. Please find attached an invoice for the class requested<br><br>
         

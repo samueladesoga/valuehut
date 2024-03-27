@@ -40,12 +40,18 @@ function InvoicePage() {
     }
 
     const handleQuantityChange = (event: ChangeEvent<HTMLInputElement>) => {
-        const value = parseInt(event.target.value, 10)
-        console.log(value)
+        let value = parseInt(event.target.value, 10)
+        if (isNaN(value)) value = 1
         if (value < 1) {
-            setValue('quantity', 1)
+            setValue('quantity', 1, { shouldValidate: true })
+        } else {
+            setValue('quantity', value, { shouldValidate: true })
         }
     }
+
+    useEffect(() => {
+        console.log(errors)
+    }, [errors])
 
     const router = useRouter()
     const { query } = router
@@ -103,6 +109,8 @@ function InvoicePage() {
         formData.append('toEmail', data.email) // Assuming you want to send it to the email provided in the form
         formData.append('subject', 'ValueHut: Your Invoice')
         formData.append('text', 'Please find attached your invoice.')
+        formData.append('customerName', data.fullName)
+        formData.append('courseName', selectedCourse?.title ?? '')
 
         // Send the email with the PDF attached via your API route
         fetch('/api/sendEmail', {
@@ -129,7 +137,7 @@ function InvoicePage() {
             })
     }
 
-    const { ref, ...rest } = register('quantity')
+    const { ref, ...rest } = register('quantity', { required: true, valueAsNumber: true })
 
     return (
         <div className="max-w-[700px] flex items-center m-auto min-h-[1000px]">
