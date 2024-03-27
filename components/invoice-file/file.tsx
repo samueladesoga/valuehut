@@ -3,11 +3,20 @@ import { Page, Text, View, Document, Image, StyleSheet } from '@react-pdf/render
 import { styles, tableStyles } from '../../lib/file.styles'
 import { InvoiceSchemaType } from '../../lib/schemas/invoice.schema'
 import LogoVH from '../../public/logo192.png'
-import { ICourse } from '../../pages/invoice'
+import { ICourse } from '../../pages/checkout/invoice'
 
-const InvoiceDocument = ({ data, selectedCourse }: { data: InvoiceSchemaType; selectedCourse: ICourse | null }) => {
+const InvoiceDocument = ({
+    data,
+    selectedCourse,
+    isUk,
+}: {
+    data: InvoiceSchemaType
+    selectedCourse: ICourse | null
+    isUk: string | undefined
+}) => {
     const today = new Date().toLocaleDateString()
     const totalPrice = selectedCourse ? selectedCourse.price * data.quantity : 0
+    const currency = isUk ? '£' : '$'
 
     return (
         <Document>
@@ -132,23 +141,29 @@ const InvoiceDocument = ({ data, selectedCourse }: { data: InvoiceSchemaType; se
                             <Text style={tableStyles.tableCell}>{selectedCourse?.price.toFixed(2)}</Text>
                         </View>
                         <View style={tableStyles.tableCol}>
-                            <Text style={tableStyles.tableCell}>£ {totalPrice.toFixed(2)}</Text>
+                            <Text style={tableStyles.tableCell}>
+                                {currency} {totalPrice.toFixed(2)}
+                            </Text>
                         </View>
                     </View>
                     <View style={{ ...tableStyles.totalsRow, marginTop: 11 }}>
                         <Text style={[tableStyles.totalsLabel, tableStyles.tableCell]}>Sub-Total</Text>
-                        <Text style={[tableStyles.totalsAmount, tableStyles.tableCell]}>£ {totalPrice.toFixed(2)}</Text>
+                        <Text style={[tableStyles.totalsAmount, tableStyles.tableCell]}>
+                            {currency} {totalPrice.toFixed(2)}
+                        </Text>
                     </View>
                     <View style={tableStyles.totalsRow}>
-                        <Text style={[tableStyles.totalsLabel, tableStyles.tableCell]}>Tax (20%):</Text>
+                        <Text style={[tableStyles.totalsLabel, tableStyles.tableCell]}>
+                            Tax ({isUk ? '20%' : '0%'}):
+                        </Text>
                         <Text style={[tableStyles.totalsAmount, tableStyles.tableCell]}>
-                            £ {Number(totalPrice * 0.2).toFixed(2)}
+                            {isUk ? `${currency} ${Number(totalPrice * 0.2).toFixed(2)}` : '$0'}
                         </Text>
                     </View>
                     <View style={tableStyles.totalsRow}>
                         <Text style={[tableStyles.totalsLabel, tableStyles.tableCell]}>TOTAL</Text>
                         <Text style={[tableStyles.totalsAmount, tableStyles.tableCell]}>
-                            £ {Number(totalPrice + totalPrice * 0.2).toFixed(2)}
+                            {currency} {Number(isUk ? totalPrice + totalPrice * 0.2 : totalPrice).toFixed(2)}
                         </Text>
                     </View>
                 </View>

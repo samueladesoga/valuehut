@@ -92,7 +92,11 @@ const BookingForm: React.FC<BookingFormTypes> = ({ training, stream }) => {
             <Link
                 id="payWithInvoice"
                 className="button button-secondary button-primary-small w-full"
-                href={encodeURI(`/invoice?courseId=${stream.id}`)}
+                href={encodeURI(
+                    `/checkout/invoice?courseId=${stream.id}${
+                        country.toLowerCase() === 'united kingdom' ? '&country=UK' : ''
+                    }`,
+                )}
             >
                 Pay with invoice
             </Link>
