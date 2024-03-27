@@ -92,8 +92,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         
                             Thank you for your trust in ValueHut.
 
-                            Regards,
-                            Debbie
+                            Regards, <br>
+                            Debbie <br>
                             info@valuehut.co
                         </div>
                         <div class="footer">
