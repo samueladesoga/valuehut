@@ -1,15 +1,16 @@
 import Head from 'next/head';
-import Link from 'next/link';
-import { useState } from 'react';
 import Header from '../header/header.component.tsx';
 import Footer from '../footer/footer.component.tsx';
 import BottomNav from '../bottom-nav/bottom-nav.component.tsx';
 import { content } from '../../data/content';
+import {NextUIProvider} from "@nextui-org/react";
+
 
 export default function Layout({ children }) {
   const offices = content.pages.contact.offices;
   return (
     <div className="App">
+    <NextUIProvider>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         {/*<!-- TrustBox script -->*/}
@@ -32,6 +33,7 @@ export default function Layout({ children }) {
         {/* <!-- FOXYCART --> */}
         <script data-cfasync="false" src="https://cdn.foxycart.com/valuehut/loader.js" async defer></script>
         {/* <!-- FOXYCART --> */}
+      </NextUIProvider>
     </div>
   );
 }
