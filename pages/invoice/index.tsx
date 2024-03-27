@@ -118,7 +118,7 @@ function InvoicePage() {
             <form onSubmit={handleSubmit(onSubmit)} className="w-full">
                 <div className="flex w-full flex-wrap md:flex-nowrap gap-2 mb-4">
                     <Input
-                        label="Full name (or company name)"
+                        label="Full name (or Company name)"
                         fullWidth
                         disabled={loading}
                         {...register('fullName', { required: true })}
@@ -172,7 +172,7 @@ function InvoicePage() {
                 </div>
 
                 <Button type="submit" disabled={loading} fullWidth variant="bordered">
-                    {loading ? 'Loading...' : 'Send me an invoice'}
+                    {loading ? 'Loading...' : 'Send invoice to email'}
                 </Button>
 
                 {_errors || success ? (
