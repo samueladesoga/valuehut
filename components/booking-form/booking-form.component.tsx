@@ -88,7 +88,7 @@ const BookingForm: React.FC<BookingFormTypes> = ({ training, stream }) => {
             >
                 Pay {bookPrice.currency ? bookPrice.currency.symbol : '$'} {bookPrice.amount.toString()} by Card
             </Link>
-            {/* <div className="py-2 w-full text-center">OR</div>
+            <div className="py-2 w-full text-center">OR</div>
             <Link
                 id="payWithInvoice"
                 className="button button-secondary button-primary-small w-full"
@@ -99,7 +99,7 @@ const BookingForm: React.FC<BookingFormTypes> = ({ training, stream }) => {
                 )}
             >
                 Pay {bookPrice.currency ? bookPrice.currency.symbol : '$'} {bookPrice.amount.toString()} with invoice
-            </Link> */}
+            </Link>
         </div>
     )
 }
