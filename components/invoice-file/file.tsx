@@ -12,7 +12,7 @@ const InvoiceDocument = ({
 }: {
     data: InvoiceSchemaType
     selectedCourse: ICourse | null
-    isUk: string | undefined
+    isUk: boolean
 }) => {
     const today = new Date().toLocaleDateString()
     const totalPrice = selectedCourse ? selectedCourse.price * data.quantity : 0

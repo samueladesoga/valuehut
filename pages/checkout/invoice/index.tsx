@@ -28,6 +28,7 @@ function InvoicePage() {
         setValue,
         formState: { errors },
     } = useForm<InvoiceSchemaType>({
+        mode: 'onChange',
         defaultValues: {
             quantity: 1,
         },
@@ -39,6 +40,10 @@ function InvoicePage() {
         return formatReadableDate(date.toISOString().split('T')[0])
     }
 
+    useEffect(() => {
+        setValue('quantity', 1, { shouldValidate: true })
+    }, [setValue])
+
     const handleQuantityChange = (event: ChangeEvent<HTMLInputElement>) => {
         let value = parseInt(event.target.value, 10)
         if (isNaN(value)) value = 1
@@ -49,10 +54,6 @@ function InvoicePage() {
         }
     }
 
-    useEffect(() => {
-        console.log(errors)
-    }, [errors])
-
     const router = useRouter()
     const { query } = router
 
@@ -62,24 +63,30 @@ function InvoicePage() {
 
     const [_errors, setError] = useState<string | null>(null)
 
-    const formatStreams = useCallback((trainings: TrainingTypes[]): (ICourse | undefined)[] => {
-        return trainings
-            .filter((training) => training.isTraining && training.streams && training.streams?.length > 0)
-            .flatMap((training) =>
-                training?.streams
-                    ?.filter((stream) => !stream.filled)
-                    .map((stream) => ({
-                        id: stream.id,
-                        title: `${training.acronym} (${training.title})`,
-                        price: stream.price[0].amount,
-                        startDate: formatDate(stream.startDate),
-                        endDate: formatDate(stream.endDate),
-                        label: training.title,
-                        time: stream.time,
-                        acronym: training.acronym,
-                    })),
-            )
-    }, [])
+    const formatStreams = useCallback(
+        (trainings: TrainingTypes[]): (ICourse | undefined)[] => {
+            return trainings
+                .filter((training) => training.isTraining && training.streams && training.streams?.length > 0)
+                .flatMap((training) =>
+                    training?.streams
+                        ?.filter((stream) => !stream.filled)
+                        .map((stream) => ({
+                            id: stream.id,
+                            title: `${training.acronym} (${training.title})`,
+                            price: (
+                                stream.price.find((p) => p.regionDescription.includes(query.country as string)) ??
+                                stream.price[3]
+                            ).amount,
+                            startDate: formatDate(stream.startDate),
+                            endDate: formatDate(stream.endDate),
+                            label: training.title,
+                            time: stream.time,
+                            acronym: training.acronym,
+                        })),
+                )
+        },
+        [query.country],
+    )
 
     useEffect(() => {
         if (query.courseId) {
@@ -93,7 +100,7 @@ function InvoicePage() {
     const onSubmit: SubmitHandler<InvoiceSchemaType> = async (data) => {
         setLoading(true)
         const doc = (
-            <InvoiceDocument data={data} selectedCourse={selectedCourse} isUk={query.country as string | undefined} />
+            <InvoiceDocument data={data} selectedCourse={selectedCourse} isUk={query.country === 'United Kingdom'} />
         )
         const asPdf = pdf()
 
