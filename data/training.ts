@@ -356,42 +356,6 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    id: '9c544d91-5b3d-48d9-b0bf-4bd98394188d',
-                    startDate: new Date('2024-02-23').toJSON(),
-                    classType: 'Virtual',
-                    endDate: new Date('2024-02-24').toJSON(),
-                    time: '9:00 - 17:00 GMT',
-                    price: [
-                        {
-                            region: 'United Kingdom',
-                            regionDescription: ['United Kingdom'],
-                            amount: 1000,
-                            currency: {
-                                name: 'gbp',
-                                symbol: '£',
-                                locale: 'en_GB',
-                                template: 'GBP',
-                            },
-                        },
-                        {
-                            region: 'Primary Market',
-                            regionDescription: primaryMarket,
-                            amount: 1000,
-                        },
-                        {
-                            region: 'Tertiary Market',
-                            regionDescription: tertiaryMarket,
-                            amount: 800,
-                        },
-                        {
-                            region: 'Secondary Market',
-                            regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 900,
-                        },
-                    ],
-                    filled: true,
-                },
-                {
                     id: '360af7f3-a02a-4502-9e22-595e78714487',
                     startDate: new Date('2024-03-29').toJSON(),
                     classType: 'Virtual',
@@ -425,7 +389,7 @@ export const training: TrainingObject = {
                             amount: 900,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
                     id: 'c2ac8c6b-5974-45cc-953d-1b29f5908638',
