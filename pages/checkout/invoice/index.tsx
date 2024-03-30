@@ -7,8 +7,8 @@ import InvoiceDocument from '../../../components/invoice-file/file'
 import { TrainingTypes, training } from '../../../data/training'
 import { useRouter, withRouter } from 'next/router'
 import classNames from 'classnames'
-import { formatReadableDate } from '../../../lib/utils'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { getDateInWords } from '../../../components/dates-table/dates-table.component'
 
 export interface ICourse {
     id: string
@@ -37,7 +37,7 @@ function InvoicePage() {
 
     const formatDate = (dateString: string): string => {
         const date = new Date(dateString)
-        return formatReadableDate(date.toISOString().split('T')[0])
+        return getDateInWords(date)
     }
 
     useEffect(() => {
@@ -147,12 +147,15 @@ function InvoicePage() {
     const { ref, ...rest } = register('quantity', { required: true, valueAsNumber: true })
 
     return (
-        <div className="max-w-[700px] flex items-center m-auto min-h-[800px]">
+        <div className="max-w-[700px] flex flex-col justify-center items-center m-auto min-h-[1000px] px-2">
+            <h1 className="mb-2 text-stone-800">Checkout: Invoice</h1>
+            <span className="mb-40 text-stone-600">Please fill the below form to proceed.</span>
             <form onSubmit={handleSubmit(onSubmit)} className="w-full">
                 <div className="flex w-full flex-wrap md:flex-nowrap gap-2 mb-4">
                     <Input
                         label="Full name (or Company name)"
                         fullWidth
+                        errorMessage={errors.fullName ? <>{errors?.fullName.message}</> : null}
                         disabled={loading}
                         {...register('fullName', { required: true })}
                         className={`${errors?.fullName?.message ? '!outline-red-400' : ''}`}
@@ -163,6 +166,7 @@ function InvoicePage() {
                         type="email"
                         label="Email"
                         fullWidth
+                        errorMessage={errors.email ? <>{errors?.email.message}</> : null}
                         disabled={loading}
                         {...register('email', { required: true })}
                         className={`${errors?.email?.message ? '!outline-red-400' : ''}`}
@@ -170,6 +174,7 @@ function InvoicePage() {
                     <Input
                         label="Phone Number"
                         fullWidth
+                        errorMessage={errors.phoneNumber ? <>{errors?.phoneNumber.message}</> : null}
                         disabled={loading}
                         {...register('phoneNumber', { required: true })}
                         className={`${errors.phoneNumber ? 'border-red-400' : ''}`}
@@ -181,6 +186,7 @@ function InvoicePage() {
                         label="Address"
                         fullWidth
                         disabled={loading}
+                        errorMessage={errors.address ? <>{errors?.address.message}</> : null}
                         {...register('address', { required: true })}
                         className={`${errors.address ? 'border-red-400' : ''}`}
                     />
@@ -192,6 +198,7 @@ function InvoicePage() {
                         type="number"
                         min={1}
                         disabled={loading}
+                        errorMessage={errors.quantity ? <>{errors?.quantity.message}</> : null}
                         {...rest}
                         ref={ref}
                         onChange={(e) => {
@@ -209,8 +216,14 @@ function InvoicePage() {
                     <h3 className="text-stone-600 text-sm">Time: {selectedCourse?.time}</h3>
                 </div>
 
-                <Button type="submit" disabled={loading} fullWidth variant="bordered">
-                    {loading ? 'Loading...' : 'Send invoice to email'}
+                <Button
+                    type="submit"
+                    disabled={loading}
+                    fullWidth
+                    variant="solid"
+                    className="bg-[#528ecc] text-white font-medium"
+                >
+                    <span>{loading ? 'Loading...' : 'Continue'}</span>
                 </Button>
 
                 {_errors || success ? (
