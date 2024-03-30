@@ -3,11 +3,20 @@ import { Page, Text, View, Document, Image, StyleSheet } from '@react-pdf/render
 import { styles, tableStyles } from '../../lib/file.styles'
 import { InvoiceSchemaType } from '../../lib/schemas/invoice.schema'
 import LogoVH from '../../public/logo192.png'
-import { ICourse } from '../../pages/invoice'
+import { ICourse } from '../../pages/checkout/invoice'
 
-const InvoiceDocument = ({ data, selectedCourse }: { data: InvoiceSchemaType; selectedCourse: ICourse | null }) => {
+const InvoiceDocument = ({
+    data,
+    selectedCourse,
+    isUk,
+}: {
+    data: InvoiceSchemaType
+    selectedCourse: ICourse | null
+    isUk: boolean
+}) => {
     const today = new Date().toLocaleDateString()
     const totalPrice = selectedCourse ? selectedCourse.price * data.quantity : 0
+    const currency = isUk ? '£' : '$'
 
     return (
         <Document>
@@ -99,9 +108,6 @@ const InvoiceDocument = ({ data, selectedCourse }: { data: InvoiceSchemaType; se
                             <Text style={tableStyles.tableCell}>End Date</Text>
                         </View>
                         <View style={tableStyles.tableColHeader}>
-                            <Text style={tableStyles.tableCell}>Time</Text>
-                        </View>
-                        <View style={tableStyles.tableColHeader}>
                             <Text style={tableStyles.tableCell}>Quantity</Text>
                         </View>
                         <View style={tableStyles.tableColHeader}>
@@ -123,32 +129,35 @@ const InvoiceDocument = ({ data, selectedCourse }: { data: InvoiceSchemaType; se
                             <Text style={tableStyles.tableCell}>{selectedCourse?.endDate}</Text>
                         </View>
                         <View style={tableStyles.tableCol}>
-                            <Text style={tableStyles.tableCell}>{selectedCourse?.time}</Text>
-                        </View>
-                        <View style={tableStyles.tableCol}>
                             <Text style={tableStyles.tableCell}>{data.quantity}</Text>
                         </View>
                         <View style={tableStyles.tableCol}>
                             <Text style={tableStyles.tableCell}>{selectedCourse?.price.toFixed(2)}</Text>
                         </View>
                         <View style={tableStyles.tableCol}>
-                            <Text style={tableStyles.tableCell}>£ {totalPrice.toFixed(2)}</Text>
+                            <Text style={tableStyles.tableCell}>
+                                {currency} {totalPrice.toFixed(2)}
+                            </Text>
                         </View>
                     </View>
                     <View style={{ ...tableStyles.totalsRow, marginTop: 11 }}>
                         <Text style={[tableStyles.totalsLabel, tableStyles.tableCell]}>Sub-Total</Text>
-                        <Text style={[tableStyles.totalsAmount, tableStyles.tableCell]}>£ {totalPrice.toFixed(2)}</Text>
+                        <Text style={[tableStyles.totalsAmount, tableStyles.tableCell]}>
+                            {currency} {totalPrice.toFixed(2)}
+                        </Text>
                     </View>
                     <View style={tableStyles.totalsRow}>
-                        <Text style={[tableStyles.totalsLabel, tableStyles.tableCell]}>Tax (20%):</Text>
+                        <Text style={[tableStyles.totalsLabel, tableStyles.tableCell]}>
+                            Tax ({isUk ? '20%' : '0%'}):
+                        </Text>
                         <Text style={[tableStyles.totalsAmount, tableStyles.tableCell]}>
-                            £ {Number(totalPrice * 0.2).toFixed(2)}
+                            {isUk ? `${currency} ${Number(totalPrice * 0.2).toFixed(2)}` : '$0'}
                         </Text>
                     </View>
                     <View style={tableStyles.totalsRow}>
                         <Text style={[tableStyles.totalsLabel, tableStyles.tableCell]}>TOTAL</Text>
                         <Text style={[tableStyles.totalsAmount, tableStyles.tableCell]}>
-                            £ {Number(totalPrice + totalPrice * 0.2).toFixed(2)}
+                            {currency} {Number(isUk ? totalPrice + totalPrice * 0.2 : totalPrice).toFixed(2)}
                         </Text>
                     </View>
                 </View>
@@ -203,11 +212,12 @@ const InvoiceDocument = ({ data, selectedCourse }: { data: InvoiceSchemaType; se
                             fontWeight: 'light',
                         }}
                     >
-                        Payment is to be made into specified Bank account within 7 days from invoice date.
+                        Payment is to be made into specified Bank account within 7days from invoice date. Our bank accounts are below:
                     </Text>
                 </View>
                 <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
-                    <View style={{ fontSize: '8px' }}>
+                    <View style={{ fontSize: '6px' }}>
+                        <Text>USD account</Text>
                         <Text>Account holder: Valuehut Limited</Text>
                         <Text>ACH and Wire routing number: 026073150</Text>
                         <Text>Account number: 8313703765</Text>
@@ -216,7 +226,8 @@ const InvoiceDocument = ({ data, selectedCourse }: { data: InvoiceSchemaType; se
                         <Text>New York NY 10010</Text>
                         <Text>United States</Text>
                     </View>
-                    <View style={{ fontSize: '8px' }}>
+                    <View style={{ fontSize: '6px' }}>
+                        <Text>EUR account</Text>
                         <Text>Account holder: Valuehut Limited</Text>
                         <Text>SWIFT/BIC: TRWIBEB1XXX</Text>
                         <Text>IBAN: BE16 9677 5000 5174</Text>
@@ -225,7 +236,8 @@ const InvoiceDocument = ({ data, selectedCourse }: { data: InvoiceSchemaType; se
                         <Text>Brussels 1050</Text>
                         <Text>Belgium</Text>
                     </View>
-                    <View style={{ fontSize: '8px' }}>
+                    <View style={{ fontSize: '6px' }}>
+                        <Text>GBP account</Text>
                         <Text>Account holder: Valuehut Limited</Text>
                         <Text>Account Number: 92489597</Text>
                         <Text>Sort Code: 40-04-01</Text>
