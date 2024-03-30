@@ -155,6 +155,7 @@ function InvoicePage() {
                     <Input
                         label="Full name (or Company name)"
                         fullWidth
+                        errorMessage={errors.fullName ? <>{errors?.fullName.message}</> : null}
                         disabled={loading}
                         {...register('fullName', { required: true })}
                         className={`${errors?.fullName?.message ? '!outline-red-400' : ''}`}
@@ -165,6 +166,7 @@ function InvoicePage() {
                         type="email"
                         label="Email"
                         fullWidth
+                        errorMessage={errors.email ? <>{errors?.email.message}</> : null}
                         disabled={loading}
                         {...register('email', { required: true })}
                         className={`${errors?.email?.message ? '!outline-red-400' : ''}`}
@@ -172,6 +174,7 @@ function InvoicePage() {
                     <Input
                         label="Phone Number"
                         fullWidth
+                        errorMessage={errors.phoneNumber ? <>{errors?.phoneNumber.message}</> : null}
                         disabled={loading}
                         {...register('phoneNumber', { required: true })}
                         className={`${errors.phoneNumber ? 'border-red-400' : ''}`}
@@ -183,6 +186,7 @@ function InvoicePage() {
                         label="Address"
                         fullWidth
                         disabled={loading}
+                        errorMessage={errors.address ? <>{errors?.address.message}</> : null}
                         {...register('address', { required: true })}
                         className={`${errors.address ? 'border-red-400' : ''}`}
                     />
@@ -194,6 +198,7 @@ function InvoicePage() {
                         type="number"
                         min={1}
                         disabled={loading}
+                        errorMessage={errors.quantity ? <>{errors?.quantity.message}</> : null}
                         {...rest}
                         ref={ref}
                         onChange={(e) => {
