@@ -7,8 +7,8 @@ import InvoiceDocument from '../../../components/invoice-file/file'
 import { TrainingTypes, training } from '../../../data/training'
 import { useRouter, withRouter } from 'next/router'
 import classNames from 'classnames'
-import { formatReadableDate } from '../../../lib/utils'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { getDateInWords } from '../../../components/dates-table/dates-table.component'
 
 export interface ICourse {
     id: string
@@ -37,7 +37,7 @@ function InvoicePage() {
 
     const formatDate = (dateString: string): string => {
         const date = new Date(dateString)
-        return formatReadableDate(date.toISOString().split('T')[0])
+        return getDateInWords(date)
     }
 
     useEffect(() => {
