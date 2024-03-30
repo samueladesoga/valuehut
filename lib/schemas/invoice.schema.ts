@@ -12,7 +12,13 @@ export const invoiceSchema = z.object({
     address: z
         .string({ required_error: 'Address is required', invalid_type_error: 'Please enter your current address' })
         .min(8, 'Please enter a valid address (at least 8 characters long).'),
-    quantity: z.number().min(1, 'Quantity should at least be 1.'),
+    quantity: z
+        .number({
+            required_error: 'Number of attendees should at least be 1.',
+            invalid_type_error: 'Number of attendees should be a number.',
+        })
+        .min(1, 'Number of attendees should at least be 1.')
+        .default(1),
 })
 
 export type InvoiceSchemaType = z.infer<typeof invoiceSchema>
