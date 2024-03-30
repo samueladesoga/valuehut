@@ -147,7 +147,9 @@ function InvoicePage() {
     const { ref, ...rest } = register('quantity', { required: true, valueAsNumber: true })
 
     return (
-        <div className="max-w-[700px] flex items-center m-auto min-h-[800px]">
+        <div className="max-w-[700px] flex flex-col justify-center items-center m-auto min-h-[1000px]">
+            <h1 className="mb-2 text-stone-800">Checkout: Invoice</h1>
+            <span className="mb-40 text-stone-600">Please fill the below form to proceed.</span>
             <form onSubmit={handleSubmit(onSubmit)} className="w-full">
                 <div className="flex w-full flex-wrap md:flex-nowrap gap-2 mb-4">
                     <Input
@@ -209,8 +211,14 @@ function InvoicePage() {
                     <h3 className="text-stone-600 text-sm">Time: {selectedCourse?.time}</h3>
                 </div>
 
-                <Button type="submit" disabled={loading} fullWidth variant="bordered">
-                    {loading ? 'Loading...' : 'Send invoice to email'}
+                <Button
+                    type="submit"
+                    disabled={loading}
+                    fullWidth
+                    variant="solid"
+                    className="bg-[#528ecc] text-white font-medium"
+                >
+                    <span>{loading ? 'Loading...' : 'Continue'}</span>
                 </Button>
 
                 {_errors || success ? (
