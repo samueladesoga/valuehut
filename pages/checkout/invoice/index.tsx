@@ -147,7 +147,7 @@ function InvoicePage() {
     const { ref, ...rest } = register('quantity', { required: true, valueAsNumber: true })
 
     return (
-        <div className="max-w-[700px] flex flex-col justify-center items-center m-auto min-h-[1000px]">
+        <div className="max-w-[700px] flex flex-col justify-center items-center m-auto min-h-[1000px] px-2">
             <h1 className="mb-2 text-stone-800">Checkout: Invoice</h1>
             <span className="mb-40 text-stone-600">Please fill the below form to proceed.</span>
             <form onSubmit={handleSubmit(onSubmit)} className="w-full">
