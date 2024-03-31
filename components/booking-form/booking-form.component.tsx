@@ -86,7 +86,7 @@ const BookingForm: React.FC<BookingFormTypes> = ({ training, stream }) => {
                     ${bookPrice.currency ? `&template_set=${bookPrice.currency.template}` : `&template_set=DEFAULT`}
                     `)}
             >
-                Pay {bookPrice.currency ? bookPrice.currency.symbol : '$'} {bookPrice.amount.toString()} by Card
+                Pay {bookPrice.currency ? bookPrice.currency.symbol : '$'}{bookPrice.amount.toString()} by Card
             </Link>
             <div className="py-2 w-full text-center">OR</div>
             <Link
@@ -94,7 +94,7 @@ const BookingForm: React.FC<BookingFormTypes> = ({ training, stream }) => {
                 className="button button-secondary button-primary-small w-full"
                 href={encodeURI(`/checkout/invoice?courseId=${stream.id}&country=${country}`)}
             >
-                Pay {bookPrice.currency ? bookPrice.currency.symbol : '$'} {bookPrice.amount.toString()} with invoice
+                Pay {bookPrice.currency ? bookPrice.currency.symbol : '$'}{bookPrice.amount.toString()} with invoice
             </Link>
         </div>
     )
