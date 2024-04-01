@@ -1,7 +1,16 @@
 import React, { ChangeEvent, useCallback, useEffect, useState } from 'react'
 import { InvoiceSchemaType, invoiceSchema } from '../../../lib/schemas/invoice.schema'
 import { useForm, SubmitHandler } from 'react-hook-form'
-import { Button, Input } from '@nextui-org/react'
+import {
+    Button,
+    Input,
+    Modal,
+    ModalBody,
+    ModalContent,
+    ModalFooter,
+    ModalHeader,
+    useDisclosure,
+} from '@nextui-org/react'
 import { pdf } from '@react-pdf/renderer'
 import InvoiceDocument from '../../../components/invoice-file/file'
 import { TrainingTypes, training } from '../../../data/training'
@@ -26,6 +35,7 @@ function InvoicePage() {
         register,
         handleSubmit,
         setValue,
+        getValues,
         formState: { errors },
     } = useForm<InvoiceSchemaType>({
         mode: 'onChange',
@@ -34,6 +44,8 @@ function InvoicePage() {
         },
         resolver: zodResolver(invoiceSchema),
     })
+
+    const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
     const formatDate = (dateString: string): string => {
         const date = new Date(dateString)
@@ -130,8 +142,7 @@ function InvoicePage() {
                     setError('An error occurred while sending you an invoice. please try again later!')
                     setSuccess(null)
                 } else {
-                    router.back()
-                    setError(null)
+                    onOpen()
                 }
             })
             .catch((error) => {
@@ -237,6 +248,30 @@ function InvoicePage() {
                     </p>
                 ) : null}
             </form>
+            <Modal size={'2xl'} isOpen={isOpen} onOpenChange={onOpenChange}>
+                <ModalContent>
+                    {(onClose) => (
+                        <>
+                            <ModalHeader className="flex flex-col gap-1">Email sent</ModalHeader>
+                            <ModalBody>
+                                <p>An email containing your envoice has been successfuly sent.</p>
+                                <p>To download your invoice, please check your email ({getValues('email')})</p>
+                            </ModalBody>
+                            <ModalFooter>
+                                <Button
+                                    className="bg-[#528ecc] text-white font-medium"
+                                    onPress={() => {
+                                        onClose()
+                                        router.push('/services/training')
+                                    }}
+                                >
+                                    Ok
+                                </Button>
+                            </ModalFooter>
+                        </>
+                    )}
+                </ModalContent>
+            </Modal>
         </div>
     )
 }
