@@ -33,15 +33,14 @@ const InvoiceDocument = ({
                     >
                         <Text
                             style={{
-                                fontSize: 18,
+                                fontSize: 12,
                                 fontWeight: 'bold',
                             }}
                         >
-                            Invoice N° {new Date().getTime()}
+                            Invoice No: {new Date().getTime()}
                         </Text>
                         <Text>Date: {today}</Text>
                         <Text>Due Date: {today}</Text>
-                        <Text>PO Number: --</Text>
                     </View>
                 </View>
 
@@ -56,9 +55,8 @@ const InvoiceDocument = ({
                             fontWeight: 'bold',
                         }}
                     >
-                        ValueHut Limited (Formerly Thoughtstudios Limited)
+                        ValueHut Limited
                     </Text>
-                    <Text>Address: 44 Community Rd, Allen</Text>
                 </View>
                 <View
                     style={{
