@@ -1216,7 +1216,7 @@ export const training: TrainingObject = {
                         The course is high recommended for Software Teams that already work together in an organisation to improve their ways of working 
                         using Scrum. The class is delivered over three (3) days (8hrs per day) offering attendees a real-world view of building software with scrum`,
             imageURL: '/images/morillo.jpg',
-            logo: 'aps.svg',
+            logo: 'apssd.svg',
             iconBorder: 'https://static.scrum.org/web/tokens/token-psm-color.svg',
             articles: [
                 {

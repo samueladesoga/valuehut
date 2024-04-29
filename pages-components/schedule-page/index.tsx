@@ -96,6 +96,14 @@ function SchedulePage() {
                             >
                                 APS
                             </li>
+                            <li
+                                className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
+                                    'border-primary-default bg-primary-light': filters.includes('APS-SD'),
+                                })}
+                                onClick={() => handleFilter('APS-SD')}
+                            >
+                                APS-SD
+                            </li>
                         </ul>
                     </div>
                 </div>
