@@ -1188,9 +1188,70 @@ export const training: TrainingObject = {
                     title: 'More information',
                     content: ``,
                     contentList: [
-                        `Mode of delivery is Virtual using Zoom`,
+                        `Mode of delivery is either  Virtual using Zoom or In-Person`,
                         `The price for the class is dependent on your home address.`,
                         `Attendees are able to claim 14 PDU credits from the Project Management Institute (PMI) after attending this two-day course.`,
+                        `If you would like a private class for your organisation, send us an email - info@valuehut.co`,
+                    ],
+                    links: [
+                        {
+                            label: 'Click here for more reasons to train with ValueHut limited',
+                            url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
+                        },
+                    ],
+                },
+            ],
+            streams: [],
+            isTraining: true,
+        },
+        {
+            id: 8,
+            title: 'Applying Professional Scrum for Software Development',
+            acronym: 'APS-SD',
+            description: `The APS is a hands-on course where attendees experience the practices required to deliver quality software products using Scrum with
+                        Agile and DevOps practices. Attendees work in Scrum Teams over three (3) to four (4) creating a software product to learn Scrum while 
+                        using the Scrum Framework. Packaged with the course is a free attempt at the gloablly recognised Professional Scrum Developer I certification
+                        assessment (PSD I).
+                        
+                        The course is high recommended for Software Teams that already work together in an organisation to improve their ways of working 
+                        using Scrum. The class is delivered over three (3) days (8hrs per day) offering attendees a real-world view of building software with scrum`,
+            imageURL: '/images/morillo.jpg',
+            logo: 'aps.svg',
+            iconBorder: 'https://static.scrum.org/web/tokens/token-psm-color.svg',
+            articles: [
+                {
+                    title: 'Course Learning Objectives',
+                    content: `The course objectives include:`,
+                    contentList: [
+                        `Experience true collaboration between Development, Product Owner and the Scrum Master in the process of building and delivery a high quality and valuable product`,
+                        `Teach developers how to apply modern Agile enginerring practices and Devops tools to the process of building and delivering working software`,
+                        `Learn and practice the synergy between the elements of the Scrum Framework and complimentary practices`,
+                        `Be introduced to and exprience practices such as Pair Programming, Test Driven Development, Agile Testing, DevOps, Managing Technical Debt and more.`,
+                    ],
+                },
+                {
+                    title: 'Who should attend?',
+                    content: ``,
+                    contentList: [
+                        `Members of a Product Team involved in delivering and developing Software including architects, programmers, database developers, testers, managers, Operations 
+                        and others including Scrum Masters and Product Owners`,
+                        `Managers with a Technical/Programming backlog that want to experience 3days in the life of a Software Developer working within a Scrum Team`,
+                        `Entire Scrum/Product Teams that would like to learn how to improve the quality of their product`,
+                    ],
+                },
+                {
+                    title: 'Assessment Certification',
+                    content: `All participants will receive a password to attempt the Professional Scrum Developer (PSD) assessment. 
+                    APS-SD class attendees who attempt the PSD I assessment within 14 days of receiving their free password and 
+                    do not score at least 85% will be granted a 2nd attempt at no additional cost.`,
+                },
+                {
+                    title: 'More information',
+                    content: ``,
+                    contentList: [
+                        `Mode of delivery is either  Virtual using Zoom or In-Person`,
+                        `The price for the class is dependent on your home address.`,
+                        `If you would like a private class for your organisation, send us an email - info@valuehut.co`,
                     ],
                     links: [
                         {

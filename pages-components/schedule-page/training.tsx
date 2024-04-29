@@ -42,7 +42,7 @@ function WrapTraining({ training }: { training: TrainingTypes }) {
                     ))}
                 {((_training.streams && _training.streams?.length < 1) || !_training.streams) && (
                     <div className="w-full col-start-1 col-end-13 md:col-start-2">
-                        <p className="text-sm max-w-3xl">No classes available. Please <a href="/contact">contact us</a> if you would like us to organise a private class for your team.</p>
+                        <p className="text-sm max-w-3xl">No public classes available. Please <a style={{ textDecoration: "underline" }} href="/contact">contact us</a> if you would like us to organise a private class for your team.</p>
                     </div>
                 )}
             </div>
