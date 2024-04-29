@@ -51,6 +51,9 @@ function generateSiteMap(paths: any) {
     <url>
         <loc>${BASEURL}/services/training/applying-professional-scrum</loc>
     </url>
+    <url>
+        <loc>${BASEURL}/services/training/applying-professional-scrum-for-software-development</loc>
+    </url>
     ${paths
         .map((slug: string) => {
             return `
