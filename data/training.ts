@@ -1235,7 +1235,7 @@ export const training: TrainingObject = {
                     contentList: [
                         `Members of a Product Team involved in delivering and developing Software including architects, programmers, database developers, testers, managers, Operations 
                         and others including Scrum Masters and Product Owners`,
-                        `Managers with a Technical/Programming backlog that want to experience 3days in the life of a Software Developer working within a Scrum Team`,
+                        `Managers with a Technical/Programming background that want to experience 3days in the life of a Software Developer working within a Scrum Team`,
                         `Entire Scrum/Product Teams that would like to learn how to improve the quality of their product`,
                     ],
                 },
