@@ -1148,7 +1148,7 @@ export const training: TrainingObject = {
             description: `The APS is a hands-on, activity-based course in which students experience how Professional Scrum and the Scrum framework 
                         improves their capacity to deliver value compared to traditional methods. Scrum enables a better way of working that highlights 
                         the use of experimentation, incremental delivery of customer value, frequent feedback loops and the fostering of strong team 
-                        dynamics. The course is high recommended for teams that already work together in an organisation to improve their ways of working 
+                        dynamics. The course is highly recommended for teams that already work together in an organisation to improve their ways of working 
                         using Scrum. The class is delivered over a two days (8hrs per day).`,
             imageURL: '/images/morillo.jpg',
             logo: 'aps.svg',
@@ -1213,7 +1213,7 @@ export const training: TrainingObject = {
                         using the Scrum Framework. Packaged with the course is a free attempt at the gloablly recognised Professional Scrum Developer I certification
                         assessment (PSD I).
                         
-                        The course is high recommended for Software Teams that already work together in an organisation to improve their ways of working 
+                        The course is highly recommended for Software Teams that already work together in an organisation to improve their ways of working 
                         using Scrum. The class is delivered over three (3) days (8hrs per day) offering attendees a real-world view of building software with scrum`,
             imageURL: '/images/morillo.jpg',
             logo: 'apssd.svg',
