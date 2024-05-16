@@ -138,42 +138,6 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    id: '471611cf-944b-4029-968b-d84e1db142ac',
-                    startDate: new Date('2024-04-12').toJSON(),
-                    classType: 'Virtual class',
-                    endDate: new Date('2024-04-13').toJSON(),
-                    time: '09:00 - 17:00 BST',
-                    price: [
-                        {
-                            region: 'United Kingdom',
-                            regionDescription: ['United Kingdom'],
-                            amount: 1000,
-                            currency: {
-                                name: 'gbp',
-                                symbol: '£',
-                                locale: 'en_GB',
-                                template: 'GBP',
-                            },
-                        },
-                        {
-                            region: 'Primary Market',
-                            regionDescription: primaryMarket,
-                            amount: 1000,
-                        },
-                        {
-                            region: 'Tertiary Market',
-                            regionDescription: tertiaryMarket,
-                            amount: 800,
-                        },
-                        {
-                            region: 'Secondary Market',
-                            regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 900,
-                        },
-                    ],
-                    filled: true,
-                },
-                {
                     id: '58d2733a-51f4-46f2-b1e3-7c4646338672',
                     startDate: new Date('2024-05-11').toJSON(),
                     classType: 'In Person Class (2 Saturdays)',
@@ -207,13 +171,49 @@ export const training: TrainingObject = {
                             amount: 900,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
                     id: 'b8f8e8b3-246b-4352-b3be-5815b15710f4',
                     startDate: new Date('2024-06-28').toJSON(),
                     classType: 'Virtual class',
                     endDate: new Date('2024-06-29').toJSON(),
+                    time: '09:00 - 17:00 BST',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1000,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1000,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 800,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 900,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    id: 'b8f8e8c3-246b-4352-b3be-5815b15710f4',
+                    startDate: new Date('2024-07-26').toJSON(),
+                    classType: 'Virtual class',
+                    endDate: new Date('2024-07-27').toJSON(),
                     time: '09:00 - 17:00 BST',
                     price: [
                         {
@@ -360,6 +360,42 @@ export const training: TrainingObject = {
                     startDate: new Date('2024-06-07').toJSON(),
                     classType: 'Virtual',
                     endDate: new Date('2024-06-08').toJSON(),
+                    time: '9:00 - 17:00 BST',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1000,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1000,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 800,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 900,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    id: 'be19b77f-3bba-4fdb-842d-18754062717d',
+                    startDate: new Date('2024-07-19').toJSON(),
+                    classType: 'Virtual',
+                    endDate: new Date('2024-07-20').toJSON(),
                     time: '9:00 - 17:00 BST',
                     price: [
                         {
@@ -995,42 +1031,6 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    id: '678b90dc-6fee-44b2-8e17-8f39f8fd1775',
-                    startDate: new Date('2024-03-15').toJSON(),
-                    endDate: new Date('2024-03-16').toJSON(),
-                    time: '9:00 - 17:00 GMT',
-                    classType: 'Virtual',
-                    price: [
-                        {
-                            region: 'United Kingdom',
-                            regionDescription: ['United Kingdom'],
-                            amount: 1100,
-                            currency: {
-                                name: 'gbp',
-                                symbol: '£',
-                                locale: 'en_GB',
-                                template: 'GBP',
-                            },
-                        },
-                        {
-                            region: 'Primary Market',
-                            regionDescription: primaryMarket,
-                            amount: 1100,
-                        },
-                        {
-                            region: 'Tertiary Market',
-                            regionDescription: tertiaryMarket,
-                            amount: 850,
-                        },
-                        {
-                            region: 'Secondary Market',
-                            regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 950,
-                        },
-                    ],
-                    filled: true,
-                },
-                {
                     id: '3c3857bc-9120-4fa8-b430-b512a5c398b0',
                     startDate: new Date('2024-05-16').toJSON(),
                     endDate: new Date('2024-05-17').toJSON(),
@@ -1064,7 +1064,7 @@ export const training: TrainingObject = {
                             amount: 950,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
                     id: '8260ce12-4aeb-4447-be0f-6c0ea888acc6',
