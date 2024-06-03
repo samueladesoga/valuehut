@@ -975,7 +975,7 @@ export const training: TrainingObject = {
         },
         {
             id: 6,
-            title: 'Professional Agile Leadership',
+            title: 'Professional Agile Leadership - Essentials',
             acronym: 'PAL-E',
             description: `Professional Agile Leadership is a 2 day workshop to equip leaders and managers 
             of Agile teams along with their Product Owners and Scrum Masters to help their organizations change.
@@ -1107,6 +1107,102 @@ export const training: TrainingObject = {
         },
         {
             id: 7,
+            title: 'Professional Agile Leadership - Evidence Based Management',
+            acronym: 'PAL-EBM',
+            description: `Professional Agile Leadership - Evidence-Based Management is a 1-day workshop where participants become 
+            familiar with the Evidence-Based Management framework and how to apply it to their work through hands-on, activity-based 
+            learning.  The class activities help attendees learn techniques that help set and achieve strategic goals through 
+            experimentation and adapting goals. Attendees also learn how to move away from measuring progress solely through team 
+            performance metrics towards a focus on customer-centricity, improving customer outcomes.`,
+            imageURL: '/images/fauxels.jpg',
+            logo: 'pal-e.svg',
+            iconBorder: 'https://static.scrum.org/web/tokens/token-psm-color.svg',
+            articles: [
+                {
+                    title: 'Course Learning Objectives',
+                    content: `The course objectives include:`,
+                    contentList: [
+                        `Understand goals and measures and an understanding of how they influence behaviours, culture and values`,
+                        `Create Evidence-based Leadership as a management approach across the organisation`,
+                        `Discover how goals and trust help promote an environment that enables autonomy, transparent and value delivery`,
+                        `Correlate Product and Market leadership to experimentation and adaptation`,
+                        `Understand how to use EBM and its Key Value Areas to derive a balanced set of metrics to improve the market value and organisation capabilities to deliver value`
+                    ],
+                },
+                {
+                    title: 'Who should attend?',
+                    content: `The PAL-EBM is strongly recommended for anyone is a leadership role and willing to explore ways of working as an Evidence based Leader.`,
+                    contentList: [
+                        `Leaders that are responsible for the success of product delivery and agile transformation programs`,
+                        `Leaders that seek framework which help identifies areas of improvement in their organisational capalibities for delivery value effectively`,
+                        `Leaders that desire alternative measures to traditional and vanity measures e.g. Use of Velocity`,
+                        `Leaders that want to articulate strategic goals and measures in a manner that promotes self management and helps connect the work of the team to the value delivered to the users of the product`,
+                    ],
+                },
+                {
+                    title: 'Assessment Certification',
+                    content: `All participants will receive a password to attempt the will receive a password to attempt the PAL-EBM assessment.
+                    PAL-EBM participants who attempt the associated assessment within 14 days of receiving their free password and do not score at 
+                    least 85% will be granted a 2nd attempt at no additional cost.`,
+                },
+                {
+                    title: 'More information',
+                    content: ``,
+                    contentList: [
+                        `Mode of delivery is Virtual using Zoom`,
+                        `The price for the class is dependent on your home address.`,
+                        `Attendees are able to claim 7 PDU credits from the Project Management Institute (PMI) after attending this one-day course.`,
+                    ],
+                    links: [
+                        {
+                            label: 'Click here for more reasons to train with ValueHut limited',
+                            url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
+                        },
+                    ],
+                },
+            ],
+            streams: [
+                {
+                    id: '6f1c7c34-f2dd-4343-ab3a-7a4065b6fb8b',
+                    startDate: new Date('2024-07-31').toJSON(),
+                    endDate: new Date('2024-07-31').toJSON(),
+                    time: '9:00 - 17:00 BST',
+                    classType: 'Virtual',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 700,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 700,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 600,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 500,
+                        },
+                    ],
+                    filled: false,
+                },
+            ],
+            isTraining: true,
+        },
+        {
+            id: 8,
             title: 'Applying Professional Scrum',
             acronym: 'APS',
             description: `The APS is a hands-on, activity-based course in which students experience how Professional Scrum and the Scrum framework 
@@ -1169,7 +1265,7 @@ export const training: TrainingObject = {
             isTraining: true,
         },
         {
-            id: 8,
+            id: 9,
             title: 'Applying Professional Scrum for Software Development',
             acronym: 'APS-SD',
             description: `The APS is a hands-on course where attendees experience the practices required to deliver quality software products using Scrum with

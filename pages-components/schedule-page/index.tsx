@@ -46,7 +46,15 @@ function SchedulePage() {
                                 })}
                                 onClick={() => handleFilter('PAL-E')}
                             >
-                                PAL - Essential
+                                PAL - Essentials
+                            </li>
+                            <li
+                                className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
+                                    'border-primary-default bg-primary-light': filters.includes('PAL-EBM'),
+                                })}
+                                onClick={() => handleFilter('PAL-EBM')}
+                            >
+                                PAL - Evidence Based Management
                             </li>
                             <li
                                 className={classNames('border-2 rounded-md px-2 py-1 cursor-pointer', {
