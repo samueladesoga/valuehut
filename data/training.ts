@@ -1115,7 +1115,7 @@ export const training: TrainingObject = {
             experimentation and adapting goals. Attendees also learn how to move away from measuring progress solely through team 
             performance metrics towards a focus on customer-centricity, improving customer outcomes.`,
             imageURL: '/images/fauxels.jpg',
-            logo: 'pal-e.svg',
+            logo: 'pal-ebm.svg',
             iconBorder: 'https://static.scrum.org/web/tokens/token-psm-color.svg',
             articles: [
                 {
