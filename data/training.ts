@@ -1131,12 +1131,12 @@ export const training: TrainingObject = {
                 },
                 {
                     title: 'Who should attend?',
-                    content: `The PAL-EBM is strongly recommended for anyone is a leadership role and willing to explore ways of working as an Evidence based Leader.`,
+                    content: `The PAL-EBM is strongly recommended for anyone in a leadership role who is willing to explore ways of being an Evidence-based Leader.`,
                     contentList: [
-                        `Leaders that are responsible for the success of product delivery and agile transformation programs`,
-                        `Leaders that seek framework which help identifies areas of improvement in their organisational capalibities for delivery value effectively`,
-                        `Leaders that desire alternative measures to traditional and vanity measures e.g. Use of Velocity`,
-                        `Leaders that want to articulate strategic goals and measures in a manner that promotes self management and helps connect the work of the team to the value delivered to the users of the product`,
+                        `Leaders who are responsible for the success of product delivery and agile transformation programmes`,
+                        `Leaders that seek a framework which help identify areas of improvement in their organisational capabilities for the delivery of value effectively`,
+                        `Leaders that desire alternative measures to traditional and vanity measures e.g. the Use of Velocity`,
+                        `Leaders that want to articulate strategic goals and measures in a manner that promotes self-management and helps connect the work of the team to the value delivered to the users of the product`,
                     ],
                 },
                 {
