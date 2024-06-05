@@ -502,42 +502,6 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    id: '33e78141-202d-4884-8b4e-3b55916766da',
-                    startDate: new Date('2024-04-06').toJSON(),
-                    endDate: new Date('2024-04-07').toJSON(),
-                    time: '08:00 - 16:00 CST',
-                    classType: 'Virtual',
-                    price: [
-                        {
-                            region: 'United Kingdom',
-                            regionDescription: ['United Kingdom'],
-                            amount: 1100,
-                            currency: {
-                                name: 'gbp',
-                                symbol: '£',
-                                locale: 'en_GB',
-                                template: 'GBP',
-                            },
-                        },
-                        {
-                            region: 'Primary Market',
-                            regionDescription: primaryMarket,
-                            amount: 1100,
-                        },
-                        {
-                            region: 'Tertiary Market',
-                            regionDescription: tertiaryMarket,
-                            amount: 850,
-                        },
-                        {
-                            region: 'Secondary Market',
-                            regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 950,
-                        },
-                    ],
-                    filled: true,
-                },
-                {
                     id: 'db474e60-f44f-408a-aa16-9ad7840352ca',
                     startDate: new Date('2024-05-24').toJSON(),
                     endDate: new Date('2024-05-25').toJSON(),
@@ -571,12 +535,12 @@ export const training: TrainingObject = {
                             amount: 950,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
                     id: '8a0ca903-1d99-4497-a0b9-95d641507d59',
-                    startDate: new Date('2024-08-23').toJSON(),
-                    endDate: new Date('2024-08-24').toJSON(),
+                    startDate: new Date('2024-08-29').toJSON(),
+                    endDate: new Date('2024-08-30').toJSON(),
                     time: '9:00 - 17:00 MST',
                     classType: 'Virtual',
                     price: [
