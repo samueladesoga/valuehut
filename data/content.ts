@@ -65,7 +65,7 @@ export const content = {
     pages: {
         home: {
             widescreenBanner: {
-                slogan: [`Co-creating better ways of building great products.`, ``],
+                slogan: [`Co-creating better ways of working and leading.`, ``],
             },
             headerArticle: {
                 imageURL: 'network.png',
