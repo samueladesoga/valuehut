@@ -1240,12 +1240,12 @@ export const training: TrainingObject = {
                         {
                             region: 'Tertiary Market',
                             regionDescription: tertiaryMarket,
-                            amount: 1300,
+                            amount: 1200,
                         },
                         {
                             region: 'Secondary Market',
                             regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 1200,
+                            amount: 1300,
                         },
                     ],
                     filled: false,
