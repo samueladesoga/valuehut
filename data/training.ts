@@ -791,9 +791,9 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    id: 'ee3da410-9bd0-424c-ac57-5f318840ee0d',
-                    startDate: new Date('2024-05-31').toJSON(),
-                    endDate: new Date('2024-05-31').toJSON(),
+                    id: 'c3934f12-0484-42e6-86d6-9718cb74bb2d',
+                    startDate: new Date('2024-06-21').toJSON(),
+                    endDate: new Date('2024-06-21').toJSON(),
                     classType: 'Virtual',
                     time: '9:00 - 17:00 GMT',
                     price: [
@@ -827,9 +827,45 @@ export const training: TrainingObject = {
                     filled: true,
                 },
                 {
-                    id: 'c3934f12-0484-42e6-86d6-9718cb74bb2d',
-                    startDate: new Date('2024-06-21').toJSON(),
-                    endDate: new Date('2024-06-21').toJSON(),
+                    id: 'e4dbb496-5bc1-409c-b048-f70e68fe99d8',
+                    startDate: new Date('2024-08-02').toJSON(),
+                    endDate: new Date('2024-08-02').toJSON(),
+                    classType: 'Virtual',
+                    time: '9:00 - 17:00 GMT',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 550,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 550,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 450,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 500,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    id: '7a91256e-f821-43ef-afbc-f1419c110eed',
+                    startDate: new Date('2024-09-06').toJSON(),
+                    endDate: new Date('2024-09-06').toJSON(),
                     classType: 'Virtual',
                     time: '9:00 - 17:00 GMT',
                     price: [
