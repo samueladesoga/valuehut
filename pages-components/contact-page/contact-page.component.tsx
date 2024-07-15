@@ -38,11 +38,11 @@ const ContactPage: React.FC<ContactProps> = ({ howto, offices }) => {
         }
 
         emailjs
-            .sendForm(
+            .send(
                 process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID as string,
                 process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID as string,
                 form.current as HTMLFormElement,
-                process.env.NEXT_PUBLIC_EMAIL_USER_ID as string,
+                {publicKey: process.env.NEXT_PUBLIC_EMAIL_USER_ID as string,}
             )
             .then((result: EmailJSResponseStatus) => {
                 alert('Email has been sent, thank you!');

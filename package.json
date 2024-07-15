@@ -14,7 +14,7 @@
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.12.1",
     "@contentful/rich-text-types": "^15.13.2",
-    "@emailjs/browser": "^3.10.0",
+    "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@hookform/resolvers": "^3.3.4",
@@ -44,7 +44,7 @@
     "next-sitemap": "^3.1.7",
     "nextjs-google-analytics": "^2.3.3",
     "node": "^18.17.0",
-    "node-sass": "^7.0.3",
+    "node-sass": "^9.0.0",
     "nodemailer": "^6.9.13",
     "npm": "^10.4.0",
     "react": "18.2.0",
