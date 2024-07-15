@@ -3,7 +3,7 @@ import contactPageStyles from './contact-page.module.scss';
 import ContactData from '../../components/contact-data/contact-data.component';
 import { ContactDataTypes } from '../../data/content';
 import { SpinnerContainer, SpinnerMiniOverlay } from '../../components/spinner/spinner.styles';
-import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 export interface ContactProps {
     howto: string;
@@ -42,13 +42,17 @@ const ContactPage: React.FC<ContactProps> = ({ howto, offices }) => {
                 process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID as string,
                 process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID as string,
                 form.current as HTMLFormElement,
-                {publicKey: process.env.NEXT_PUBLIC_EMAIL_USER_ID as string,}
+                { publicKey: process.env.NEXT_PUBLIC_EMAIL_USER_ID as string,}
             )
-            .then((result: EmailJSResponseStatus) => {
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
                 alert('Email has been sent, thank you!');
                 form.current?.reset();
+            },
+            (err) => {
+                console.log('FAILED...', err);
+                alert('An error has occurred, please try again!');
             })
-            .catch((rejected: any) => alert('An error has occurred, please try again!'));
     };
     return (
         <div className={`page ${contactPageStyles.contactPage}`}>
