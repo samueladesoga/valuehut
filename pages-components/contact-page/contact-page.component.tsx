@@ -38,7 +38,7 @@ const ContactPage: React.FC<ContactProps> = ({ howto, offices }) => {
         }
 
         emailjs
-            .send(
+            .sendForm(
                 process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID as string,
                 process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID as string,
                 form.current as HTMLFormElement,
