@@ -4,10 +4,6 @@
 
 // Important!
 // Each word of title should be in Capitalize Case
-
-// Start and End Dates should be JSON objects!
-// (See how it looks now)
-
 import { primaryMarket, tertiaryMarket } from './countries'
 
 export interface PriceTypes {
