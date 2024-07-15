@@ -138,42 +138,6 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    id: '58d2733a-51f4-46f2-b1e3-7c4646338672',
-                    startDate: new Date('2024-05-11').toJSON(),
-                    classType: 'In Person Class (2 Saturdays)',
-                    endDate: new Date('2024-05-18').toJSON(),
-                    time: '09:00 - 17:00 BST',
-                    price: [
-                        {
-                            region: 'United Kingdom',
-                            regionDescription: ['United Kingdom'],
-                            amount: 1000,
-                            currency: {
-                                name: 'gbp',
-                                symbol: '£',
-                                locale: 'en_GB',
-                                template: 'GBP',
-                            },
-                        },
-                        {
-                            region: 'Primary Market',
-                            regionDescription: primaryMarket,
-                            amount: 1000,
-                        },
-                        {
-                            region: 'Tertiary Market',
-                            regionDescription: tertiaryMarket,
-                            amount: 800,
-                        },
-                        {
-                            region: 'Secondary Market',
-                            regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 900,
-                        },
-                    ],
-                    filled: true,
-                },
-                {
                     id: 'b8f8e8b3-246b-4352-b3be-5815b15710f4',
                     startDate: new Date('2024-06-28').toJSON(),
                     classType: 'Virtual class',
@@ -207,13 +171,49 @@ export const training: TrainingObject = {
                             amount: 900,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
                     id: 'b8f8e8c3-246b-4352-b3be-5815b15710f4',
                     startDate: new Date('2024-07-26').toJSON(),
                     classType: 'Virtual class',
                     endDate: new Date('2024-07-27').toJSON(),
+                    time: '09:00 - 17:00 BST',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1000,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1000,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 800,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 900,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    id: 'b8f8e8c3-246b-4352-b3be-5815b15710f4',
+                    startDate: new Date('2024-08-16').toJSON(),
+                    classType: 'Virtual class',
+                    endDate: new Date('2024-08-17').toJSON(),
                     time: '09:00 - 17:00 BST',
                     price: [
                         {
