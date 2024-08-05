@@ -167,7 +167,7 @@ export const training: TrainingObject = {
                             amount: 900,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
                     id: 'b8f8e8c3-246b-4352-b3be-5815b15710f4',
@@ -349,7 +349,7 @@ export const training: TrainingObject = {
                             amount: 900,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
                     id: 'be19b77f-3bba-4fdb-842d-18754062717d',
@@ -710,7 +710,7 @@ export const training: TrainingObject = {
                             amount: 500,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
                     id: 'b7958f84-3d2d-42ad-aa6e-80a802f0b6be',
@@ -1156,7 +1156,7 @@ export const training: TrainingObject = {
                             amount: 500,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
             ],
             isTraining: true,
