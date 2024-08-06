@@ -55,7 +55,7 @@ const InvoiceDocument = ({
                             fontWeight: 'bold',
                         }}
                     >
-                        ValueHut Limited
+                        ValueHut Consulting
                     </Text>
                 </View>
                 <View

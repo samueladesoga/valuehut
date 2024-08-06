@@ -113,7 +113,7 @@ export const training: TrainingObject = {
                     content: ``,
                     contentList: [
                         `Participants are invited to a 90mins free coaching and support group call approximately 5days after the class. Details would be discussed in the class.`,
-                        `All participants get an invite to the ValueHut support platform where they can get access to our trainers.`,
+                        `All participants get an invite to the ValueHut Consulting support platform where they can get access to our trainers.`,
                     ],
                 },
                 {
@@ -126,7 +126,7 @@ export const training: TrainingObject = {
                     ],
                     links: [
                         {
-                            label: 'Click here for more reasons to train with ValueHut limited',
+                            label: 'Click here for more reasons to train with ValueHut Consulting',
                             url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
                         },
                     ],
@@ -308,7 +308,7 @@ export const training: TrainingObject = {
                     ],
                     links: [
                         {
-                            label: 'Click here for more reasons to train with ValueHut limited',
+                            label: 'Click here for more reasons to train with ValueHut Consulting',
                             url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
                         },
                     ],
@@ -441,7 +441,7 @@ export const training: TrainingObject = {
                     content: ``,
                     contentList: [
                         `Participants are invited to a 90mins free coaching and support group call approximately 5days after the class. Details would be discussed in the class.`,
-                        `All participants get an invite to the ValueHut support platform where they can get access to our trainers.`,
+                        `All participants get an invite to the ValueHut Consulting support platform where they can get access to our trainers.`,
                     ],
                 },
                 {
@@ -454,7 +454,7 @@ export const training: TrainingObject = {
                     ],
                     links: [
                         {
-                            label: 'Click here for more reasons to train with ValueHut limited',
+                            label: 'Click here for more reasons to train with  ValueHut Consulting',
                             url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
                         },
                     ],
@@ -620,7 +620,7 @@ export const training: TrainingObject = {
                     content: ``,
                     contentList: [
                         `Participants are invited to a 90mins free coaching and support group call approximately 5days after the class. Details would be discussed in the class.`,
-                        `All participants get an invite to the ValueHut support platform where they can get access to our trainers.`,
+                        `All participants get an invite to the ValueHut Consulting support platform where they can get access to our trainers.`,
                     ],
                 },
                 {
@@ -633,7 +633,7 @@ export const training: TrainingObject = {
                     ],
                     links: [
                         {
-                            label: 'Click here for more reasons to train with ValueHut limited',
+                            label: 'Click here for more reasons to train with ValueHut Consulting',
                             url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
                         },
                     ],
@@ -802,7 +802,7 @@ export const training: TrainingObject = {
                     title: 'Additional Benefits',
                     content: ``,
                     contentList: [
-                        `All participants get an invite to the ValueHut support platform where they can get access to our trainers.`,
+                        `All participants get an invite to the ValueHut Consulting support platform where they can get access to our trainers.`,
                     ],
                 },
                 {
@@ -815,7 +815,7 @@ export const training: TrainingObject = {
                     ],
                     links: [
                         {
-                            label: 'Click here for more reasons to train with ValueHut limited',
+                            label: 'Click here for more reasons to train with ValueHut Consulting',
                             url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
                         },
                     ],
@@ -983,7 +983,7 @@ export const training: TrainingObject = {
                     ],
                     links: [
                         {
-                            label: 'Click here for more reasons to train with ValueHut limited',
+                            label: 'Click here for more reasons to train with ValueHut Consulting',
                             url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
                         },
                     ],
@@ -1115,7 +1115,7 @@ export const training: TrainingObject = {
                     ],
                     links: [
                         {
-                            label: 'Click here for more reasons to train with ValueHut limited',
+                            label: 'Click here for more reasons to train with ValueHut Consulting',
                             url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
                         },
                     ],
@@ -1215,7 +1215,7 @@ export const training: TrainingObject = {
                     ],
                     links: [
                         {
-                            label: 'Click here for more reasons to train with ValueHut limited',
+                            label: 'Click here for more reasons to train with ValueHut Consulting',
                             url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
                         },
                     ],
@@ -1275,7 +1275,7 @@ export const training: TrainingObject = {
                     ],
                     links: [
                         {
-                            label: 'Click here for more reasons to train with ValueHut limited',
+                            label: 'Click here for more reasons to train with ValueHut Consulting',
                             url: 'https://www.valuehut.co/blog/a-case-for-agile-and-scrum-training-with-valuehut',
                         },
                     ],

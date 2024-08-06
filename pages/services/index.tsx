@@ -17,11 +17,11 @@ const Services: NextPage = ({ introduction }: any) => {
         <>
             <Head>
                 <title>
-                    Agile Coaching, Training and Consultancy Service | Valuehut
+                    Agile Coaching, Training and Consultancy Service | ValueHut Consulting
                 </title>
                 <meta
                     name="description"
-                    content="Transforming your organisation, the leading agile coaching, training, and consultancy service offered by Valuehut. Drive innovation by improving effectivesness and efficiency."
+                    content="Transforming your organisation, the leading agile coaching, training, and consultancy service offered by ValueHut Consulting. Drive innovation by improving effectiveness and efficiency."
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

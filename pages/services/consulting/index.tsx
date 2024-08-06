@@ -38,10 +38,10 @@ const Consulting: NextPage = ({ introduction }: any) => {
     return (
         <>
             <Head>
-                <title>Agile Consultancy Services | ValueHut</title>
+                <title>Agile Consultancy Services | ValueHut Consulting</title>
                 <meta
                     name="description"
-                    content="Our agile consultancy services include Team Augumentation, Product Backlog Management services, Product Inception and Discovery Services, Test Automation and Continous Delivery Capabilities. Try ValueHut today!"
+                    content="Our agile consultancy services include Team Augumentation, Product Backlog Management services, Product Inception and Discovery Services, Test Automation and Continous Delivery Capabilities. Try ValueHut Consulting today!"
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

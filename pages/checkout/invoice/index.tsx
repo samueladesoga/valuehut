@@ -126,7 +126,7 @@ function InvoicePage() {
 
         formData.append('file', blob, fileName)
         formData.append('toEmail', data.email) // Assuming you want to send it to the email provided in the form
-        formData.append('subject', 'ValueHut: Your Invoice')
+        formData.append('subject', 'ValueHut Consulting: Your Invoice')
         formData.append('text', 'Please find attached your invoice.')
         formData.append('customerName', data.fullName)
         formData.append('courseName', selectedCourse?.title ?? '')

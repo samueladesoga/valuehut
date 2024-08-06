@@ -69,8 +69,8 @@ export const content = {
             },
             headerArticle: {
                 imageURL: 'network.png',
-                header: 'ValueHut Limited',
-                description: `ValueHut is an agile coaching and training consultancy that is helping 
+                header: 'ValueHut Consulting',
+                description: `We are an agile Management consultancy that is helping 
                 Organisations transform into a network of interdependent product teams across different business units.
                 The desire for transformation is driven by a need to respond to changing customer needs  and capabities 
                 to continually deliver products that delight users. Our coaches work with product teams to improve their cross-functional 
@@ -187,7 +187,7 @@ export const content = {
                     name: 'Samuel Adesoga',
                     avatar: 'sam_avatar.jpeg',
                     about: `
-                    Sam is our Principal Coach and Lead Trainer at ValueHut; He is an agnostic Enterprise Agile Coach and Practitioner, a Professional Scrum Trainer with Scrum.org.
+                    Sam is our Principal Coach and Lead Trainer at ValueHut Consulting; He is an agnostic Enterprise Agile Coach and Practitioner, a Professional Scrum Trainer with Scrum.org.
                     In the last 20years, Sam has supported individuals, teams and Organisations to deliver value using Agile Frameworks and Practices; ultimately developing the 
                     mindset required to thrive in  Volatile, Uncertain, Complex and Ambiguous (VUCA) business environment.
                     `,
@@ -201,7 +201,7 @@ export const content = {
                     name: 'Temitope Awere',
                     avatar: 'temi_avatar.jpg',
                     about: `
-                    Temitope is a Partner Coach and Trainer at ValueHut; Temi is an experienced Lean-Agile Practitioner, Accredited Kanban Trainer, ICAgile Instructor Agile Coach, 
+                    Temitope is a Partner Coach and Trainer at ValueHut Consulting; Temi is an experienced Lean-Agile Practitioner, Accredited Kanban Trainer, ICAgile Instructor Agile Coach, 
                     Professional Scrum Master, Agile Project Manager,  SAFe Program consultant and Kanban Management Professional with over 10 years’ experience empowering 
                     and coaching development teams and organizations in the adoption agile principles and improving the flow of customer value through scalable, maintainable 
                     software solutions.

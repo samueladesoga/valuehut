@@ -89,7 +89,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
                 <body>
                     <div class="container">
                         <div class="header">
-                            ValueHut Invoice for <b>${courseName}</b>
+                            ValueHut Consulting Invoice for <b>${courseName}</b>
                         </div>
                         <div class="content">
                             Hello ${customerName},<br><br>
@@ -98,14 +98,14 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         
                             Should you have any questions or require further assistance including the Bank Details for your preferred currency, feel free to contact us.<br><br>
         
-                            Thank you for your trust in ValueHut.
+                            Thank you for your trust in ValueHut Consulting.
 
                             Regards, <br>
-                            Debbie <br>
+                            Temitope <br>
                             info@valuehut.co
                         </div>
                         <div class="footer">
-                            © ValueHut - All rights reserved
+                            © ValueHut Consulting - All rights reserved
                         </div>
                     </div>
                 </body>

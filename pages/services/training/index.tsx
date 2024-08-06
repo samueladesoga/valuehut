@@ -31,8 +31,8 @@ const Trainings: NextPage = ({ introduction }: any) => {
     return (
         <>
             <Head>
-                <title>Professional Scrum and Agile Training Services | ValueHut</title>
-                <meta name="description" content="Professional Scrum and Agile Training offered by ValueHut Limited. Gain valuable insights and practical knowledge to develop your organisational agile capabilities. Contact us today!" />
+                <title>Professional Scrum and Agile Training Services | ValueHut Consulting</title>
+                <meta name="description" content="Professional Scrum and Agile Training offered by ValueHut Consulting. Gain valuable insights and practical knowledge to develop your organisational agile capabilities. Contact us today!" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <TrainingsPage url={"training"} trainings={trainings} introduction={content.pages.whatWeDo.introduction} />

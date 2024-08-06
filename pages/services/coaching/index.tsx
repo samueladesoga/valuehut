@@ -36,8 +36,8 @@ const Coaching: NextPage = ({ introduction }: any) => {
     return (
         <>
             <Head>
-                <title>Enterprise Agility Coaching and Consulting | Valuehut</title>
-                <meta name="description" content="Transform your organisation with ValueHut. Our Agile Coaching and Consulting Service by ValueHut, improving teams effectiveness and efficiency. For more details, our services contact us today!" />
+                <title>Enterprise Agility Coaching and Consulting | ValueHut Consulting</title>
+                <meta name="description" content="Transform your organisation with ValueHut Consulting. Our Agile Coaching and Consulting Service by ValueHut Consulting, improving teams effectiveness and efficiency. For more details, our services contact us today!" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <ConsultingPage url={"coaching"} consulting={coaching} introduction={content.pages.whatWeDo.introduction} />

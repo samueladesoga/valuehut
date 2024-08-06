@@ -72,7 +72,7 @@ export const consulting: ConsultingObject = {
                 content: `Organisation that care about faster delivery, lowering time-to-market and improving the overall quality of their product have to invest into automated
                 testing capabilities. Our consultants and coaches have helped many organisation eliminate extended manual tests as part of their product delivery cycles.
                 Every form of testing can be automated from Functional Tests, Unit Tests, Performance Tests and additional Non-Functional Tests using matured tools and integrating these
-                tests into the continuous delivery pipelines. At ValueHut, our consultants are able to: `,
+                tests into the continuous delivery pipelines. At ValueHut Consulting, our people are able to: `,
                 contentList: [
                     `Train your product teams on approaches to Software Testing`,
                     `Augment your product teams with our people; we work along side your product team improving the quality of the product`,
