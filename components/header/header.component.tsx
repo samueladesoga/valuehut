@@ -27,7 +27,7 @@ const Header: React.FC = () => {
     return (
         <header className={`${headerStyles.header}`} style={styles}>
             <div className={`${headerStyles.headerContainer}`} id="start">
-                <LogoContainer imageURL='/logo/logo-standalone.png' />
+                <LogoContainer imageURL='/logo/vh-logo.png' />
                 <NavbarContainer />
                 <CartButtonContainer />
             </div>
