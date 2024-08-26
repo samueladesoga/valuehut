@@ -14,7 +14,7 @@ function Footer({ howto, offices }: FooterTypes) {
         <footer className={`${footerStyles.footer}`}>
             <div className={`${footerStyles.footerContainer}`}>
                 <>
-                    <LogoContainer imageURL="/logo/logo-primary-bg-black.png" />
+                    <LogoContainer imageURL="/logo/vh-logo.png" />
                     <LogoContainer imageURL="/logo/ptn.png" />
                     <h3>Contact Us Now:</h3>
                     {offices.map(({ region, email, address, phone }, i) => (
