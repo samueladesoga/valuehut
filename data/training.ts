@@ -1124,8 +1124,8 @@ export const training: TrainingObject = {
             streams: [
                 {
                     id: 'f40719df-128e-401d-aa5f-7f239c9b5c01',
-                    startDate: new Date('2024-09-27').toJSON(),
-                    endDate: new Date('2024-09-27').toJSON(),
+                    startDate: new Date('2024-10-03').toJSON(),
+                    endDate: new Date('2024-10-03').toJSON(),
                     time: '9:00 - 17:00 BST',
                     classType: 'Virtual',
                     price: [
