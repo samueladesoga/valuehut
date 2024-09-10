@@ -1320,9 +1320,9 @@ export const training: TrainingObject = {
                 },
                 {
                     id: 'e605056c-31cb-43aa-9db9-c8dd74870ef4',
-                    startDate: new Date('2024-09-02').toJSON(),
-                    endDate: new Date('2024-09-04').toJSON(),
-                    time: '9:00 - 17:00 BST',
+                    startDate: new Date('2024-12-18').toJSON(),
+                    endDate: new Date('2024-12-20').toJSON(),
+                    time: '9:00 - 17:00 GMT',
                     classType: 'Virtual',
                     price: [
                         {
