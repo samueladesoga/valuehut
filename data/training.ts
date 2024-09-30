@@ -1156,6 +1156,42 @@ export const training: TrainingObject = {
                             amount: 600,
                         },
                     ],
+                    filled: true,
+                },
+                {
+                    id: 'f40719df-128e-401d-aa5f-7f239c9b5c01',
+                    startDate: new Date('2024-11-15').toJSON(),
+                    endDate: new Date('2024-11-15').toJSON(),
+                    time: '9:00 - 17:00 East African Time',
+                    classType: 'In Person - Nairobi, Kenya',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 800,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 800,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 650,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 700,
+                        },
+                    ],
                     filled: false,
                 },
             ],
