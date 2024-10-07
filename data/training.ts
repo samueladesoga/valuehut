@@ -135,42 +135,6 @@ export const training: TrainingObject = {
             streams: [
                 {
                     id: 'b8f8e8c3-246b-4352-b3be-5815b15710f4',
-                    startDate: new Date('2024-07-26').toJSON(),
-                    classType: 'Virtual class',
-                    endDate: new Date('2024-07-27').toJSON(),
-                    time: '09:00 - 17:00 BST',
-                    price: [
-                        {
-                            region: 'United Kingdom',
-                            regionDescription: ['United Kingdom'],
-                            amount: 1000,
-                            currency: {
-                                name: 'gbp',
-                                symbol: '£',
-                                locale: 'en_GB',
-                                template: 'GBP',
-                            },
-                        },
-                        {
-                            region: 'Primary Market',
-                            regionDescription: primaryMarket,
-                            amount: 1000,
-                        },
-                        {
-                            region: 'Tertiary Market',
-                            regionDescription: tertiaryMarket,
-                            amount: 800,
-                        },
-                        {
-                            region: 'Secondary Market',
-                            regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 900,
-                        },
-                    ],
-                    filled: true,
-                },
-                {
-                    id: 'b8f8e8c3-246b-4352-b3be-5815b15710f4',
                     startDate: new Date('2024-08-16').toJSON(),
                     classType: 'Virtual class',
                     endDate: new Date('2024-08-17').toJSON(),
@@ -203,14 +167,50 @@ export const training: TrainingObject = {
                             amount: 900,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
-                    id: 'b8f8e8c3-246b-4352-b3be-5815b15710f4',
+                    id: 'ad9e0903-7c84-446b-aff5-976530caa585',
                     startDate: new Date('2024-10-24').toJSON(),
                     classType: 'Virtual class',
                     endDate: new Date('2024-10-25').toJSON(),
                     time: '09:00 - 17:00 BST',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1000,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1000,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 800,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 900,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    id: '27bdeb3a-725a-4c89-8db7-a199368c66ad',
+                    startDate: new Date('2024-12-12').toJSON(),
+                    classType: 'Virtual class',
+                    endDate: new Date('2024-12-13').toJSON(),
+                    time: '09:00 - 17:00 GMT',
                     price: [
                         {
                             region: 'United Kingdom',
@@ -317,9 +317,9 @@ export const training: TrainingObject = {
             streams: [
                 {
                     id: 'be19b77f-3bba-4fdb-842d-18754062717d',
-                    startDate: new Date('2024-07-19').toJSON(),
+                    startDate: new Date('2024-09-19').toJSON(),
                     classType: 'Virtual',
-                    endDate: new Date('2024-07-20').toJSON(),
+                    endDate: new Date('2024-09-20').toJSON(),
                     time: '9:00 - 17:00 BST',
                     price: [
                         {
@@ -352,10 +352,10 @@ export const training: TrainingObject = {
                     filled: true,
                 },
                 {
-                    id: 'be19b77f-3bba-4fdb-842d-18754062717d',
-                    startDate: new Date('2024-09-19').toJSON(),
+                    id: 'e7a085e5-9714-4462-a470-5a0e8364b975',
+                    startDate: new Date('2024-11-14').toJSON(),
                     classType: 'Virtual',
-                    endDate: new Date('2024-09-20').toJSON(),
+                    endDate: new Date('2024-11-15').toJSON(),
                     time: '9:00 - 17:00 BST',
                     price: [
                         {
@@ -462,42 +462,6 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    id: 'db474e60-f44f-408a-aa16-9ad7840352ca',
-                    startDate: new Date('2024-05-24').toJSON(),
-                    endDate: new Date('2024-05-25').toJSON(),
-                    time: '9:00 - 17:00 BST',
-                    classType: 'Virtual',
-                    price: [
-                        {
-                            region: 'United Kingdom',
-                            regionDescription: ['United Kingdom'],
-                            amount: 1100,
-                            currency: {
-                                name: 'gbp',
-                                symbol: '£',
-                                locale: 'en_GB',
-                                template: 'GBP',
-                            },
-                        },
-                        {
-                            region: 'Primary Market',
-                            regionDescription: primaryMarket,
-                            amount: 1100,
-                        },
-                        {
-                            region: 'Tertiary Market',
-                            regionDescription: tertiaryMarket,
-                            amount: 850,
-                        },
-                        {
-                            region: 'Secondary Market',
-                            regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 950,
-                        },
-                    ],
-                    filled: true,
-                },
-                {
                     id: 'c07eb5ab-c134-4b62-8278-442eff5d8637',
                     startDate: new Date('2024-08-29').toJSON(),
                     endDate: new Date('2024-08-30').toJSON(),
@@ -531,7 +495,7 @@ export const training: TrainingObject = {
                             amount: 950,
                         },
                     ],
-                    filled: false,
+                    filled: true,
                 },
                 {
                     id: '8a0ca903-1d99-4497-a0b9-95d641507d59',
@@ -823,9 +787,9 @@ export const training: TrainingObject = {
             ],
             streams: [
                 {
-                    id: 'c3934f12-0484-42e6-86d6-9718cb74bb2d',
-                    startDate: new Date('2024-06-21').toJSON(),
-                    endDate: new Date('2024-06-21').toJSON(),
+                    id: '7a91256e-f821-43ef-afbc-f1419c110eed',
+                    startDate: new Date('2024-10-04').toJSON(),
+                    endDate: new Date('2024-10-04').toJSON(),
                     classType: 'Virtual',
                     time: '9:00 - 17:00 GMT',
                     price: [
@@ -859,45 +823,9 @@ export const training: TrainingObject = {
                     filled: true,
                 },
                 {
-                    id: 'e4dbb496-5bc1-409c-b048-f70e68fe99d8',
-                    startDate: new Date('2024-09-06').toJSON(),
-                    endDate: new Date('2024-09-06').toJSON(),
-                    classType: 'Virtual',
-                    time: '9:00 - 17:00 GMT',
-                    price: [
-                        {
-                            region: 'United Kingdom',
-                            regionDescription: ['United Kingdom'],
-                            amount: 550,
-                            currency: {
-                                name: 'gbp',
-                                symbol: '£',
-                                locale: 'en_GB',
-                                template: 'GBP',
-                            },
-                        },
-                        {
-                            region: 'Primary Market',
-                            regionDescription: primaryMarket,
-                            amount: 550,
-                        },
-                        {
-                            region: 'Tertiary Market',
-                            regionDescription: tertiaryMarket,
-                            amount: 450,
-                        },
-                        {
-                            region: 'Secondary Market',
-                            regionDescription: 'All countries not listed as primary or tertiary',
-                            amount: 500,
-                        },
-                    ],
-                    filled: false,
-                },
-                {
                     id: '7a91256e-f821-43ef-afbc-f1419c110eed',
-                    startDate: new Date('2024-10-04').toJSON(),
-                    endDate: new Date('2024-10-04').toJSON(),
+                    startDate: new Date('2024-11-08').toJSON(),
+                    endDate: new Date('2024-11-08').toJSON(),
                     classType: 'Virtual',
                     time: '9:00 - 17:00 GMT',
                     price: [
