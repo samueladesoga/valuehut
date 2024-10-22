@@ -205,6 +205,42 @@ export const training: TrainingObject = {
                     ],
                     filled: false,
                 },
+                {
+                    id: '32e8b022-cdf6-44a1-98c5-44dcf4129d07',
+                    startDate: new Date('2025-02-20').toJSON(),
+                    classType: 'Virtual class',
+                    endDate: new Date('2025-02-21').toJSON(),
+                    time: '09:00 - 17:00 GMT',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1000,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1000,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 800,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 900,
+                        },
+                    ],
+                    filled: false,
+                },
             ],
             isTraining: true,
         },
@@ -320,6 +356,78 @@ export const training: TrainingObject = {
                     startDate: new Date('2024-11-14').toJSON(),
                     classType: 'Virtual',
                     endDate: new Date('2024-11-15').toJSON(),
+                    time: '9:00 - 17:00 BST',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1000,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1000,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 800,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 900,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    id: '05f85b4d-e209-41b3-a639-078f22722957',
+                    startDate: new Date('2025-02-13').toJSON(),
+                    classType: 'Virtual',
+                    endDate: new Date('2025-02-14').toJSON(),
+                    time: '9:00 - 17:00 BST',
+                    price: [
+                        {
+                            region: 'United Kingdom',
+                            regionDescription: ['United Kingdom'],
+                            amount: 1000,
+                            currency: {
+                                name: 'gbp',
+                                symbol: '£',
+                                locale: 'en_GB',
+                                template: 'GBP',
+                            },
+                        },
+                        {
+                            region: 'Primary Market',
+                            regionDescription: primaryMarket,
+                            amount: 1000,
+                        },
+                        {
+                            region: 'Tertiary Market',
+                            regionDescription: tertiaryMarket,
+                            amount: 800,
+                        },
+                        {
+                            region: 'Secondary Market',
+                            regionDescription: 'All countries not listed as primary or tertiary',
+                            amount: 900,
+                        },
+                    ],
+                    filled: false,
+                },
+                {
+                    id: 'fd3247c6-5150-428b-9192-9c7c1cbb8aa2',
+                    startDate: new Date('2025-03-06').toJSON(),
+                    classType: 'Virtual',
+                    endDate: new Date('2025-03-07').toJSON(),
                     time: '9:00 - 17:00 BST',
                     price: [
                         {
